@@ -1,0 +1,53 @@
+pp yields and errors
+
+from 
+
+points[0] = NPE_eh_correlation_for_assopt_primpt(1,1,4,5,true,true);
+points[1] = NPE_eh_correlation_for_assopt_primpt(2,2,4,5,true,true);
+points[2] = NPE_eh_correlation_for_assopt_primpt(3,4,4,5,true,true);
+points[3] = NPE_eh_correlation_for_assopt_primpt(1,1,6,8,true,true);
+points[4] = NPE_eh_correlation_for_assopt_primpt(2,2,6,8,true,true);
+points[5] = NPE_eh_correlation_for_assopt_primpt(3,4,6,8,true,true);
+
+i = 0
+near side: 
+yield: 0.814888 stat: 0.00977926 sys: 0.00360017
+head: 
+yield: 0.812439 stat: 0.00965688 sys: 0.00511522
+shoulder: 
+yield: 0.561056 stat: 0.00786714 sys: 0.00216749
+i = 1
+near side: 
+yield: 0.279777 stat: 0.00536135 sys: 0.00167489
+head: 
+yield: 0.337404 stat: 0.00580794 sys: 0.00293765
+shoulder: 
+yield: 0.156817 stat: 0.00379766 sys: 0.000439399
+i = 2
+near side: 
+yield: 0.057533 stat: 0.00242196 sys: 0.00096921
+head: 
+yield: 0.0916335 stat: 0.0030426 sys: 0.00164648
+shoulder: 
+yield: 0.019603 stat: 0.00132994 sys: 8.75715e-05
+i = 3
+near side: 
+yield: 0.801004 stat: 0.0245826 sys: 0.00217934
+head: 
+yield: 0.815639 stat: 0.025429 sys: 0.00632914
+shoulder: 
+yield: 0.48424 stat: 0.0194036 sys: 0.00332109
+i = 4
+near side: 
+yield: 0.278887 stat: 0.0138082 sys: 0.00181987
+head: 
+yield: 0.403106 stat: 0.0163408 sys: 0.00270691
+shoulder: 
+yield: 0.135421 stat: 0.00940179 sys: 0.000890293
+i = 5
+near side: 
+yield: 0.0681146 stat: 0.00652803 sys: 0.000581799
+head: 
+yield: 0.164206 stat: 0.00992462 sys: 0.000868219
+shoulder: 
+yield: 0.0147791 stat: 0.00321696 sys: 0.000280081

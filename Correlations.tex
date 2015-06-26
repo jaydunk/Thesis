@@ -331,7 +331,7 @@ The photonic electron reconstruction efficiency ($\epsilon_\gamma$) is determine
 
 The systematic uncertainty from background normalization is calculated by performing the ZYAM procedure on the two lowest points in the correlation. The difference in normalization factors is taken as the uncertainty and we display this as a shaded bar at 0 yield and 0 angle. This uncertainty would move all points together in a uniform manner.
 
-The subtracted distributions give some insight into the interactions of heavy quarks with the QGP medium. For all trigger $\pt$ shown the direction of trigger electron is well correlated to the direction of the parent B or D meson. Thus we look to the near and away side yields for clues to the nature of the initially created heavy quarks interactions. We calculate the background subtracted yield for the near side region $\Delta\phi \leq .942$, in the away side "head" $\Delta\phi \geq 2.2$, and in the away side shoulder $1.25 \leq \Delta\phi \leq 2.2$. For the separated shoulder and head regions we are looking for signs of away side broadening in the correlation. We might expect to find that the ratio of the shoulder to head yields is larger in more central collisions as a result of jets being diverted or smeared out as a result of interactions with the QGP. We can also look for evidence of medium responses to a heavy quark traversing it. The yields from these plots are listed in Table AAA. We will summarize these results once we have the correlations from p+p as well. 
+The subtracted distributions give some insight into the interactions of heavy quarks with the QGP medium. For all trigger $\pt$ shown the direction of trigger electron is well correlated to the direction of the parent B or D meson. Thus we look to the near and away side yields for clues to the nature of the initially created heavy quarks interactions. We calculate the background subtracted yield for the near side region $\Delta\phi \leq .942$, in the away side ``head" $\Delta\phi \geq 2.2$, and in the away side shoulder $1.25 \leq \Delta\phi \leq 2.2$. For the separated shoulder and head regions we are looking for signs of away side broadening in the correlation. We might expect to find that the ratio of the shoulder to head yields is larger in more central collisions as a result of jets being diverted or smeared out as a result of interactions with the QGP. We can also look for evidence of medium responses to a heavy quark traversing it. The yields from these plots are listed in Table AAA. We will summarize these results once we have the correlations from p+p as well. 
 
 \section{Correlations in p+p}
 
@@ -441,7 +441,54 @@ $p_{T,asso} \in(2.0, 4.0)$ GeV/c  & Shoulder & 0.0147791 & 0.00321696 & 0.000280
 
 \subsection{Charm to Bottom Ratios}
 
-\section{Comparisons on Yields}
+We can use the p+p NPE-h correlations to investigate the relative contributions of charm and bottom to non-photonic electrons by fitting the observed correlations with those from $B$ and $D$ to find the ratio as a function of electron $\pt$. Several experiments have performed this measurement, making this a reasonable check that our method for constructing NPE-h correlations is working as intended. 
+
+The simulations are done with Pythia 8.2 with the standard STAR heavy flavor tune. To get reasonable samples across all electron $\pt$ and to avoid the low $\pt$ divergence in heavy flavor processes in Pythia we generate the correlations in several bins in \texttt{ptHat} and then piece them together according to a weighting, this closely follows the Pythia example \texttt{main08.cc}. For \texttt{ptHat} $\leq 3.0$ GeV/c we use the ``minbias" process \texttt{SoftQCD:nonDiffractive = on} for the bins above this we use the hard QCD processes \texttt{HardQCD:all = on}. Then to patch the different bins together we scale each bin by the generated cross section, the raw and scaled \texttt{ptHat} spectra can be seen in Figure~\ref{fig:PythiaProcess}.   
+
+\begin{figure}[htbp]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/pthat_raw.pdf}
+		\caption{Raw}
+		\label{fig:PythiaProcessa}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/pthat_weighted.pdf}
+		\caption{Weighted}
+		\label{fig:PythiaProcessb}
+	\end{subfigure}	
+\caption[Raw and Weighted Pythia Generated Hard Processes]{The raw and weighted \texttt{ptHat} spectra from Pythia.}
+\label{fig:PythiaProcess}
+\end{figure}
+
+Then we construct the electron-hadron correlations from the Pythia simulations in two separate cases one for initial $b$ quarks and one for initial $c$ quarks. We check that the final state contains an electron and that the electron has a parent $B$ or $D$ meson. To increase statistics, if there is no final state electron we we pick on of the heavy mesons, undo and then redo the decay until we get an electron effectively setting the branching ratio for semileptonic decays to 100\%. Then we apply acceptance cuts that closely match the STAR acceptance: $\eta_e \in (-.7,.7)$, $p_{T,e} > 2.0$ GeV/c,$\eta_h \in (1.0,1.0)$, and $p_{T,h} > 0.2$ GeV/c. This gives us the electron-hadron correlation that we use in the fit. 
+
+For the fit we compare the correlations for $p_{T,h} > .2$ GeV/c and vary the $\pt$ of the trigger particle. We fit the correlation with the function:
+
+\begin{equation}\label{eq:BDfitfunc}
+\frac{dN_{NPE-h}}{d\Delta\phi} = r_B f_B(\Delta\phi) + (1 - r_B) f_D(\Delta\phi)
+\end{equation}
+
+Where $f_B$ and $f_D$ are the correlations for bottom and charm electron-hadron correlations from Pythia, and $r_B = \frac{e_B}{e_B + e_D}$. The fit is done in a range around the near side peak $\Delta\phi < 1.5$ due to diffuculties in Pythia accurately recreating away side behavior. Figure~\ref{fig:exfit} shows an example fit, plus the correlations from Pythia.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/charm_corr_primpt_5_5_assopt_0_9.pdf}
+\end{center}
+\caption[D/B Ratio Fit Example]{NPE-h correlation with 5.0 GeV/c $< p_{T,e} <$ 6.0 GeV/c and $p_{T,h} >$ 0.2 GeV/c. Pythia distributions are $f_D(\Delta\phi)$ (blue), $f_B(\Delta\phi)$ (green), and the distribution with best fit value of $r_B$ (red).}
+\label{fig:exfit}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/BD_ratio.pdf}
+\end{center}
+\caption[B/D Ratio]{Measured value of $r_B$ as a function of trigger $\pt$. Red points are for the current analysis and the black are from STAR published in Ref. Only statistical errors are shown.}
+\label{fig:BDRatio}
+\end{figure}
+
+Figure ~\ref{fig:BDRatio} shows the results for obtaining $r_B$ from fits of the p+p correlation plus a comparison to previous published results. Errors are large at high trigger $\pt$ due to the distributions from $B$ and $D$ becoming similar thus reducing the ability to distinguish between the contributions to the overall p+p correlation shape. Discrepancies in the mid $\pt$ range may be due to difficulties in patching together the \texttt{ptHat} bins in the Pythia simulations and this could be fixed by only using \texttt{SoftQCD:nonDiffractive} to generate the simulated correlations, but this would be far more time consuming. 
+
+\section{Comparisons of Yields}
 
 \subsection{Away Side Shape}
 
@@ -449,5 +496,7 @@ $p_{T,asso} \in(2.0, 4.0)$ GeV/c  & Shoulder & 0.0147791 & 0.00321696 & 0.000280
 
 \section{Event-Plane Dependent Correlations}
 
-\section{Event Plane Reconstruction}
+\subsection{Event Plane Reconstruction}
+
+\subsection{Correlations}
 

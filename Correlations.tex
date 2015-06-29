@@ -514,5 +514,65 @@ The event plane angle gives us an estimate for the reaction plane angle, we will
 
 \subsection{Event Plane Reconstruction}
 
+We use the azimuthal distribution of the particles in an event to calculate the event plane, $\Psi_{EP}$. Event planes can be calculated for any order of harmonic in the decompisition of the particle distribution, but since we are interested in $v_2$ and the second order event plane everything that follows is specifically the $n = 2$ case. For a more general treatment see ref. First we apply single particle $\phi$-weighting to correct for the acceptance of the detector. This is the same procedure as used for the two-particle correlation.
+
+We use the hadrons in the event with 0.2 GeV/c $ \leq p_{T} \leq $ 2.0 GeV/c in the event plane calculation. Since these events are high tower triggered events there is also a high $\pt$ leading particle in each event. Since the presence of a jet may bias the calculation of the event plane, we should try to remove this contribution. To do this we exclude the particles in the event with $|\Delta\eta| <$ .5, where $\Delta\eta$ is the pseudorapidity difference between the hadron and the leading particle in the event (in events used in NPE analysis this track is usually the electron). This procedure is called the Modified Reaction Plane (MRP) method.
+
+With our sample of hadrons we then construct a flow vector $\mathbf{Q}$ for the event. The components of this vector are:
+
+\begin{equation}\label{eq:Xcomp}
+X = \sum_{i} w_i \cos(2\phi_i)
+\end{equation}
+\begin{equation}\label{eq:Ycomp}
+Y = \sum_{i} w_i \sin(2\phi_i)
+\end{equation}
+
+where $w_i$ is some weight given to the particle, in this analysis we use the particle's $\pt$ as the weight. The second order event plane angle is then given by:
+
+\begin{equation}\label{eq:EP}
+\Psi_{EP} = \frac{1}{2}\tan^{-1}(\frac{Y}{X})
+\end{equation}
+
+The true distribution of the reaction planes should be uniform across all events, however there will still be some distortion in the event plane distribution which we need to correct. To do this we use a shifting method where the harmonics of the uncorrected distribution are used to flatten it. Figure~\ref{EPPhi_corrected} shows the distribution of the event plane angle after applying the shifting correction. We see that the resulting distribution is flat to within 1\%.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/EPPhi_corrected.pdf}
+\end{center}
+\caption[Corrected Event Plane Distribution]{The $\phi$ distribution of the event plane angle $\Psi_{EP}$ after applying the shifting correction.}
+\label{fig:EPPhi_corrected}
+\end{figure}
+
+When we calculate the event plane dependent NPE-h correlations we will potentially be correlating the trigger electron with some of the particles used in the event plane calculation. We would like the calculated event plane to be independent of the particles in the correlation so we will actually calculate 5 separate event planes per event. We calculate one for all hadrons in the range .2 GeV/c $\leq p_{T} \leq $ 2.0 GeV/c then we calculate one for each case where the ranges .2 GeV/c $\leq p_{T} \leq$ .5 GeV/c, .5 GeV/c $\leq p_{T} \leq$ 1.0 GeV/c, 1.0 GeV/c $\leq p_{T} \leq$ 1.5 GeV/c, and 1.5 GeV/c $\leq p_{T} \leq$ 2.0 GeV/c are excluded. Each bin with an excluded $\pt$ range will have a lower resolution due to fewer particles used in the event plane calculation.
+
+Using a finite number of particles to calculate the event plane leaves us with an event plane resolution by which we must scale up our azimuthal anisotropy measurements to get the anisotropy relative to the true reaction plane. This is done to get the correct value of $v_2$ in flow analyses but we will also need the event plane resolution for calculating the event plane dependent $v_2$ background for electron-hadron correlations. We calculate the resolution by subevent planes. We divide each event randomly into two equally sized sub events then independently calculate the event plane for each. The differences between the subevent planes can be used to measure the event plane resolution. Figure~\ref{fig:EPRes_MRP} summarizes the resolution as a function of event centrality as well for different hadron $\pt$ slices. Resolution is best around 30\% centrality and falls off in central events due to lower azimuthal anisotropy and in peripheral events because of lower multiplicity.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/EPRes_MRP.pdf}
+\end{center}
+\caption[Event Plane Resolutions]{Event plane resolution as a function of centrality.}
+\label{fig:EPRes_MRP}
+\end{figure}
+
 \subsection{Correlations}
 
+Now we would like to calculate the NPE-h correlation and look at the dependence based on how the trigger particle is oriented relative to the event plane. Since for trigger particles which are out of the event plane the heavy quark traversed a longer path in medium, we might wonder if this could effect the correlation.
+
+The correlation is constructed as previously described for Au+Au collisions with one important difference. Before the background from flow assumed no dependence of the trigger particle on the reaction plane. The form of this background resulted from the dependence on the reaction plane cancelling leaving only the difference $\Delta\phi$ between the correlated particles. Now we are choosing specific orientations of the trigger particle relative to the event plane and thus the background will be different and depend on that orientation.
+
+We use the same functional form for the background, Equation~\ref{eq:v2background}, as when we originally calculated the NPE-h correlations in Au+Au, but now we replace the $v_2$ of the electron with an `effective` $v_2$, denoted $\widetilde{v}_{2}$, which will depend on the electrons angle relative to the event plane as well as the event plane resolution. The effective $v_2$ can be calculated for any arbitrary slice relative to the event plane, but we will only consider the case of two equal slices: in-plane and out-of-plane. For this case $\widetilde{v}_{2}$ is given by:
+
+\begin{equation}\label{eq:inplane}
+0 \leq |\phi_{trig} - \Psi_{EP}| \leq \frac{\pi}{4} : 
+	  \widetilde{v}_{2} = \frac{\pi v_{2} + 2 \langle\cos(2\Delta\Psi)\rangle}
+						{\pi + 4 v_{2}  \langle\cos(2\Delta\Psi)\rangle}
+\end{equation}
+
+\begin{equation}\label{eq:outplane}
+\frac{\pi}{4} \leq |\phi_{trig} - \Psi_{EP}| \leq \frac{\pi}{2} : 
+           \widetilde{v}_{2} = \frac{\pi v_{2} - 2 \langle\cos(2\Delta\Psi)\rangle}
+						{\pi - 4 v_{2}  \langle\cos(2\Delta\Psi)\rangle}
+\end{equation}
+
+where Equation~\ref{eq:inplane} is for in-plane triggers and Equation~\ref{eq:outplane} is for out-of-plane triggers.

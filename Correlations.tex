@@ -533,7 +533,7 @@ where $w_i$ is some weight given to the particle, in this analysis we use the pa
 \Psi_{EP} = \frac{1}{2}\tan^{-1}(\frac{Y}{X})
 \end{equation}
 
-The true distribution of the reaction planes should be uniform across all events, however there will still be some distortion in the event plane distribution which we need to correct. To do this we use a shifting method where the harmonics of the uncorrected distribution are used to flatten it. Figure~\ref{EPPhi_corrected} shows the distribution of the event plane angle after applying the shifting correction. We see that the resulting distribution is flat to within 1\%.
+The true distribution of the reaction planes should be uniform across all events, however there will still be some distortion in the event plane distribution which we need to correct. To do this we use a shifting method where the harmonics of the uncorrected distribution are used to flatten it. Figure~\ref{fig:EPPhi_corrected} shows the distribution of the event plane angle after applying the shifting correction. We see that the resulting distribution is flat to within 1\%.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -576,3 +576,90 @@ We use the same functional form for the background, Equation~\ref{eq:v2backgroun
 \end{equation}
 
 where Equation~\ref{eq:inplane} is for in-plane triggers and Equation~\ref{eq:outplane} is for out-of-plane triggers.
+
+Now we construct the raw correlations for two cases: The trigger particle is in-plane or out-of-plane and then subtract off the appropriate background for that case. We use the ZYAM method to normalize the bckground to the distributions, calculating each case individually. In principle it is possible to calculate what the normalization for each case should be just from the normalization of the background for all triggers, but we choose not to do this. When combining bins in centrality we calculate $\widetilde{v}_{2}$ from the average values in each bin, weighted by the number of NPE in each centrality bin.
+
+We construct the raw correlation for 20-60\% central events. This is the region with the best event plane resolution due to the large elliptic flow and high multiplicity. It is also similar to the centrality region investigated by previous analyses of event plane dependent dihadron correlations. Figure~\ref{fig:EP_corr_raw} shows the resulting raw correlations for both cases and the dependence on the associated hadron $\pt$. We can also see how the background changes between in-plane and out-of-plane cases. For out-of-plane triggers the background appears shifted by $\pi/2$ since the effective $v_2$ has a negative value. This is not always the case though as for bins with large $v_2$ but poor event plane resolution we could potentially find that $\widetilde{v}_{2}$ for out-of-plane triggers is still positive.
+
+\begin{figure}[htbp]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/raw/NPE_eh_corr_raw_inplane_primpt_4_5_cent_2_5_assopt_1_1.pdf}
+		\caption{.5 GeV/c $\leq p_{T,h} \leq$ 1.0 GeV/c}
+		\label{fig:EP_corr_raw_a}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/raw/NPE_eh_corr_raw_outofplane_primpt_4_5_cent_2_5_assopt_1_1.pdf}
+		\caption{.5 GeV/c $\leq p_{T,h} \leq$ 1.0 GeV/c}
+		\label{fig:EP_corr_raw_b}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/raw/NPE_eh_corr_raw_inplane_primpt_4_5_cent_2_5_assopt_2_2.pdf}
+		\caption{1.0 GeV/c $\leq p_{T,h} \leq$ 2.0 GeV/c}
+		\label{fig:EP_corr_raw_c}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/raw/NPE_eh_corr_raw_outofplane_primpt_4_5_cent_2_5_assopt_2_2.pdf}
+		\caption{1.0 GeV/c $\leq p_{T,h} \leq$ 2.0 GeV/c}
+		\label{fig:EP_corr_raw_d}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/raw/NPE_eh_corr_raw_inplane_primpt_4_5_cent_2_5_assopt_3_4.pdf}
+		\caption{2.0 GeV/c $\leq p_{T,h} \leq$ 4.0 GeV/c}
+		\label{fig:EP_corr_raw_e}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/raw/NPE_eh_corr_raw_outofplane_primpt_4_5_cent_2_5_assopt_3_4.pdf}
+		\caption{2.0 GeV/c $\leq p_{T,h} \leq$ 4.0 GeV/c}
+		\label{fig:EP_corr_raw_f}
+	\end{subfigure}	
+\caption[Raw NPE-hadron Correlations, In-plane and Out-of-plane]{Raw NPE-h correlations for 20-60\% centrality Au+Au collisions with 4.0 GeV/c $\leq pt_{T,e} \leq$ 6.0 GeV/c. Left column shows correlations for in-plane electrons, right shows out-of-plane electrons.}
+\label{fig:EP_corr_raw}
+\end{figure}
+
+We can then subtract the backgrounds to get the correlations and yields to see if there is any significant difference between the in-plane and out-of-plane cases. The systematic errors from photonic eletron reconstruction efficiency and background normalization are calculated exactly as before. For the uncertainty in NPE $v_2$ we again let the value vary between .05 and .15 calculate $\widetilde{v}_{2}$ for the extreme values and then take the difference between the points when fit with different backgrounds as the uncertainty.
+
+\begin{figure}[htbp]
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/subtracted/NPE_subtracted_eh_corr_inplane_primpt_4_5_cent_2_5_assopt_1_1.pdf}
+		\caption{.5 GeV/c $\leq p_{T,h} \leq$ 1.0 GeV/c}
+		\label{fig:EP_corr_subtracted_a}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/subtracted/NPE_subtracted_eh_corr_outplane_primpt_4_5_cent_2_5_assopt_1_1.pdf}
+		\caption{.5 GeV/c $\leq p_{T,h} \leq$ 1.0 GeV/c}
+		\label{fig:EP_corr_subtracted_b}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/subtracted/NPE_subtracted_eh_corr_inplane_primpt_4_5_cent_2_5_assopt_2_2.pdf}
+		\caption{1.0 GeV/c $\leq p_{T,h} \leq$ 2.0 GeV/c}
+		\label{fig:EP_corr_subtracted_c}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/subtracted/NPE_subtracted_eh_corr_outplane_primpt_4_5_cent_2_5_assopt_2_2.pdf}
+		\caption{1.0 GeV/c $\leq p_{T,h} \leq$ 2.0 GeV/c}
+		\label{fig:EP_corr_subtracted_d}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/subtracted/NPE_subtracted_eh_corr_inplane_primpt_4_5_cent_2_5_assopt_3_4.pdf}
+		\caption{2.0 GeV/c $\leq p_{T,h} \leq$ 4.0 GeV/c}
+		\label{fig:EP_corr_subtracted_e}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/EP/subtracted/NPE_subtracted_eh_corr_outplane_primpt_4_5_cent_2_5_assopt_3_4.pdf}
+		\caption{2.0 GeV/c $\leq p_{T,h} \leq$ 4.0 GeV/c}
+		\label{fig:EP_corr_subtracted_f}
+	\end{subfigure}	
+\caption[Subtracted NPE-hadron Correlations, In-plane and Out-of-plane]{NPE-h correlations for 20-60\% centrality Au+Au collisions with 4.0 GeV/c $\leq pt_{T,e} \leq$ 6.0 GeV/c. Left column shows correlations for in-plane electrons, right shows out-of-plane electrons. Errors from photonic eletron reconstruciton efficiency and NPE $v_2$ uncertainty are shown as shaded regions around each point, background normalization uncertainties are the shaded bars around 0.}
+\label{fig:EP_corr_subtracted}
+\end{figure}
+
+We can see from the subtracted distributions in Figure~\ref{fig:EP_corr_subtracted} that systematic uncertainties are quite large for lower hadron $\pt$. Above 2 GeV/c the uncertainties are less of a problem and this also happens to be the exact region looked at by a previous STAR analysis in dihadron collisions. In Figure~\ref{fig:EP_comparison} we show the comparison of in-plane and out-of-plane correlations for NPE-h as well as dihadron correlations, p+p dihadron correlations are also shown. For the dihadron correlations only the statistical errors are shown. We see that while in dihadron correlations there is evidence of greater jet supression in the out-of-plane correlations, there does not appear to be any discernable difference between in-plane and out-of-plane in NPE-h correlations. In fact, the NPE-h correlations appear comparable to the dihadron p+p data. There are a few possible explanations for this. The NPE-h correlation contains the decay products of the heavy $B$ or $D$ meson which happens after the freezeout of the QGP. Also in heavy flavor correlations the connection of the kinematics of the leading particle to the initial heavy quark is more tenuous, and the biases in these correlations may be different. We won't draw any definitive conclusions from these data and instead just present them as potential avenues for further study.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/EP/NPE_subtracted_eh_corr_in-out_comp_with_pub_primpt_4_5_cent_2_5_assopt_3_4.pdf}
+\end{center}
+\caption[Event Plane Dependent Correlation Comparison]{In-plane and out-of-plane correlations comparison for NPE-h and dihadron correlations.}
+\label{fig:EP_comparison}
+\end{figure}
+

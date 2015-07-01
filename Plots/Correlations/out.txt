@@ -1,0 +1,2026 @@
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+***1***
+***2***
+5406.87
+5727.85
+5660.8
+5591.41
+5519.56
+5445.11
+5367.92
+5287.84
+5204.69
+5118.3
+5028.47
+***4***
+NTrigger_total 2332.95
+NTrigger_total_in 1277.81
+NTrigger_total_out 1055.13
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69316
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69316
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693183
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693183
+EPRes: 0.374558
+v2hadron: 0.0934344
+nbinsx 20
+minbin 20
+minbin_value 7.29716
+next_minbin 2
+next_minbin_value 7.36223
+nextnext_minbin 10
+nextnext_minbin_value 7.3772
+v2 C: 7.42919
+v2 C next: 7.444
+v2 C nextnext: 7.51068
+spread: 0.0148065
+spread_in: 0.279405
+spread_out: 0.0350285
+minbin 20
+minbin_value 7.29716
+minbin_center 4.55531
+v2 C 7.42919
+minbin_in 10
+minbin_value_in 6.85458
+minbin_center_in 1.41372
+v2_in C 7.27209
+minbin_out 6
+minbin_value_out 7.64313
+minbin_center_out 0.15708
+v2_out C 7.84586
+v2_in_calc C 3.89174
+v2_out_calc C 3.53744
+v2_in_calc C + v2_out_calc C = 7.42919||||| v2 c = 7.42919
+away side head yield (error): 0.363855 (0.0659528)
+away side shoulder yield (error): 0.107132 (0.063884)
+away side head yield in-plane (error): 0.151951 (0.0882604)
+away side shoulder yield in-plane (error): 0.160895 (0.0844485)
+away side head yield out-of-plane (error): 0.401516 (0.0991963)
+away side shoulder yield out-of-plane (error): -0.162346 (0.0974287)
+near side yield (error): 0.0143632 (0.0737196)
+near side yield in-plane (error): -0.213347 (0.0991737)
+near side yield out-of-plane (error): 0.00216576 (0.110196)
+***1***
+***2***
+1000.35
+1050.73
+1040.12
+1029.19
+1017.92
+1006.3
+994.301
+981.918
+969.126
+955.907
+942.237
+***4***
+NTrigger_total 469.713
+NTrigger_total_in 265.619
+NTrigger_total_out 204.094
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69316
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69316
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69316
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693183
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693183
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693183
+EPRes: 0.375726
+v2hadron: 0.0933835
+nbinsx 20
+minbin 1
+minbin_value 6.77904
+next_minbin 5
+next_minbin_value 6.88325
+nextnext_minbin 2
+nextnext_minbin_value 6.96043
+v2 C: 6.90163
+v2 C next: 6.76312
+v2 C nextnext: 7.03769
+spread: 0.138514
+spread_in: 0.494769
+spread_out: 0.200706
+minbin 1
+minbin_value 6.77904
+minbin_center -1.41372
+v2 C 6.90163
+minbin_in 2
+minbin_value_in 5.98907
+minbin_center_in -1.09956
+v2_in C 6.20975
+minbin_out 6
+minbin_value_out 6.7768
+minbin_center_out 0.15708
+v2_out C 6.95746
+v2_in_calc C 3.6159
+v2_out_calc C 3.28573
+v2_in_calc C + v2_out_calc C = 6.90163||||| v2 c = 6.90163
+away side head yield (error): 0.868317 (0.136648)
+away side shoulder yield (error): 0.37479 (0.128162)
+away side head yield in-plane (error): 1.08562 (0.177312)
+away side shoulder yield in-plane (error): 1.02042 (0.164186)
+away side head yield out-of-plane (error): 1.38058 (0.213661)
+away side shoulder yield out-of-plane (error): 0.332121 (0.203326)
+near side yield (error): 0.43422 (0.152473)
+near side yield in-plane (error): 0.667041 (0.195276)
+near side yield out-of-plane (error): 1.19201 (0.241969)
+***1***
+***2***
+37297.5
+39169.5
+38779.3
+38375
+37955.9
+37521.1
+37069.7
+36600.7
+36113.1
+35605.8
+35077.5
+***4***
+NTrigger_total 5975.54
+NTrigger_total_in 3123.01
+NTrigger_total_out 2852.53
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693175
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693175
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693362
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693362
+EPRes: 0.438054
+v2hadron: 0.0781178
+nbinsx 20
+minbin 2
+minbin_value 19.6343
+next_minbin 20
+next_minbin_value 19.7454
+nextnext_minbin 10
+nextnext_minbin_value 19.8679
+v2 C: 19.8163
+v2 C next: 20.0432
+v2 C nextnext: 20.1676
+spread: 0.226912
+spread_in: 0.735245
+spread_out: 0.656823
+minbin 2
+minbin_value 19.6343
+minbin_center -1.09956
+v2 C 19.8163
+minbin_in 20
+minbin_value_in 19.025
+minbin_center_in 4.55531
+v2_in C 20.0966
+minbin_out 5
+minbin_value_out 19.4846
+minbin_center_out -0.15708
+v2_out C 20.0489
+v2_in_calc C 10.4608
+v2_out_calc C 9.35553
+v2_in_calc C + v2_out_calc C = 19.8163||||| v2 c = 19.8163
+away side head yield (error): 0.446483 (0.0664356)
+away side shoulder yield (error): 0.351208 (0.0655682)
+away side head yield in-plane (error): 0.114244 (0.0925034)
+away side shoulder yield in-plane (error): 0.0596196 (0.0888486)
+away side head yield out-of-plane (error): 0.30579 (0.0954564)
+away side shoulder yield out-of-plane (error): 0.155421 (0.096974)
+near side yield (error): 0.113593 (0.0752799)
+near side yield in-plane (error): -0.237647 (0.104244)
+near side yield out-of-plane (error): -0.177335 (0.108827)
+***1***
+***2***
+6279.89
+6613.94
+6543.86
+6471.51
+6396.76
+6319.5
+6239.6
+6156.92
+6071.32
+5982.63
+5890.68
+***4***
+NTrigger_total 1083.33
+NTrigger_total_in 576.95
+NTrigger_total_out 506.375
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693175
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693175
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693175
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693362
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693362
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.693362
+EPRes: 0.438119
+v2hadron: 0.0780313
+nbinsx 20
+minbin 19
+minbin_value 17.8351
+next_minbin 2
+next_minbin_value 18.1569
+nextnext_minbin 18
+nextnext_minbin_value 18.1634
+v2 C: 18.0002
+v2 C next: 18.325
+v2 C nextnext: 18.1634
+spread: 0.324791
+spread_in: 0.351217
+spread_out: 0.0504047
+minbin 19
+minbin_value 17.8351
+minbin_center 4.24115
+v2 C 18.0002
+minbin_in 1
+minbin_value_in 16.519
+minbin_center_in -1.41372
+v2_in C 17.4484
+minbin_out 19
+minbin_value_out 18.4614
+minbin_center_out 4.24115
+v2_out C 18.146
+v2_in_calc C 9.50217
+v2_out_calc C 8.49806
+v2_in_calc C + v2_out_calc C = 18.0002||||| v2 c = 18.0002
+away side head yield (error): 0.285343 (0.147377)
+away side shoulder yield (error): 0.465791 (0.144077)
+away side head yield in-plane (error): 0.128077 (0.205473)
+away side shoulder yield in-plane (error): 0.330938 (0.196732)
+away side head yield out-of-plane (error): 0.93133 (0.211192)
+away side shoulder yield out-of-plane (error): 1.05574 (0.211576)
+near side yield (error): 0.529239 (0.16639)
+near side yield in-plane (error): 0.187399 (0.229818)
+near side yield out-of-plane (error): 1.53279 (0.241143)
+***1***
+***2***
+83348.7
+88163.9
+87173.7
+86140.4
+85061.1
+83932.5
+82751.3
+81513.6
+80215.3
+78851.8
+77418.1
+***4***
+NTrigger_total 5045.32
+NTrigger_total_in 2667.16
+NTrigger_total_out 2378.16
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69311
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69311
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.692791
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.692791
+EPRes: 0.28635
+v2hadron: 0.03294
+nbinsx 20
+minbin 18
+minbin_value 52.0523
+next_minbin 9
+next_minbin_value 52.2608
+nextnext_minbin 19
+nextnext_minbin_value 52.3151
+v2 C: 52.0523
+v2 C next: 52.464
+v2 C nextnext: 52.5185
+spread: 0.41174
+spread_in: 0.00790869
+spread_out: 0.591197
+minbin 18
+minbin_value 52.0523
+minbin_center 3.92699
+v2 C 52.0523
+minbin_in 2
+minbin_value_in 51.375
+minbin_center_in -1.09956
+v2_in C 51.9226
+minbin_out 18
+minbin_value_out 51.966
+minbin_center_out 3.92699
+v2_out C 51.966
+v2_in_calc C 26.975
+v2_out_calc C 25.0772
+v2_in_calc C + v2_out_calc C = 52.0523||||| v2 c = 52.0523
+away side head yield (error): 0.737388 (0.147269)
+away side shoulder yield (error): 0.658026 (0.146362)
+away side head yield in-plane (error): 0.757477 (0.201585)
+away side shoulder yield in-plane (error): 0.55073 (0.199037)
+away side head yield out-of-plane (error): 0.921161 (0.215644)
+away side shoulder yield out-of-plane (error): 1.01627 (0.215843)
+near side yield (error): 0.74085 (0.167485)
+near side yield in-plane (error): 0.521882 (0.229007)
+near side yield out-of-plane (error): 1.27014 (0.24554)
+***1***
+***2***
+13959.8
+15006.5
+14789.4
+14563.8
+14329.3
+14085.4
+13831.5
+13566.9
+13291
+13003
+12702.1
+***4***
+NTrigger_total 953.802
+NTrigger_total_in 534.485
+NTrigger_total_out 419.317
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69311
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69311
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.69311
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.692791
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.692791
+pt_low_edge: 0.5
+pt_up_edge: 1
+pt_spec_bin_low: 6
+pt_spec_bin_up: 10
+pt_sum/Nh: 0.692791
+EPRes: 0.288147
+v2hadron: 0.033351
+nbinsx 20
+minbin 2
+minbin_value 43.6808
+next_minbin 3
+next_minbin_value 45.228
+nextnext_minbin 17
+nextnext_minbin_value 45.7869
+v2 C: 43.8528
+v2 C next: 45.228
+v2 C nextnext: 45.6081
+spread: 1.37527
+spread_in: 0.621026
+spread_out: 1.61899
+minbin 2
+minbin_value 43.6808
+minbin_center -1.09956
+v2 C 43.8528
+minbin_in 2
+minbin_value_in 45.1565
+minbin_center_in -1.09956
+v2_in C 45.6458
+minbin_out 2
+minbin_value_out 41.7998
+minbin_center_out -1.09956
+v2_out C 41.6583
+v2_in_calc C 22.7308
+v2_out_calc C 21.1219
+v2_in_calc C + v2_out_calc C = 43.8528||||| v2 c = 43.8528
+away side head yield (error): 2.76404 (0.316466)
+away side shoulder yield (error): 2.84518 (0.315039)
+away side head yield in-plane (error): 2.11297 (0.428557)
+away side shoulder yield in-plane (error): 2.13312 (0.423031)
+away side head yield out-of-plane (error): 3.43309 (0.46881)
+away side shoulder yield out-of-plane (error): 3.7882 (0.471979)
+near side yield (error): 2.31516 (0.358503)
+near side yield in-plane (error): 1.41655 (0.487037)
+near side yield out-of-plane (error): 3.29974 (0.528768)
+***1***
+***2***
+1422.05
+1518.38
+1498.26
+1477.43
+1455.87
+1433.52
+1410.36
+1386.32
+1361.37
+1335.45
+1308.5
+***4***
+NTrigger_total 2332.95
+NTrigger_total_in 1277.81
+NTrigger_total_out 1055.13
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30877
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30877
+EPRes: 0.414753
+v2hadron: 0.158671
+nbinsx 20
+minbin 1
+minbin_value 1.94026
+next_minbin 2
+next_minbin_value 2.09902
+nextnext_minbin 20
+nextnext_minbin_value 2.15085
+v2 C: 2.00064
+v2 C next: 2.13892
+v2 C nextnext: 2.21779
+spread: 0.13828
+spread_in: 0.0758764
+spread_out: 0.0275051
+minbin 1
+minbin_value 1.94026
+minbin_center -1.41372
+v2 C 2.00064
+minbin_in 10
+minbin_value_in 1.72528
+minbin_center_in 1.41372
+v2_in C 1.92631
+minbin_out 7
+minbin_value_out 2.16917
+minbin_center_out 0.471239
+v2_out C 2.24158
+v2_in_calc C 1.05315
+v2_out_calc C 0.947495
+v2_in_calc C + v2_out_calc C = 2.00064||||| v2 c = 2.00064
+away side head yield (error): 0.366602 (0.0355859)
+away side shoulder yield (error): 0.126959 (0.0335234)
+away side head yield in-plane (error): 0.28486 (0.0484756)
+away side shoulder yield in-plane (error): 0.167948 (0.0450505)
+away side head yield out-of-plane (error): 0.327017 (0.0523876)
+away side shoulder yield out-of-plane (error): -0.0708621 (0.0501741)
+near side yield (error): 0.322385 (0.0396921)
+near side yield in-plane (error): 0.337374 (0.053314)
+near side yield out-of-plane (error): 0.116836 (0.0594414)
+***1***
+***2***
+297.631
+313.981
+310.538
+306.99
+303.333
+299.561
+295.67
+291.653
+287.504
+283.217
+278.784
+***4***
+NTrigger_total 469.713
+NTrigger_total_in 265.619
+NTrigger_total_out 204.094
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30877
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30877
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30877
+EPRes: 0.416435
+v2hadron: 0.158628
+nbinsx 20
+minbin 20
+minbin_value 1.93549
+next_minbin 1
+next_minbin_value 2.01695
+nextnext_minbin 2
+nextnext_minbin_value 2.02882
+v2 C: 1.99571
+v2 C next: 2.0797
+v2 C nextnext: 2.06737
+spread: 0.0839966
+spread_in: 0.0106845
+spread_out: 0.400502
+minbin 20
+minbin_value 1.93549
+minbin_center 4.55531
+v2 C 1.99571
+minbin_in 1
+minbin_value_in 1.56478
+minbin_center_in -1.41372
+v2_in C 1.74761
+minbin_out 20
+minbin_value_out 2.20724
+minbin_center_out 4.55531
+v2_out C 2.09692
+v2_in_calc C 1.05076
+v2_out_calc C 0.944945
+v2_in_calc C + v2_out_calc C = 1.99571||||| v2 c = 1.99571
+away side head yield (error): 0.391791 (0.0738275)
+away side shoulder yield (error): 0.160784 (0.0700681)
+away side head yield in-plane (error): 0.433676 (0.0990904)
+away side shoulder yield in-plane (error): 0.139971 (0.082076)
+away side head yield out-of-plane (error): 0.551763 (0.110628)
+away side shoulder yield out-of-plane (error): 0.387777 (0.120806)
+near side yield (error): 0.39401 (0.0845325)
+near side yield in-plane (error): 0.392737 (0.107989)
+near side yield out-of-plane (error): 0.677663 (0.134523)
+***1***
+***2***
+11131.9
+11714.1
+11592.7
+11467
+11336.7
+11201.4
+11061
+10915.2
+10763.5
+10605.8
+10441.5
+***4***
+NTrigger_total 5975.54
+NTrigger_total_in 3123.01
+NTrigger_total_out 2852.53
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30896
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30896
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30918
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30918
+EPRes: 0.487006
+v2hadron: 0.13409
+nbinsx 20
+minbin 1
+minbin_value 5.92983
+next_minbin 20
+next_minbin_value 6.0086
+nextnext_minbin 12
+nextnext_minbin_value 6.06072
+v2 C: 6.08503
+v2 C next: 6.16586
+v2 C nextnext: 6.15779
+spread: 0.0808321
+spread_in: 0.14156
+spread_out: 0.430094
+minbin 1
+minbin_value 5.92983
+minbin_center -1.41372
+v2 C 6.08503
+minbin_in 1
+minbin_value_in 5.3251
+minbin_center_in -1.41372
+v2_in C 5.90678
+minbin_out 16
+minbin_value_out 6.02537
+minbin_center_out 3.29867
+v2_out C 6.39034
+v2_in_calc C 3.23118
+v2_out_calc C 2.85386
+v2_in_calc C + v2_out_calc C = 6.08503||||| v2 c = 6.08503
+away side head yield (error): 0.234525 (0.0363017)
+away side shoulder yield (error): 0.0472435 (0.035183)
+away side head yield in-plane (error): 0.380628 (0.0510049)
+away side shoulder yield in-plane (error): 0.186424 (0.0471872)
+away side head yield out-of-plane (error): -0.0021762 (0.0516204)
+away side shoulder yield out-of-plane (error): -0.252755 (0.052565)
+near side yield (error): 0.225576 (0.0410495)
+near side yield in-plane (error): 0.357342 (0.0571127)
+near side yield out-of-plane (error): -0.0403748 (0.0590316)
+***1***
+***2***
+2040.91
+2131.78
+2112.72
+2093.03
+2072.7
+2051.68
+2029.95
+2007.46
+1984.17
+1960.04
+1935.03
+***4***
+NTrigger_total 1083.33
+NTrigger_total_in 576.95
+NTrigger_total_out 506.375
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30896
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30896
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30896
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30918
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30918
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30918
+EPRes: 0.487055
+v2hadron: 0.134008
+nbinsx 20
+minbin 19
+minbin_value 5.53563
+next_minbin 2
+next_minbin_value 5.53829
+nextnext_minbin 3
+nextnext_minbin_value 5.58603
+v2 C: 5.62423
+v2 C next: 5.62693
+v2 C nextnext: 5.58603
+spread: 0.00270047
+spread_in: 0.145719
+spread_out: 0.229538
+minbin 19
+minbin_value 5.53563
+minbin_center 4.24115
+v2 C 5.62423
+minbin_in 19
+minbin_value_in 5.25534
+minbin_center_in 4.24115
+v2_in C 5.59572
+minbin_out 6
+minbin_value_out 5.01437
+minbin_center_out 0.15708
+v2_out C 5.31796
+v2_in_calc C 2.98651
+v2_out_calc C 2.63773
+v2_in_calc C + v2_out_calc C = 5.62423||||| v2 c = 5.62423
+away side head yield (error): 0.398024 (0.0809105)
+away side shoulder yield (error): 0.21068 (0.0785307)
+away side head yield in-plane (error): 0.677913 (0.11263)
+away side shoulder yield in-plane (error): 0.38146 (0.104429)
+away side head yield out-of-plane (error): 0.389647 (0.116168)
+away side shoulder yield out-of-plane (error): 0.349533 (0.118613)
+near side yield (error): 0.0457684 (0.0909543)
+near side yield in-plane (error): 0.491262 (0.127796)
+near side yield out-of-plane (error): -0.0415266 (0.129081)
+***1***
+***2***
+26738.9
+28210.1
+27907.6
+27591.9
+27262.1
+26917.3
+26556.4
+26178.3
+25781.6
+25365.1
+24927.1
+***4***
+NTrigger_total 5045.32
+NTrigger_total_in 2667.16
+NTrigger_total_out 2378.16
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30889
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30889
+EPRes: 0.330928
+v2hadron: 0.0583666
+nbinsx 20
+minbin 19
+minbin_value 16.547
+next_minbin 18
+next_minbin_value 16.6845
+nextnext_minbin 2
+nextnext_minbin_value 16.6922
+v2 C: 16.6614
+v2 C next: 16.6845
+v2 C nextnext: 16.8075
+spread: 0.0231244
+spread_in: 0.377196
+spread_out: 0.10098
+minbin 19
+minbin_value 16.547
+minbin_center 4.24115
+v2 C 16.6614
+minbin_in 19
+minbin_value_in 16.1211
+minbin_center_in 4.24115
+v2_in C 16.4577
+minbin_out 3
+minbin_value_out 16.2611
+minbin_center_out -0.785398
+v2_out C 16.2611
+v2_in_calc C 8.68169
+v2_out_calc C 7.97967
+v2_in_calc C + v2_out_calc C = 16.6614||||| v2 c = 16.6614
+away side head yield (error): 0.0738618 (0.078665)
+away side shoulder yield (error): 0.199047 (0.0777526)
+away side head yield in-plane (error): 0.349415 (0.107742)
+away side shoulder yield in-plane (error): 0.535839 (0.105324)
+away side head yield out-of-plane (error): 0.352326 (0.115113)
+away side shoulder yield out-of-plane (error): 0.421963 (0.115138)
+near side yield (error): 0.223651 (0.0911303)
+near side yield in-plane (error): 0.734406 (0.125077)
+near side yield out-of-plane (error): 0.437754 (0.133045)
+***1***
+***2***
+4338.81
+4662.35
+4595.23
+4525.51
+4453.04
+4377.65
+4299.16
+4217.38
+4132.09
+4043.06
+3950.04
+***4***
+NTrigger_total 953.802
+NTrigger_total_in 534.485
+NTrigger_total_out 419.317
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30914
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30889
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30889
+pt_low_edge: 1
+pt_up_edge: 2
+pt_spec_bin_low: 11
+pt_spec_bin_up: 20
+pt_sum/Nh: 1.30889
+EPRes: 0.332679
+v2hadron: 0.0591234
+nbinsx 20
+minbin 18
+minbin_value 14.2923
+next_minbin 11
+next_minbin_value 14.3935
+nextnext_minbin 10
+nextnext_minbin_value 14.4798
+v2 C: 14.2923
+v2 C next: 14.5572
+v2 C nextnext: 14.6445
+spread: 0.264879
+spread_in: 0.20508
+spread_out: 1.22371
+minbin 18
+minbin_value 14.2923
+minbin_center 3.92699
+v2 C 14.2923
+minbin_in 19
+minbin_value_in 12.6659
+minbin_center_in 4.24115
+v2_in C 12.9348
+minbin_out 13
+minbin_value_out 14.5271
+minbin_center_out 2.35619
+v2_out C 14.5271
+v2_in_calc C 7.44885
+v2_out_calc C 6.84346
+v2_in_calc C + v2_out_calc C = 14.2923||||| v2 c = 14.2923
+away side head yield (error): 0.385498 (0.172518)
+away side shoulder yield (error): 0.283197 (0.168621)
+away side head yield in-plane (error): 0.725496 (0.226703)
+away side shoulder yield in-plane (error): 0.505884 (0.212524)
+away side head yield out-of-plane (error): 1.36254 (0.265499)
+away side shoulder yield out-of-plane (error): 1.40751 (0.271532)
+near side yield (error): 0.631058 (0.193553)
+near side yield in-plane (error): 0.803029 (0.249116)
+near side yield out-of-plane (error): 2.2918 (0.304967)
+***1***
+***2***
+136.607
+142.376
+141.171
+139.923
+138.632
+137.294
+135.907
+134.468
+132.974
+131.422
+129.809
+***4***
+NTrigger_total 2332.95
+NTrigger_total_in 1277.81
+NTrigger_total_out 1055.13
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31531
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31531
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34104
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34104
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34092
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34092
+EPRes: 0.44134
+v2hadron: 0.216886
+nbinsx 20
+minbin 3
+minbin_value 0.152764
+next_minbin 2
+next_minbin_value 0.169241
+nextnext_minbin 20
+nextnext_minbin_value 0.175308
+v2 C: 0.152764
+v2 C next: 0.173668
+v2 C nextnext: 0.182852
+spread: 0.0209046
+spread_in: 0.00819156
+spread_out: 0.0177864
+minbin 3
+minbin_value 0.152764
+minbin_center -0.785398
+v2 C 0.152764
+minbin_in 3
+minbin_value_in 0.162161
+minbin_center_in -0.785398
+v2_in C 0.162161
+minbin_out 3
+minbin_value_out 0.141384
+minbin_center_out -0.785398
+v2_out C 0.141384
+v2_in_calc C 0.0806741
+v2_out_calc C 0.0720898
+v2_in_calc C + v2_out_calc C = 0.152764||||| v2 c = 0.152764
+away side head yield (error): 0.0923857 (0.0105544)
+away side shoulder yield (error): 0.0449183 (0.00902871)
+away side head yield in-plane (error): 0.0938149 (0.0146056)
+away side shoulder yield in-plane (error): 0.0423575 (0.0119515)
+away side head yield out-of-plane (error): 0.0885686 (0.015222)
+away side shoulder yield out-of-plane (error): 0.0513954 (0.0137486)
+near side yield (error): 0.0649261 (0.0114213)
+near side yield in-plane (error): 0.0536995 (0.0155302)
+near side yield out-of-plane (error): 0.0772325 (0.0168517)
+***1***
+***2***
+22.5568
+23.6035
+23.3832
+23.1562
+22.922
+22.6805
+22.4311
+22.1737
+21.9077
+21.6327
+21.3483
+***4***
+NTrigger_total 469.713
+NTrigger_total_in 265.619
+NTrigger_total_out 204.094
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31531
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31531
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31531
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34104
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34104
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34104
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34092
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34092
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34092
+EPRes: 0.442792
+v2hadron: 0.216817
+nbinsx 20
+minbin 1
+minbin_value 0.152861
+next_minbin 3
+next_minbin_value 0.191573
+nextnext_minbin 2
+nextnext_minbin_value 0.19663
+v2 C: 0.159436
+v2 C next: 0.191573
+v2 C nextnext: 0.201773
+spread: 0.0321368
+spread_in: 0.0389114
+spread_out: 0.0523574
+minbin 1
+minbin_value 0.152861
+minbin_center -1.41372
+v2 C 0.159436
+minbin_in 1
+minbin_value_in 0.0980096
+minbin_center_in -1.41372
+v2_in C 0.115182
+minbin_out 3
+minbin_value_out 0.181535
+minbin_center_out -0.785398
+v2_out C 0.181535
+v2_in_calc C 0.0842123
+v2_out_calc C 0.0752236
+v2_in_calc C + v2_out_calc C = 0.159436||||| v2 c = 0.159436
+away side head yield (error): 0.107273 (0.0231531)
+away side shoulder yield (error): 0.0379724 (0.0194678)
+away side head yield in-plane (error): 0.147351 (0.0281285)
+away side shoulder yield in-plane (error): 0.0522859 (0.024508)
+away side head yield out-of-plane (error): 0.0922333 (0.0387199)
+away side shoulder yield out-of-plane (error): 0.0468632 (0.0314653)
+near side yield (error): 0.0956762 (0.0230099)
+near side yield in-plane (error): 0.143694 (0.030532)
+near side yield out-of-plane (error): 0.080054 (0.0350057)
+***1***
+***2***
+898.798
+949.464
+938.905
+927.964
+916.62
+904.85
+892.631
+879.935
+866.735
+852.998
+838.693
+***4***
+NTrigger_total 5975.54
+NTrigger_total_in 3123.01
+NTrigger_total_out 2852.53
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31541
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31541
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31549
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31549
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34098
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34098
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34103
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34103
+EPRes: 0.516283
+v2hadron: 0.191844
+nbinsx 20
+minbin 10
+minbin_value 0.478779
+next_minbin 20
+next_minbin_value 0.499888
+nextnext_minbin 3
+nextnext_minbin_value 0.503296
+v2 C: 0.496912
+v2 C next: 0.51882
+v2 C nextnext: 0.503296
+spread: 0.0219078
+spread_in: 0.0601798
+spread_out: 0.0292399
+minbin 10
+minbin_value 0.478779
+minbin_center 1.41372
+v2 C 0.496912
+minbin_in 1
+minbin_value_in 0.455126
+minbin_center_in -1.41372
+v2_in C 0.533421
+minbin_out 3
+minbin_value_out 0.49455
+minbin_center_out -0.785398
+v2_out C 0.49455
+v2_in_calc C 0.264788
+v2_out_calc C 0.232124
+v2_in_calc C + v2_out_calc C = 0.496912||||| v2 c = 0.496912
+away side head yield (error): 0.0855548 (0.0104771)
+away side shoulder yield (error): 0.0180967 (0.00924105)
+away side head yield in-plane (error): 0.0541693 (0.0149603)
+away side shoulder yield in-plane (error): 0.0079233 (0.0122237)
+away side head yield out-of-plane (error): 0.0826608 (0.0146094)
+away side shoulder yield out-of-plane (error): -0.00327998 (0.0139874)
+near side yield (error): 0.0771784 (0.0115255)
+near side yield in-plane (error): 0.0322414 (0.0160372)
+near side yield out-of-plane (error): 0.0779979 (0.0165724)
+***1***
+***2***
+135.809
+144.869
+142.968
+141.006
+138.979
+136.884
+134.717
+132.474
+130.153
+127.747
+125.254
+***4***
+NTrigger_total 1083.33
+NTrigger_total_in 576.95
+NTrigger_total_out 506.375
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31541
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31541
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31541
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31549
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31549
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31549
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34098
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34098
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34098
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34103
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34103
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34103
+EPRes: 0.51633
+v2hadron: 0.191959
+nbinsx 20
+minbin 8
+minbin_value 0.352867
+next_minbin 10
+next_minbin_value 0.399044
+nextnext_minbin 18
+nextnext_minbin_value 0.459162
+v2 C: 0.352867
+v2 C next: 0.414167
+v2 C nextnext: 0.459162
+spread: 0.0612994
+spread_in: 0.000265486
+spread_out: 0.144307
+minbin 8
+minbin_value 0.352867
+minbin_center 0.785398
+v2 C 0.352867
+minbin_in 20
+minbin_value_in 0.364717
+minbin_center_in 4.55531
+v2_in C 0.427508
+minbin_out 3
+minbin_value_out 0.254962
+minbin_center_out -0.785398
+v2_out C 0.254962
+v2_in_calc C 0.188033
+v2_out_calc C 0.164835
+v2_in_calc C + v2_out_calc C = 0.352867||||| v2 c = 0.352867
+away side head yield (error): 0.1675 (0.0238689)
+away side shoulder yield (error): 0.125145 (0.0209576)
+away side head yield in-plane (error): 0.106257 (0.033026)
+away side shoulder yield in-plane (error): 0.0598715 (0.0274401)
+away side head yield out-of-plane (error): 0.238632 (0.0345203)
+away side shoulder yield out-of-plane (error): 0.229065 (0.0321373)
+near side yield (error): 0.183656 (0.0245176)
+near side yield in-plane (error): 0.0437634 (0.0332213)
+near side yield out-of-plane (error): 0.352552 (0.0363112)
+***1***
+***2***
+2199.82
+2319.15
+2294.62
+2269.01
+2242.26
+2214.29
+2185.01
+2154.33
+2122.14
+2088.34
+2052.79
+***4***
+NTrigger_total 5045.32
+NTrigger_total_in 2667.16
+NTrigger_total_out 2378.16
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31544
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31544
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34105
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34105
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34101
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34101
+EPRes: 0.318852
+v2hadron: 0.0876394
+nbinsx 20
+minbin 8
+minbin_value 1.26486
+next_minbin 9
+next_minbin_value 1.26673
+nextnext_minbin 18
+nextnext_minbin_value 1.32733
+v2 C: 1.26486
+v2 C next: 1.27992
+v2 C nextnext: 1.32733
+spread: 0.0150588
+spread_in: 0.0188438
+spread_out: 0.0128017
+minbin 8
+minbin_value 1.26486
+minbin_center 0.785398
+v2 C 1.26486
+minbin_in 3
+minbin_value_in 1.27012
+minbin_center_in -0.785398
+v2_in C 1.27012
+minbin_out 16
+minbin_value_out 1.23448
+minbin_center_out 3.29867
+v2_out C 1.25697
+v2_in_calc C 0.658104
+v2_out_calc C 0.606754
+v2_in_calc C + v2_out_calc C = 1.26486||||| v2 c = 1.26486
+away side head yield (error): 0.0756338 (0.0215144)
+away side shoulder yield (error): 0.112994 (0.0207828)
+away side head yield in-plane (error): 0.100665 (0.0295606)
+away side shoulder yield in-plane (error): 0.0999085 (0.0279639)
+away side head yield out-of-plane (error): 0.048461 (0.0313719)
+away side shoulder yield out-of-plane (error): 0.131118 (0.0309911)
+near side yield (error): 0.0992778 (0.0245557)
+near side yield in-plane (error): 0.111291 (0.0338375)
+near side yield out-of-plane (error): 0.0877012 (0.0356899)
+***1***
+***2***
+335.05
+365.881
+359.484
+352.84
+345.935
+338.751
+331.273
+323.482
+315.357
+306.877
+298.018
+***4***
+NTrigger_total 953.802
+NTrigger_total_in 534.485
+NTrigger_total_out 419.317
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31551
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31544
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31544
+pt_low_edge: 2
+pt_up_edge: 3
+pt_spec_bin_low: 21
+pt_spec_bin_up: 30
+pt_sum/Nh: 2.31544
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34105
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34105
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34105
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34101
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34101
+pt_low_edge: 3
+pt_up_edge: 4
+pt_spec_bin_low: 31
+pt_spec_bin_up: 40
+pt_sum/Nh: 3.34101
+EPRes: 0.321355
+v2hadron: 0.0883923
+nbinsx 20
+minbin 17
+minbin_value 1.04695
+next_minbin 1
+next_minbin_value 1.11816
+nextnext_minbin 2
+nextnext_minbin_value 1.13302
+v2 C: 1.03618
+v2 C next: 1.13728
+v2 C nextnext: 1.14492
+spread: 0.101096
+spread_in: 0.161089
+spread_out: 0.0751574
+minbin 17
+minbin_value 1.04695
+minbin_center 3.61283
+v2 C 1.03618
+minbin_in 17
+minbin_value_in 0.916864
+minbin_center_in 3.61283
+v2_in C 0.889809
+minbin_out 10
+minbin_value_out 0.992741
+minbin_center_out 1.41372
+v2_out C 0.974868
+v2_in_calc C 0.539289
+v2_out_calc C 0.496892
+v2_in_calc C + v2_out_calc C = 1.03618||||| v2 c = 1.03618
+away side head yield (error): 0.151844 (0.0469381)
+away side shoulder yield (error): 0.134278 (0.0464204)
+away side head yield in-plane (error): 0.240691 (0.0639221)
+away side shoulder yield in-plane (error): 0.311975 (0.0612015)
+away side head yield out-of-plane (error): 0.273086 (0.0689972)
+away side shoulder yield out-of-plane (error): 0.140003 (0.0711592)
+near side yield (error): 0.326725 (0.052348)
+near side yield in-plane (error): 0.511934 (0.0689762)
+near side yield out-of-plane (error): 0.402684 (0.0803022)
+ 
+double point_near_peri_yield[3] = {0.0143632, 0.322385, 0.0649261};
+double point_near_peri_yield_err[3] = {0.0737196, 0.0396921, 0.0114213};
+double point_near_mid_yield[3] = {0.113593, 0.225576, 0.0771784};
+double point_near_mid_yield_err[3] = {0.0752799, 0.0410495, 0.0115255};
+double point_near_cen_yield[3] = {0.74085, 0.223651, 0.0992778};
+double point_near_cen_yield_err[3] = {0.167485, 0.0911303, 0.0245557};
+ 
+ 
+double point_head_peri_yield[3] = {0.363855, 0.366602, 0.0923857};
+double point_head_peri_yield_err[3] = {0.0659528, 0.0355859, 0.0105544};
+double point_head_mid_yield[3] = {0.446483, 0.234525, 0.0855548};
+double point_head_mid_yield_err[3] = {0.0664356, 0.0363017, 0.0104771};
+double point_head_cen_yield[3] = {0.737388, 0.0738618, 0.0756338};
+double point_head_cen_yield_err[3] = {0.147269, 0.078665, 0.0215144};
+ 
+ 
+double point_shoulder_peri_yield[3] = {0.107132, 0.126959, 0.0449183};
+double point_shoulder_peri_yield_err[3] = {0.063884, 0.0335234, 0.00902871};
+double point_shoulder_mid_yield[3] = {0.351208, 0.0472435, 0.0180967};
+double point_shoulder_mid_yield_err[3] = {0.0655682, 0.035183, 0.00924105};
+double point_shoulder_cen_yield[3] = {0.658026, 0.199047, 0.112994};
+double point_shoulder_cen_yield_err[3] = {0.146362, 0.0777526, 0.0207828};
+ 
+**ALL EP**
+i = 0
+near side: 
+yield: 0.0143632 stat: 0.0737196 sys: 0.0599507
+head: 
+yield: 0.363855 stat: 0.0659528 sys: 0.0589941
+shoulder: 
+yield: 0.107132 stat: 0.063884 sys: 0.00917141
+i = 1
+near side: 
+yield: 0.43422 stat: 0.152473 sys: 0.0568138
+head: 
+yield: 0.868317 stat: 0.136648 sys: 0.0549569
+shoulder: 
+yield: 0.37479 stat: 0.128162 sys: 0.00797441
+i = 2
+near side: 
+yield: 0.113593 stat: 0.0752799 sys: 0.0993901
+head: 
+yield: 0.446483 stat: 0.0664356 sys: 0.0996666
+shoulder: 
+yield: 0.351208 stat: 0.0655682 sys: 0.0254741
+i = 3
+near side: 
+yield: 0.529239 stat: 0.16639 sys: 0.104476
+head: 
+yield: 0.285343 stat: 0.147377 sys: 0.0922544
+shoulder: 
+yield: 0.465791 stat: 0.144077 sys: 0.0391084
+i = 4
+near side: 
+yield: 0.74085 stat: 0.167485 sys: 0.0727868
+head: 
+yield: 0.737388 stat: 0.147269 sys: 0.0693534
+shoulder: 
+yield: 0.658026 stat: 0.146362 sys: 0.0826822
+i = 5
+near side: 
+yield: 2.31516 stat: 0.358503 sys: 0.238676
+head: 
+yield: 2.76404 stat: 0.316466 sys: 0.233436
+shoulder: 
+yield: 2.84518 stat: 0.315039 sys: 0.180387
+i = 6
+near side: 
+yield: 0.322385 stat: 0.0396921 sys: 0.030521
+head: 
+yield: 0.366602 stat: 0.0355859 sys: 0.0283117
+shoulder: 
+yield: 0.126959 stat: 0.0335234 sys: 0.00708298
+i = 7
+near side: 
+yield: 0.39401 stat: 0.0845325 sys: 0.0303613
+head: 
+yield: 0.391791 stat: 0.0738275 sys: 0.0275223
+shoulder: 
+yield: 0.160784 stat: 0.0700681 sys: 0.0111099
+i = 8
+near side: 
+yield: 0.225576 stat: 0.0410495 sys: 0.0702893
+head: 
+yield: 0.234525 stat: 0.0363017 sys: 0.0692495
+shoulder: 
+yield: 0.0472435 stat: 0.035183 sys: 0.0101302
+i = 9
+near side: 
+yield: 0.0457684 stat: 0.0909543 sys: 0.0497525
+head: 
+yield: 0.398024 stat: 0.0809105 sys: 0.0490142
+shoulder: 
+yield: 0.21068 stat: 0.0785307 sys: 0.0177771
+i = 10
+near side: 
+yield: 0.223651 stat: 0.0911303 sys: 0.0636431
+head: 
+yield: 0.0738618 stat: 0.078665 sys: 0.0643826
+shoulder: 
+yield: 0.199047 stat: 0.0777526 sys: 0.0314492
+i = 11
+near side: 
+yield: 0.631058 stat: 0.193553 sys: 0.0816061
+head: 
+yield: 0.385498 stat: 0.172518 sys: 0.0558037
+shoulder: 
+yield: 0.283197 stat: 0.168621 sys: 0.0576901
+i = 12
+near side: 
+yield: 0.0649261 stat: 0.0114213 sys: 0.00148537
+head: 
+yield: 0.0923857 stat: 0.0105544 sys: 0.00160527
+shoulder: 
+yield: 0.0449183 stat: 0.00902871 sys: 0.00252461
+i = 13
+near side: 
+yield: 0.0956762 stat: 0.0230099 sys: 0.00354069
+head: 
+yield: 0.107273 stat: 0.0231531 sys: 0.00321996
+shoulder: 
+yield: 0.0379724 stat: 0.0194678 sys: 0.00122931
+i = 14
+near side: 
+yield: 0.0771784 stat: 0.0115255 sys: 0.00835489
+head: 
+yield: 0.0855548 stat: 0.0104771 sys: 0.00824166
+shoulder: 
+yield: 0.0180967 stat: 0.00924105 sys: 0.0017841
+i = 15
+near side: 
+yield: 0.183656 stat: 0.0245176 sys: 0.0100624
+head: 
+yield: 0.1675 stat: 0.0238689 sys: 0.00546355
+shoulder: 
+yield: 0.125145 stat: 0.0209576 sys: 0.00807931
+i = 16
+near side: 
+yield: 0.0992778 stat: 0.0245557 sys: 0.0086265
+head: 
+yield: 0.0756338 stat: 0.0215144 sys: 0.00918282
+shoulder: 
+yield: 0.112994 stat: 0.0207828 sys: 0.0118356
+i = 17
+near side: 
+yield: 0.326725 stat: 0.052348 sys: 0.0266922
+head: 
+yield: 0.151844 stat: 0.0469381 sys: 0.0147477
+shoulder: 
+yield: 0.134278 stat: 0.0464204 sys: 0.00730969
+
+**INPLANE**
+i = 0
+near side: 
+yield: -0.213347 stat: 0.0991737 sys: 0.0509022
+head: 
+yield: 0.151951 stat: 0.0882604 sys: 0.0483917
+shoulder: 
+yield: 0.160895 stat: 0.0844485 sys: 0.0107986
+i = 1
+near side: 
+yield: 0.667041 stat: 0.195276 sys: 0.0378581
+head: 
+yield: 1.08562 stat: 0.177312 sys: 0.0355685
+shoulder: 
+yield: 1.02042 stat: 0.164186 sys: 0.032311
+i = 2
+near side: 
+yield: -0.237647 stat: 0.104244 sys: 0.104859
+head: 
+yield: 0.114244 stat: 0.0925034 sys: 0.10401
+shoulder: 
+yield: 0.0596196 stat: 0.0888486 sys: 0.0153614
+i = 3
+near side: 
+yield: 0.187399 stat: 0.229818 sys: 0.0999881
+head: 
+yield: 0.128077 stat: 0.205473 sys: 0.0926111
+shoulder: 
+yield: 0.330938 stat: 0.196732 sys: 0.0204554
+i = 4
+near side: 
+yield: 0.521882 stat: 0.229007 sys: 0.100155
+head: 
+yield: 0.757477 stat: 0.201585 sys: 0.104274
+shoulder: 
+yield: 0.55073 stat: 0.199037 sys: 0.0352495
+i = 5
+near side: 
+yield: 1.41655 stat: 0.487037 sys: 0.121939
+head: 
+yield: 2.11297 stat: 0.428557 sys: 0.20816
+shoulder: 
+yield: 2.13312 stat: 0.423031 sys: 0.134573
+i = 6
+near side: 
+yield: 0.337374 stat: 0.053314 sys: 0.0297871
+head: 
+yield: 0.28486 stat: 0.0484756 sys: 0.0233315
+shoulder: 
+yield: 0.167948 stat: 0.0450505 sys: 0.0097993
+i = 7
+near side: 
+yield: 0.392737 stat: 0.107989 sys: 0.0222521
+head: 
+yield: 0.433676 stat: 0.0990904 sys: 0.0207473
+shoulder: 
+yield: 0.139971 stat: 0.082076 sys: 0.00894656
+i = 8
+near side: 
+yield: 0.357342 stat: 0.0571127 sys: 0.0539565
+head: 
+yield: 0.380628 stat: 0.0510049 sys: 0.0531193
+shoulder: 
+yield: 0.186424 stat: 0.0471872 sys: 0.0116226
+i = 9
+near side: 
+yield: 0.491262 stat: 0.127796 sys: 0.0386039
+head: 
+yield: 0.677913 stat: 0.11263 sys: 0.0396295
+shoulder: 
+yield: 0.38146 stat: 0.104429 sys: 0.0175277
+i = 10
+near side: 
+yield: 0.734406 stat: 0.125077 sys: 0.0789267
+head: 
+yield: 0.349415 stat: 0.107742 sys: 0.074491
+shoulder: 
+yield: 0.535839 stat: 0.105324 sys: 0.0627442
+i = 11
+near side: 
+yield: 0.803029 stat: 0.249116 sys: 0.102789
+head: 
+yield: 0.725496 stat: 0.226703 sys: 0.0827669
+shoulder: 
+yield: 0.505884 stat: 0.212524 sys: 0.0844164
+i = 12
+near side: 
+yield: 0.0536995 stat: 0.0155302 sys: 0.00223814
+head: 
+yield: 0.0938149 stat: 0.0146056 sys: 0.00244216
+shoulder: 
+yield: 0.0423575 stat: 0.0119515 sys: 0.00341533
+i = 13
+near side: 
+yield: 0.143694 stat: 0.030532 sys: 0.00278841
+head: 
+yield: 0.147351 stat: 0.0281285 sys: 0.00252122
+shoulder: 
+yield: 0.0522859 stat: 0.024508 sys: 0.00136562
+i = 14
+near side: 
+yield: 0.0322414 stat: 0.0160372 sys: 0.00712756
+head: 
+yield: 0.0541693 stat: 0.0149603 sys: 0.00720135
+shoulder: 
+yield: 0.0079233 stat: 0.0122237 sys: 0.00101697
+i = 15
+near side: 
+yield: 0.0437634 stat: 0.0332213 sys: 0.00733762
+head: 
+yield: 0.106257 stat: 0.033026 sys: 0.00720807
+shoulder: 
+yield: 0.0598715 stat: 0.0274401 sys: 0.00458647
+i = 16
+near side: 
+yield: 0.111291 stat: 0.0338375 sys: 0.00521179
+head: 
+yield: 0.100665 stat: 0.0295606 sys: 0.00664551
+shoulder: 
+yield: 0.0999085 stat: 0.0279639 sys: 0.0067441
+i = 17
+near side: 
+yield: 0.511934 stat: 0.0689762 sys: 0.0523832
+head: 
+yield: 0.240691 stat: 0.0639221 sys: 0.0305261
+shoulder: 
+yield: 0.311975 stat: 0.0612015 sys: 0.0274415
+
+**OUTPLANE**
+i = 0
+near side: 
+yield: 0.00216576 stat: 0.110196 sys: 0.048434
+head: 
+yield: 0.401516 stat: 0.0991963 sys: 0.0310575
+shoulder: 
+yield: -0.162346 stat: 0.0974287 sys: 0.0727132
+i = 1
+near side: 
+yield: 1.19201 stat: 0.241969 sys: 0.0536471
+head: 
+yield: 1.38058 stat: 0.213661 sys: 0.0463432
+shoulder: 
+yield: 0.332121 stat: 0.203326 sys: 0.0666474
+i = 2
+near side: 
+yield: -0.177335 stat: 0.108827 sys: 0.0889835
+head: 
+yield: 0.30579 stat: 0.0954564 sys: 0.0500005
+shoulder: 
+yield: 0.155421 stat: 0.096974 sys: 0.148901
+i = 3
+near side: 
+yield: 1.53279 stat: 0.241143 sys: 0.103328
+head: 
+yield: 0.93133 stat: 0.211192 sys: 0.116147
+shoulder: 
+yield: 1.05574 stat: 0.211576 sys: 0.0838234
+i = 4
+near side: 
+yield: 1.27014 stat: 0.24554 sys: 0.0840613
+head: 
+yield: 0.921161 stat: 0.215644 sys: 0.0740432
+shoulder: 
+yield: 1.01627 stat: 0.215843 sys: 0.091337
+i = 5
+near side: 
+yield: 3.29974 stat: 0.528768 sys: 0.315137
+head: 
+yield: 3.43309 stat: 0.46881 sys: 0.218935
+shoulder: 
+yield: 3.7882 stat: 0.471979 sys: 0.195377
+i = 6
+near side: 
+yield: 0.116836 stat: 0.0594414 sys: 0.0178906
+head: 
+yield: 0.327017 stat: 0.0523876 sys: 0.0114857
+shoulder: 
+yield: -0.0708621 stat: 0.0501741 sys: 0.0274863
+i = 7
+near side: 
+yield: 0.677663 stat: 0.134523 sys: 0.0306011
+head: 
+yield: 0.551763 stat: 0.110628 sys: 0.0269822
+shoulder: 
+yield: 0.387777 stat: 0.120806 sys: 0.0121196
+i = 8
+near side: 
+yield: -0.0403748 stat: 0.0590316 sys: 0.048673
+head: 
+yield: -0.0021762 stat: 0.0516204 sys: 0.0269992
+shoulder: 
+yield: -0.252755 stat: 0.052565 sys: 0.0817886
+i = 9
+near side: 
+yield: -0.0415266 stat: 0.129081 sys: 0.0469011
+head: 
+yield: 0.389647 stat: 0.116168 sys: 0.0301044
+shoulder: 
+yield: 0.349533 stat: 0.118613 sys: 0.0764747
+i = 10
+near side: 
+yield: 0.437754 stat: 0.133045 sys: 0.0533876
+head: 
+yield: 0.352326 stat: 0.115113 sys: 0.0478945
+shoulder: 
+yield: 0.421963 stat: 0.115138 sys: 0.0730118
+i = 11
+near side: 
+yield: 2.2918 stat: 0.304967 sys: 0.141462
+head: 
+yield: 1.36254 stat: 0.265499 sys: 0.108146
+shoulder: 
+yield: 1.40751 stat: 0.271532 sys: 0.0851639
+i = 12
+near side: 
+yield: 0.0772325 stat: 0.0168517 sys: 0.00201332
+head: 
+yield: 0.0885686 stat: 0.015222 sys: 0.00162677
+shoulder: 
+yield: 0.0513954 stat: 0.0137486 sys: 0.00265529
+i = 13
+near side: 
+yield: 0.080054 stat: 0.0350057 sys: 0.00415364
+head: 
+yield: 0.0922333 stat: 0.0387199 sys: 0.00269298
+shoulder: 
+yield: 0.0468632 stat: 0.0314653 sys: 0.00287708
+i = 14
+near side: 
+yield: 0.0779979 stat: 0.0165724 sys: 0.00419943
+head: 
+yield: 0.0826608 stat: 0.0146094 sys: 0.00384279
+shoulder: 
+yield: -0.00327998 stat: 0.0139874 sys: 0.00434782
+i = 15
+near side: 
+yield: 0.352552 stat: 0.0363112 sys: 0.0182571
+head: 
+yield: 0.238632 stat: 0.0345203 sys: 0.0092054
+shoulder: 
+yield: 0.229065 stat: 0.0321373 sys: 0.01539
+i = 16
+near side: 
+yield: 0.0877012 stat: 0.0356899 sys: 0.00816451
+head: 
+yield: 0.048461 stat: 0.0313719 sys: 0.0076993
+shoulder: 
+yield: 0.131118 stat: 0.0309911 sys: 0.0154095
+i = 17
+near side: 
+yield: 0.402684 stat: 0.0803022 sys: 0.0265416
+head: 
+yield: 0.273086 stat: 0.0689972 sys: 0.0233616
+shoulder: 
+yield: 0.140003 stat: 0.0711592 sys: 0.00497167
+

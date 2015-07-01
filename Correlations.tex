@@ -490,9 +490,54 @@ Figure ~\ref{fig:BDRatio} shows the results for obtaining $r_B$ from fits of the
 
 \section{Comparisons of Yields}
 
+We can use the yields we measured in p+p and Au+Au collisions to look for evidence of jet modification in the medium. To do this we will examine the away side peak shape by comparing the ratio of yields in the shoulder region to the head region (as defined previously). Interactions with the QGP may cause jets to be redirected or smeared out which would manifest as broader away side correlatins in Au+Au collisions. We will also look at $I_{AA}$, the ratio of the integrated yield in Au+Au to p+p. Suppressions of yields in Au+Au could indicate jet suprression in the medium while increased yields may point to medium responses to the jet.
+
+An important thing to note when comparing the yields from p+p and Au+Au is that we subtracted off a background correlation from Au+Au but performed no such ZYAM procedure for p+p. There is no standard way of accounting for this but we calculate a flat underlying event for p+p (essentially the ZYAM coefficient for background with $v_2 = 0$), use this to estimate the oversubtraction of background in Au+Au and add this back to the Au+Au yields. As seen in Figure~\ref{fig:ppcorr}, this is not much of a concern at high associated hadron $\pt$ but for the lower $\pt$ bins it has a larger effect.
+
 \subsection{Away Side Shape}
 
+We define the yield $Y$ in a region by:
+\begin{equation}\label{eq:yield}
+Y(\Delta\phi_1, \Delta\phi_2) = \int^{\Delta\phi_2}_{\Delta\phi_1} \frac{dN_{NPE-h}}{d\Delta\phi} d\Delta\phi
+\end{equation} 
+
+We define the near side yield as $Y(0, 2\pi/5)$ the head region as $Y(7\pi/10, \pi)$, and the shoulder region as $Y(2\pi/5, 7\pi/10)$. To see evidence of jet broadening we compare the yields in the shoulder and head regions. In particular we look at the ratio of the yields $Y($shoulder$)/Y($head$)$. We can see from the p+p data that this ratio tends to be below 1 as the away side peaks are narrow and contain most of the yield in the region immediately around $\pi$. Figure~\ref{fig:SH_Ratio} shows the the ratios for p+p data as well as Au+Au collisions with 0-10\%, 10-40\%, and 40-60\% centralities. We see that for the most central bins the ratio is larger indicating wider correlations, but the errors on these yields are large. For the other bins, including the p+p data, the ratios seem to follow a similar trend with increasingly narrow correlations at higher hadron $\pt$.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/SH_Ratio.pdf}
+\end{center}
+\caption[Shoulder and Head Region Yield Comparison]{Ratio of yields in shoulder region to head region in NPE-h correlations for trigger electrons have 4.0 GeV/c $\leq \pt \leq$ 6.0 GeV/c. A larger ratio indicates a wider peak.}
+\label{fig:SH_Ratio}
+\end{figure}
+
 \subsection{$I_{AA}$}
+
+We can also compare the yields in Au+Au collisions to p+p collisions directly to look for jet supression in heavy flavor correlations. To do this we look at the ration of yields $I_{AA}$ defined by:
+
+\begin{equation}\label{eq:IAA}
+I_{AA} = \frac{Y_{AuAu}(\Delta\phi_1, \Delta\phi_2)}{Y_{pp}(\Delta\phi_1, \Delta\phi_2)}
+\end{equation} 
+
+$I_{AA}$ serves for jets as a rough analogue of $R_{AA}$ which is typically used to compare particle spectra between heavy-ion and proton collisions. For identical yields in Au+Au and p+p we would get $I_{AA} = 1$ and we look for deviations from 1, less than 1 indicating suppressed yield in Au+Au and greater than 1 an enhanced yield.
+
+We measure $I_{AA}$ for the near side as well as in the away side head region. As explained earlier we estimate the level for the underlying event in p+p and then add this back to the Au+Au data to make up for potential oversubtraction of background with the ZYAM normalization. Figure~\ref{fig:IAA_Near} show the near side $I_{AA}$ and Figure~\ref{fig:IAA_Away} the away side. The results are largely inconclusive and it appears that with the errors the results are still largely consistent with 1.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/IAA_Near.pdf}
+\end{center}
+\caption[Near Side $I_{AA}$]{Near side}
+\label{fig:IAA_Near}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/Correlations/IAA_Away.pdf}
+\end{center}
+\caption[Away Side $I_{AA}$]{Away side}
+\label{fig:IAA_Away}
+\end{figure}
 
 \section{Event-Plane Dependent Correlations}
 

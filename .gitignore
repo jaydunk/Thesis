@@ -1,4 +1,4 @@
 Plots/macro_dump/*
-Plots/Correlations/out.txt
+Plots/Correlations/out*.txt
 *.log
 *.aux

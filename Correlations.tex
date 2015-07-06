@@ -30,7 +30,16 @@ The dependence of the acceptance on $\phi$ however is not the same for all track
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[scale=.8]{Plots/Placeholder.pdf}
+	\begin{subfigure}{.6\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/LowPtPhi.pdf}
+		\caption{.5 GeV/c $\leq p_{T} \leq$ 1.0 GeV/c}
+		\label{fig:PtDependPhia}
+	\end{subfigure}	
+	\begin{subfigure}{.6\textwidth}
+		\includegraphics[width=\textwidth]{Plots/Correlations/HighPtPhi.pdf}
+		\caption{1.5 GeV/c $\leq p_{T} \leq$ 2.0 GeV/c}
+		\label{fig:PtDependPhib}
+	\end{subfigure}	
 \end{center}
 \caption[$\pt$ dependence of $\phi$ acceptance]{$\phi$ distributions for single particles in different $\pt$ bins. Strong $\pt$ dependence is seen especially below 1 GeV/c due to the different track geometries.}
 \label{fig:PtDependPhi}
@@ -119,10 +128,37 @@ $\pt$               & $\geq .2$ GeV \\
 The correlations are further broken up into bins in event centrality and associated hadron $\pt$. This is the point at which we apply the acceptance corrections from the single particle $\phi$ weighting as well as the mixed event weighting. Additionaly we also correct the yield for the efficiency of the associated hadron yield. The TPC efficiency is lower for the high occupancy events in central collisions, and efficiency is also significantly worse for very low $\pt$ hadrons. The efficiency is calculated from embedding and the results are summarized in Figure~\ref{fig:assoheff}.
 
 \begin{figure}[htbp]
-\begin{center}
-\includegraphics[scale=.8]{Plots/Placeholder.pdf}
-\end{center}
-\caption[Associated hadron efficiency]{The TPC efficiency for hadrons as a function of hadron $\pt$. The different plots are for different centralities which correspond to 0-5\%, 5-10\%, 10-20\%, 20-30\%, 30-40\%, 40-50\%, and 50-60\%.}
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=.9\textwidth]{Plots/Correlations/hadron_efficiency/hadron_efficiency_centbin_2.pdf}
+		\caption{50-60\%}
+		\label{fig:assoheffa}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=.9\textwidth]{Plots/Correlations/hadron_efficiency/hadron_efficiency_centbin_3.pdf}
+		\caption{40-50\%}
+		\label{fig:assoheffb}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=.9\textwidth]{Plots/Correlations/hadron_efficiency/hadron_efficiency_centbin_4.pdf}
+		\caption{30-40\%}
+		\label{fig:assoheffc}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=.9\textwidth]{Plots/Correlations/hadron_efficiency/hadron_efficiency_centbin_5.pdf}
+		\caption{20-30\%}
+		\label{fig:assoheffd}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=.9\textwidth]{Plots/Correlations/hadron_efficiency/hadron_efficiency_centbin_6.pdf}
+		\caption{10-20\%}
+		\label{fig:assoheffe}
+	\end{subfigure}	
+	\begin{subfigure}{0.5\textwidth}
+		\includegraphics[width=.9\textwidth]{Plots/Correlations/hadron_efficiency/hadron_efficiency_centbin_7.pdf}
+		\caption{0-10\%}
+		\label{fig:assohefff}
+	\end{subfigure}	
+\caption[Associated hadron efficiency]{The TPC efficiency for hadrons as a function of hadron $\pt$. The different plots are for different centralities which correspond to 0-10\%, 10-20\%, 20-30\%, 30-40\%, 40-50\%, and 50-60\%.}
 \label{fig:assoheff}
 \end{figure}
 

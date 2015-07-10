@@ -14,6 +14,16 @@ In the end we will have a sample of electrons which we can use as triggers for m
 
 \section{Dataset and Event Selection}
 
+\subsection{Data and Triggers}
+
+In 2011 RHIC collided gold nuclei at $\sqrt{s_{NN}} = 200$ GeV and delivered 9.79 $nb^{-1}$ integrated luminosity similar to what was delivered during the previous year's run. The STAR detector recorded about 1.1 billion events across all triggers with TPC and BEMC information. In 2012 polarized proton collisions were run in RHIC (the polarization of the beams is not relevant to this analysis) at the same 200 GeV beam energy. RHIC delivered 74.0 $pb^{-1}$ which resulted in 1.7 billion triggered events in STAR. Heavy flavor events are rare and detector efficiencies can be low meaning the NPE analysisis typically constrained by statistics, necessitating large data sets. The Silicon Vertex Tracker (SVT) was removed from STAR resulting in less material near the beam line which cuts down on background from conversions in the detector. This combination of low material and high statisics make runs 11 and 12 (prior to run 14) the best datasets available for the analysis of non-photonic electrons.
+
+The STAR data acquisition system handles several different triggers the most commonly used is the minimum bias trigger (minbias) which fires based on the coincidence of the STAR vertex position detector(VPD) and Zero Degree Calorimeters (ZDC) these events are prescaled so that only a fixed fraction of triggers are accepted so that the DAQ's data taking rate is not exceeded. STAR can also trigger on hits in the barrel EMC, these are the high tower (HT) triggers. A high tower trigger requires that a hit in a BEMC tower exceeds an ADC threshold determined such that the transverse energy in that tower is high. In run 11 we use the HT triggers NPE11, NPE15, NPE18, and NPE25 which are in increasing order of $E_{T}$. The NPE11 and NPE15 triggers are also prescaled. In p+p we use the BHT0, BHT1, BHT2, and BHT3 triggers, of these only BHT0 is prescaled.
+
+Due to the large dataset sizes it is in our best interest to cut down on the data we need whenever possible. We do this first when we read the data to make BEMC points to match to tracks. Here we look through the tracks in the event and search for electron candidates based on the TPC information only. We throw out events without viable electron candidates. Since these cuts are looser than the electron cuts we will apply later we don't remove events we might actually want and we retain the ability to tighten the cuts later if we need to. After limiting ourselves to high tower triggers and keeping only events with electron candidates we are left with approximately 23 million events in Au+Au and 1.1 million events in p+p.
+
+\subsection{Event Level Cuts}
+
 \section{Track Reconstruction and TPC Cuts}
 
 \section{BEMC Points and Matching}

@@ -56,7 +56,7 @@ At the event level we cut on events with vertex too far out of the center of the
 \label{fig:Vertexz}
 \end{figure}
 
-At the event level we also determine the centrality using the STAR \texttt{StRefMultCorr} which calculates the centrality bin based on the reference multiplicity (refmult), vertex z, run number, and zdc coincidence rate. Figure~\ref{fig:EventCent} shows the event by event distribution of refmult as well as the number of events from each centrality bin used in the NPE analysis.
+At the event level we also determine the centrality using the STAR \texttt{StRefMultCorr} class which calculates the centrality bin based on the reference multiplicity (refmult), vertex z, run number, and ZDC coincidence rate. Figure~\ref{fig:EventCent} shows the event by event distribution of refmult as well as the number of events from each centrality bin used in the NPE analysis.
  
 \begin{figure}[htbp]
     \begin{subfigure}{0.5\textwidth}
@@ -75,7 +75,29 @@ At the event level we also determine the centrality using the STAR \texttt{StRef
 
 \section{Track Reconstruction and TPC Cuts}
 
+The TPC is the primary tracking and particle identification system in STAR. Charged particles traverse the TPC chamber which ionizes the gas inside. Due to the nearly uniform electric field in the TPC these ions drift to the ends of the TPC where the currents are read out by the TPC padrows. The magnetic field in the TPC causes charged particle trajectories to be helical making charge sign distinction possible. We can also use the TPC for particle identification by measuring the ionization energy loss in the detector. 
+
+In the TPC we consider two types of tracks. The global tracks are those tracks from the fit to hits inside the TPC. If a global track has a distance of closest approach (DCA) to the primary vertex less than 3 cm then the primary vertex is added to the track hits and the track is refit. The resulting track is a primary track, which should represent particles coming directly from the collision.
+
+We impose track quality cuts to make sure the track fits are good and that we get a good measurement of $dE/dx$. For primary tracks we require the number of TPC hits used in the track fit is between 20 and 50. For global tracks we only require that the number of hits is above 15. For all tracks we also cut on the ratio of hits fit to the maximum number possible keeping it between .52 and 1.05.
+
+In run 11 and run 12 we have no tracking information near the beam pipe, the Silicon Vertex Tracker was removed before the runs and the new Heavy Flavor Tracker had not been installed. Due to the relatively short decay length (~100 $\mu$m) of $D$ and $B$ mesons this means that the decay vertex of these particles can not be distinguished from the primary vertex. For electron candidates we require primary tracks with DCA of less than 2 cm. The corresponding global track for that electron must also be less than 3 cm. 
+
+The energy loss ($dE/dx$) in the TPC is modeled by the Bichsel function which also accounts for the spread in values for different particle species. We will be looking at the deviation of the energy loss compared to the Bichsel function value for electrons. This quantity is called $n\sigma_e$ and is defined as:
+
+\begin{equation}\label{eq:nsigmae}
+n\sigma_e = \frac{\log{\frac{dE/dx}{B_e}}}{\sigma_e}
+\end{equation}
+
+where $B_e$ is the Bichsel function value and $n\sigma_e$ is the deviation from the mean Bichsel function value for electrons. Analagous values are defined for protons, kaons, and pions but we will only concern ourselves with $n\sigma_e$. We will go over the specific $n\sigma_e$ cuts used when we discuss the details of electron identification. 
+
 \section{BEMC Points and Matching}
+
+The BEMC is critical to the identification of high $p_T$ electrons in STAR. In Au+Au and p+p collisions hadrons (mostly pions and protons) greatly outnumber electrons and the $n\sigma_e$ cuts in the TPC are not enough to give an acceptable electron purity. With the BEMC electron identification is possible at high $\pt$, in the calorimeter electrons are much more likely to interact in the first few layers of the calorimeter and they will also deposit their entire energy within the tower. 
+
+The barrel information in an event gives us hits for the BEMC towers as well as hits in the $\eta$ and $\phi$ directions for the shower max detector. From this information we need to cluster the tower hits as well as find hits in the SMD. Then we need to take the BEMC points (tower cluster and SMD hits) and associate it with a track from the TPC. With the combined TPC and BEMC information we can identify the high $\pt$ electrons necessary for our analysis.
+
+\section{Electron Identification}
 
 \section{Electron Purity}
 

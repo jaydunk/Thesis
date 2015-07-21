@@ -95,7 +95,34 @@ where $B_e$ is the Bichsel function value and $n\sigma_e$ is the deviation from 
 
 The BEMC is critical to the identification of high $p_T$ electrons in STAR. In Au+Au and p+p collisions hadrons (mostly pions and protons) greatly outnumber electrons and the $n\sigma_e$ cuts in the TPC are not enough to give an acceptable electron purity. With the BEMC electron identification is possible at high $\pt$, in the calorimeter electrons are much more likely to interact in the first few layers of the calorimeter and they will also deposit their entire energy within the tower. 
 
-The barrel information in an event gives us hits for the BEMC towers as well as hits in the $\eta$ and $\phi$ directions for the shower max detector. From this information we need to cluster the tower hits as well as find hits in the SMD. Then we need to take the BEMC points (tower cluster and SMD hits) and associate it with a track from the TPC. With the combined TPC and BEMC information we can identify the high $\pt$ electrons necessary for our analysis.
+The barrel information in an event gives us hits for the BEMC towers as well as hits in the $\eta$ and $\phi$ directions for the shower max detector. From this information we need to cluster the tower hits as well as find hits in the SMD. Then we need to take the BEMC points (tower cluster and SMD hits) and associate it with a track from the TPC. We want to cluster the tower and SMD hits such that each BEMC point is associated with one electron. With the combined TPC and BEMC information we can identify the high $\pt$ electrons necessary for our analysis.
+
+We will now describe the UCLA BEMC point making program and will use the following definitions: 
+
+\begin{itemize}
+\item \textbf{Tower cluster:} Group of tower hits according to some clustering criterion.
+\item \textbf{BSMD hit:} Signal in a single strip in the BSMD in either $\phi$ or $\eta$.
+\item \textbf{BSMD cluster:} Group of BSMD hits in either $\phi$ or $\eta$.
+\item \textbf{BSMD point:} Pair of clusters, one from $\phi$, the other $\eta$, which give a spatial point on the detector.
+\item \textbf{BEMC point:} A tower cluster and an associated BSMD point which will be matched up with tracks from the TPC.
+\end{itemize}
+
+To use the UCLA EMC point maker, described in detail in ref, to construct points and associate them with TPC tracks. The first step in reconstructing the BEMC points is to find and cluster the hits in the BEMC towers. To do this we first look for seed towers which have deposited energy above .1 GeV/c. Once we have found a seed tower adjoining towers within the same BEMC module are clustered with the seed, there is no clustering of towers or SMD hits across the modules. 
+
+The BSMD uses a similar clustering procedure for both the $\phi$ and $\eta$ directions. If EMC towers and BSMD clusters are found then the program will check for multiple clusters and attempt to merge them by relaxing the SMD clustering criteria. If one direction in the BSMD has no hits then clustering is rerun with relaxed criteria to try and find a good SMD point for that module. If neither tower nor SMD clusters are found in a module then the algorithm moves on to the next module. 
+
+With clusters in the towers and possibly the SMD found we move on to asscociating tower clusters to SMD hits. We only use SMD hits adjacent to the tower cluster and if there is only one SMD point associate it with the cluster. For the case of multple SMD hits adjacent to the tower the tower energy is divided between the SMD points. If there are no points in the SMD but we still have tower clusters then the tower cluster is kept but not used as a BEMC point for matching with the TPC. The SMD info is used as the $\phi$ and $\eta$ location of the hit and the tower cluster is used for the point's energy. Figure~\ref{fig:SMDetaphi} shows the distribution of SMD points in $\phi$ and $\eta$.
+
+\begin{figure}[htbp]
+\begin{center}\includegraphics[scale=.8]{Plots/NPE/SMD_phi_eta.pdf}
+\end{center}
+\caption[SMD Point $\eta$ and $\phi$]{SMD points in $\eta$ and $\phi$ for the EMC points used in the analysis}
+\label{fig:SMDetaphi}
+\end{figure}
+
+From the TPC we only consider tracks with $\pt$ above 1.5 GeV/c for association with points in the BEMC. When the TPC tracks are reconstructed they are fit to a helix to describe their trajectory through the TPC magnetic field. We then project these helices to the inner surface of the BEMC.
+
+ 
 
 \section{Electron Identification}
 

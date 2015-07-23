@@ -41,6 +41,27 @@ Due to the large dataset sizes it is in our best interest to cut down on the dat
 
 At the event level we cut on events with vertex too far out of the center of the detector. We use the tracks in the TPC to reconstruct the vertex, we can also measure the vertex with the Vertex Position Detector (VPD). By convention we have the $x$ and $y$ axes as transverse to the beam line. The $z$ axis then runs along the beam. We require that the vertex be no more than 2 cm from the center of the beam pipe in the radial direction, i.e. $\sqrt{(V_x^{TPC})^2 + (V_y^{TPC})^2} \leq$ 2 cm. We also cut on the TPC vertex in the $z$ direction, choosing events with $|V_z^{TPC}| \leq$ 30 cm in Au+Au collisions and $|V_z^{TPC}| \leq$ 40 cm in p+p. Additionally we want to have good agreement between the vertices as measured by the TPC and VPD. We require that the difference between the measured $V_z$ satisfies $|V_z^{TPC} - V_z^{VPD} \leq|$ 4 cm in Au+Au. Figure~\ref{fig:Vertexz} shows the distribution of $V_z^{TPC}$ and the difference in TPC and VPD $V_z$ in Au+Au collisions. In p+p because of lower multiplicity and a wider vertex distribution the measured vertex from VPD is not reliable and thus the cut on the difference of $V_z$ is not used.
 
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Variable            & Cut \\
+\hline
+Triggers (Au+Au)          & NPE11 NPE15 NPE18 NPE25 \\
+\hline
+Triggers (p+p)          & BHT0 BHT1 BHT2 BHT3 \\
+\hline
+$|V_z^{TPC}|$  (Au+Au)        & $\leq$ 30 cm \\
+\hline
+$|V_z^{TPC}|$  (p+p)        & $\leq$ 40 cm \\
+\hline
+$|V_z^{TPC} - V_z^{ZDC}|$  (Au+Au only)        & $\leq$ 4 cm \\
+\hline
+\end{tabular}
+\caption[Dataset and Event Level Cuts]{Datasets used in the analysis as well as the cuts applied at the event level.}
+\label{tab:TPCQual}
+\end{table}
+
 \begin{figure}[htbp]
     \begin{subfigure}{0.5\textwidth}
         \includegraphics[width=\textwidth]{Plots/NPE/VzAuAu.pdf}
@@ -83,6 +104,25 @@ We impose track quality cuts to make sure the track fits are good and that we ge
 
 In run 11 and run 12 we have no tracking information near the beam pipe, the Silicon Vertex Tracker was removed before the runs and the new Heavy Flavor Tracker had not been installed. Due to the relatively short decay length (~100 $\mu$m) of $D$ and $B$ mesons this means that the decay vertex of these particles can not be distinguished from the primary vertex. For electron candidates we require primary tracks with DCA of less than 2 cm. The corresponding global track for that electron must also be less than 3 cm. 
 
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Variable            & Cut \\
+\hline
+TPC Hits (Primary Tracks)          & $\in(20, 50)$ \\
+\hline
+TPC Hits (Global Tracks)          & $\geq 15$ \\
+\hline
+$N_{\text{hits}}/N_{\text{possible}}$               & $\in(.52, 1.05)$ \\
+\hline
+Primary DCA          & $< 2.0$cm \\
+\hline
+\end{tabular}
+\caption[Track Quality Cuts]{Quality cuts used for TPC tracks.}
+\label{tab:TPCQual}
+\end{table}
+
 The energy loss ($dE/dx$) in the TPC is modeled by the Bichsel function which also accounts for the spread in values for different particle species. We will be looking at the deviation of the energy loss compared to the Bichsel function value for electrons. This quantity is called $n\sigma_e$ and is defined as:
 
 \begin{equation}\label{eq:nsigmae}
@@ -114,17 +154,42 @@ The BSMD uses a similar clustering procedure for both the $\phi$ and $\eta$ dire
 With clusters in the towers and possibly the SMD found we move on to asscociating tower clusters to SMD hits. We only use SMD hits adjacent to the tower cluster and if there is only one SMD point associate it with the cluster. For the case of multple SMD hits adjacent to the tower the tower energy is divided between the SMD points. If there are no points in the SMD but we still have tower clusters then the tower cluster is kept but not used as a BEMC point for matching with the TPC. The SMD info is used as the $\phi$ and $\eta$ location of the hit and the tower cluster is used for the point's energy. Figure~\ref{fig:SMDetaphi} shows the distribution of SMD points in $\phi$ and $\eta$.
 
 \begin{figure}[htbp]
-\begin{center}\includegraphics[scale=.8]{Plots/NPE/SMD_phi_eta.pdf}
+\begin{center}
+\includegraphics[scale=.8]{Plots/NPE/SMD_phi_eta.pdf}
 \end{center}
 \caption[SMD Point $\eta$ and $\phi$]{SMD points in $\eta$ and $\phi$ for the EMC points used in the analysis}
 \label{fig:SMDetaphi}
 \end{figure}
 
-From the TPC we only consider tracks with $\pt$ above 1.5 GeV/c for association with points in the BEMC. When the TPC tracks are reconstructed they are fit to a helix to describe their trajectory through the TPC magnetic field. We then project these helices to the inner surface of the BEMC.
-
- 
+From the TPC we only consider tracks with $\pt$ above 1.5 GeV/c for association with points in the BEMC. When the TPC tracks are reconstructed they are fit to a helix to describe their trajectory through the TPC magnetic field. We then project these helices to the inner surface of the BEMC. After the projection we then associate the track with a BEMC point. We require that the distance between the points ($d = \sqrt{\Delta\phi^2 + \Delta\eta^2}$) be smaller than .05. If multiple BEMC points are close enough to be matched, then we select the one with the smallest distance. In general tracks from electrons will match better to the points in the BEMC, we will use this to improve the cuts for electron identification which will be discussed in the next section.
 
 \section{Electron Identification}
+
+We can now use the matched TPC tracks and BEMC points to identify electrons in Au+Au and p+p collisions. We will use the TPC information to find tracks that originate from the primary vertex, traverse the TPC depositing energy consistent with what we would expect from electrons, then interact in the first few layers of the BEMC leaving a wide shower that terminates within the tower.
+
+Our analysis only uses data from high tower trigger events. The only requirement for a high tower trigger is that a tower in the event register a hit above a certain threshold. There is no guarantee that the tower will be matched to a track or that an electron triggered the tower. However we may still find electrons in these events they will just be below the trigger threshold. This effect is called random trigger benefit and it is important to remove in NPE analyses where the production cross-section of NPE is important. It is likely not critical in this analysis because we will be looking at correlations which are normalized per trigger but we still attempt to cut out the random trigger benefit. 
+
+When we make the BEMC points we also record the highest tower ADC value in the BEMC cluster and record this as the ADC0 for that point. Figure~\ref{fig:ADC0} shows the distribution of ADC0 from primary tracks matched to BEMC points. Near 325 ADC counts we see a large rise in the ADC0 of points, this corresponds to the threshold for the NPE18 trigger. Any electrons with ADC0 much below this value can be assumed to come from random trigger benefits and are not used. 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/NPE/ADC0_NPE18.pdf}
+\end{center}
+\caption[ADC0 Distribution for NPE18]{ADC0 for primary tracks in NPE18 triggered events. Turn on of the NPE18 trigger is apparent around 325 ADC counts.}
+\label{fig:ADC0}
+\end{figure}
+
+For NPE, due to the short lifetime of the parent mesons, we only consider tracks originating from the primary vertex. Further we cut on the DCA of the track to the primary vertex, requiring that that the DCA be less than 1.5 cm. This cut is tighter than the 2 cm cut we used when considering the TPC track quality. We also remove tracks with $p_T$ < 2.0 GeV/c, generally the tracks comming from triggered electrons will be much higher than this anyway. For our acceptance we want the electron to be -.7 $\leq \eta \leq$ .7 in  pseudorapidity. This corresponds to the $\eta$ acceptance of the BEMC. Run 10 analyses also cut out areas in $\phi$ which correspond to the position of the SVT support structure. The reasoning behind that cut is that the remaining structure could cause more photon conversions in those regions, but this cut is not applied here.
+
+Now we apply the BEMC information to select electrons. Electrons begin showering much earlier in the BEMC than hadrons, the SMD sits at $5.6 X_0$ where electromagnetic showers are widest. With more hits in the SMD the spatial resolution of the BEMC points is better as so the BEMC matching for electrons tends to be better. This is illustrated in Figures~\ref{fig:point_dphi} and~\ref{fig:dZ} which show the BEMC matching in $\Delta\phi$ and $\Delta Z$. Black points are for all matched primary tracks and red points show the matching for identified electrons (with the matching cuts excluded). We set the $\Delta\phi$ cut such that $|\Delta\phi| \leq$ .013 and for $\Delta Z$ we use -2.5 cm $\leq \Delta Z \leq$ 1.1 cm (for $\eta$ > 0) and -1.5 cm $\leq \Delta Z \leq$ 1.9 cm (for $\eta$ < 0)
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/NPE/point_dphi.pdf}
+\end{center}
+\caption[TPC to BEMC $\Delta\phi$]{$\Delta\phi$ between the TPC and BEMC for all matched primary tracks (black) and identified electrons (red). Y-axis is arbitrary units scaled to show all tracks and electrons on the same figure. Matching is better for electrons and we cut on such that $|\Delta\phi| \leq$ .013.}
+\label{fig:point_dphi}
+\end{figure}
 
 \section{Electron Purity}
 

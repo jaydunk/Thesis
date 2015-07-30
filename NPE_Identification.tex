@@ -276,7 +276,36 @@ BEMC $\Delta Z$ ($\eta < 0$)    & $\in(-1.5, 1.9)$ \\
 
 \subsection{TPC Cuts}
 
+The only remaining cuts are those for ionization energy loss in the TPC. The energy loss varies significantly for different particle species as a function of the particle's momentum. Since we are looking for electrons the cuts we will be applying to tracks are based on the calculated $n\sigma_e$ as defined in Equation~\ref{eq:nsigmae}. For electrons $n\sigma_e$ should be distributed around 0, but for negative values of $n\sigma_e$ the electrons are overwhelmed by contamination from hadrons. We keep these cuts the same as they are in the run 10 NPE analysis, but they could be further tuned to improve electron purity and efficiency. Table~\ref{tab:nsigma} summarizes the $n\sigma_e$ cuts used for electron identification. The cuts are the same for both Au+Au and p+p data.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$p_T$ Range            & $n\sigma_e$ Cut \\
+\hline
+1.0 GeV/c $< p_T <$ 2.0 GeV/c   & -1.25 $< n\sigma_e <$ 2\\
+\hline
+2.0 GeV/c $< p_T <$ 4.0 GeV/c   & -0.75 $< n\sigma_e <$ 2\\
+\hline
+4.0 GeV/c $< p_T <$ 6.0 GeV/c   & -0.25 $< n\sigma_e <$ 2\\
+\hline
+6.0 GeV/c $< p_T <$ 7.0 GeV/c   & 0.25 $< n\sigma_e <$ 2\\
+\hline
+7.0 GeV/c $< p_T <$ 8.0 GeV/c   & 0.25 $< n\sigma_e <$ 2\\
+\hline
+8.0 GeV/c $< p_T <$ 10.0 GeV/c   & 0.5 $< n\sigma_e <$ 2\\
+\hline
+10.0 GeV/c $< p_T <$ 12.0 GeV/c   & 0.5 $< n\sigma_e <$ 2\\
+\hline
+\end{tabular}
+\caption[$n\sigma_e$ Cuts]{$n\sigma_e$ cuts as a function of $p_T$.}
+\label{tab:nsigma}
+\end{table}
+
 \section{Electron Purity}
+
+We will now investigate the purity of the electron sample we get from applying our electron identification cuts. We will also demonstrate the effectiveness of the BEMC and SMD in rejecting a large fraction of the hadronic background to NPE. To to this we will be relying on the $n\sigma_e$ distributions we have measured. 
 
 \section{Photonic Electron Identification}
 

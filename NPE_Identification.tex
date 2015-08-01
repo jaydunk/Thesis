@@ -305,7 +305,53 @@ $p_T$ Range            & $n\sigma_e$ Cut \\
 
 \section{Electron Purity}
 
-We will now investigate the purity of the electron sample we get from applying our electron identification cuts. We will also demonstrate the effectiveness of the BEMC and SMD in rejecting a large fraction of the hadronic background to NPE. To to this we will be relying on the $n\sigma_e$ distributions we have measured. 
+We will now investigate the purity of the electron sample we get from applying our electron identification cuts. To do this we will be relying on the $n\sigma_e$ distributions we have measured. First we will look at the $n\sigma_e$ distributions with all of the BEMC and track quality cuts applied. Then we will fit the peaks in $n\sigma_e$ with gaussian functions, apply the $n\sigma_e$ cuts as established in Table~\ref{tab:nsigma}, and then calculate the yields from the electron and hadron peaks. This will give us an estimate of the purity of the electron sample we will use in the NPE analysis.
+
+\begin{figure}[htbp]
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NPE/nsigmae/nsig_3_4.pdf}
+        \caption{3.0 GeV/c $\leq p_{T} \leq$ 4.0 GeV/c}
+        \label{fig:nsigma_3_4}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NPE/nsigmae/nsig_4_5.pdf}
+        \caption{4.0 GeV/c $\leq p_{T} \leq$ 5.0 GeV/c}
+        \label{fig:nsigma_4_5}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NPE/nsigmae/nsig_5_6.pdf}
+        \caption{5.0 GeV/c $\leq p_{T} \leq$ 6.0 GeV/c}
+        \label{fig:nsigma_5_6}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NPE/nsigmae/nsig_6_8.pdf}
+        \caption{6.0 GeV/c $\leq p_{T} \leq$ 8.0 GeV/c}
+        \label{fig:nsigma_6_8}
+    \end{subfigure}
+\caption[Fits of $n\sigma_e$]{Fits to the $n\sigma_e$ distributions for primary electron candidates (particles that pass all electron cuts excluding the $n\sigma_e$ cut) as a function of particle $p_T$. }
+\label{fig:nsigma_fits}
+\end{figure}
+
+Figure~\ref{fig:nsigma_fits} shows the $n\sigma_e$ distributions as well as the fit functions. Each distribution was fit with three gaussian functions, one each for $e^{\pm}$, $\pi^{\pm}$, and a final function for $K^{\pm} + p^{\pm}$ combined. To estimate the purity we take the parameters (height, $\mu$, $\sigma$) gaussian component of the electron and hadron peaks. Then we integrate the peaks over the range specified by the $n\sigma_e$ cuts. The purity is then the fraction of the total yield that comes from the electron peak. Table~\ref{tab:purity} lists the purities obtained by this method for a range of electron $p_T$. Below 6 GeV/c the purity is quite high between 96\% and 100\%, it begins to drop for higher $p_T$ due to narrowing and shifting of the electron peak as well as closer merging of the hadron peaks with the electrons. The peak shape is biased by the fact that we only select events with high $p_T$ tracks and $n\sigma_e$ within certain values. This causes the peaks to have non-gaussian features and prevents us from taking the purities obtained at face value. However, in this analysis we will not directly need the electron purity unlike if we were looking at NPE $v_2$. We will be normalizing our observations per trigger particle, so we only need to look at purity to estimate the contribution of hadron contamination in the NPE sample when we construct NPE-h correlations.  
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Electron $p_T$         & Purity \\
+\hline
+3.0 GeV/c $< p_T <$ 4.0 GeV/c   & 99.8\% \\
+\hline
+4.0 GeV/c $< p_T <$ 5.0 GeV/c   & 97.0\% \\
+\hline
+5.0 GeV/c $< p_T <$ 6.0 GeV/c   & 96.1\% \\
+\hline
+6.0 GeV/c $< p_T <$ 8.0 GeV/c   & 79.6\% \\
+\hline
+\end{tabular}
+\caption[Electron Purity]{Purity of electrons obtained from fits to $n\sigma_e$.}
+\label{tab:purity}
+\end{table}
 
 \section{Photonic Electron Identification}
 

@@ -355,4 +355,70 @@ Electron $p_T$         & Purity \\
 
 \section{Photonic Electron Identification}
 
+The main background to electrons from the decay of heavy flavor mesons comes from photon conversions in the detector and Dalitz decay of $\pi$ and $\eta$ mesons. Collectively we refer to these background electrons as \textit{photonic electrons}, and in this section we will summarize how we remove them from our electron sample. When the electrons are produced by these background processes they come in $e^{+}e^{-}$ pairs. To tell whether an electron is of photonic origin we search through the tracks in the event and try to find its partner.
+
+When searching for the partner electron we use very relaxed cuts. We search through all global tracks (rather than primary) within a pseudorapidty of -1.3 $\leq \eta \leq$ 1.3. To cut out hadrons we require that -3 $\leq n\sigma_e \leq$ 3. Tracks from photonic background will be very close together in the detector and will have a small opening angle. We apply cuts on the pairwise DCA of the two tracks, requiring the DCA be less than 1.0 cm. Also the opening angle between the tracks should be small, we want the total angle $\Theta <$ 0.05 and the azimuthal angle $\phi < $ 0.1. Table~\ref{tab:pe_cuts} summarizes the track cuts and pairing criteria for reconstructing photonic electrons. The partner for a photonic electron must have opposite charge to the primary track. We look for both opposite-sign as well as like-sign pairs. The like sign pairs which satisfy the photonic partner cuts let us estimate the number of photonic electrons that are misidentified due to combinatorial pairing of tracks.
+
+\begin{figure}[htbp]
+	\begin{center}
+    \begin{subfigure}{0.65\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NPE/Theta_OS_LS.pdf}
+        \caption{$\eta >$ 0}
+        \label{fig:PE_Theta}
+    \end{subfigure}
+    \begin{subfigure}{0.65\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NPE/Phi_OS_LS.pdf}
+        \caption{$\eta <$ 0}
+        \label{fig:PE_Phi}
+    \end{subfigure}
+	\end{center}
+\caption[Angle Cuts for Phot. Electrons]{Angle cuts for partner tracks used to recontstruct photonic electrons.}
+\label{fig:PE_angle}
+\end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Variable         & Cuts \\
+\hline
+TrackType   & Global \\
+\hline
+$\eta$   & $\in(-1.3,1.3)$ \\
+\hline
+$p_T$   & $> 0.3$ GeV/c \\
+\hline
+Pair DCA  & $< 1.0$ cm \\
+\hline
+Pair $\Theta$   & $< 0.05$ \\
+\hline
+Pair $\phi$   & $< 0.10$ \\
+\hline
+2D Invariant Mass   & $< 0.10$ GeV/$c^2$ \\
+\hline
+\end{tabular}
+\caption[Photonic Electron Cuts]{Cuts used for partner tracks and for identifying photonic electrons.}
+\label{tab:pe_cuts}
+\end{table}
+
+For photonic electrons we expect the pair of particles to have a low invariant mass (exactly 0 for photon conversions and $< .1$ GeV/$c^2$ for Dalitz decays). However the measurement of the invariant mass is degraded by the finite tracking resolution of the TPC. Reconstructed TPC tracks form helices in the detector volume. The resolution of the TPC effectively means that the helices can shift around relative to each other. Due to this effect, there is a large uncertainty in the location of the secondary vertex where the electrons have their minimum DCA. This causes an uncertainty in the opening angle between the tracks and smears out the invariant mass distribution of the pairs. To correct this we instead consider the 2D invariant mass. The tracks are rotated into the same plane before calculating the mass. The cutoff for photonic electrons is that this 2D invariant mass be below .10 GeV/$c^2$. Figure~\ref{fig:2DInvMass} shows the 2D invariant mass distribution. The 3D invariant mass is not used in identifying photonic electrons but is plotted in Figure~\ref{fig:InvMass}. The peak near 0 is from photon conversions while the peak at .05 GeV/$c^2$ comes from the Dalitz decays. The Dalitz decay is a three body decay and thus the missing photon causes the mass peak to be smeared.
+
+Clearly just pairing up all tracks to look for photonic electrons will not guarantee that we remove all of the background. It is possible for the partner track to be outside of our acceptance or otherwise fail to pass the photonic electron cuts. We will quantify how much background we miss by the parameter $\epsilon_\gamma$, the photonic reconstruction efficiency, which is essentially the fraction of all photonic electrons we are able to reconstruct from searching for partner tracks. The next section will discuss how $\epsilon_\gamma$ is calculated.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/NPE/2DInvMass_OS_LS.pdf}
+\end{center}
+\caption[2D Invariant Mass]{2D invariant mass for opposite sign and same sign pairs. For photonic electron identification we require that $m_{2D} <$ 0.10 GeV/$c^2$.}
+\label{fig:2DInvMass}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=.8]{Plots/NPE/InvMass_OS_LS.pdf}
+\end{center}
+\caption[Invariant Mass]{Invariant mass distribution for pairs of tracks. Opposite sign pairs show low mass excess which corresponds to the photonic electrons.}
+\label{fig:InvMass}
+\end{figure}
+
 \section{Photonic Electron Reconstruction Efficiency}

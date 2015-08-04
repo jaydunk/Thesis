@@ -403,8 +403,6 @@ Pair $\phi$   & $< 0.10$ \\
 
 For photonic electrons we expect the pair of particles to have a low invariant mass (exactly 0 for photon conversions and $< .1$ GeV/$c^2$ for Dalitz decays). However the measurement of the invariant mass is degraded by the finite tracking resolution of the TPC. Reconstructed TPC tracks form helices in the detector volume. The resolution of the TPC effectively means that the helices can shift around relative to each other. Due to this effect, there is a large uncertainty in the location of the secondary vertex where the electrons have their minimum DCA. This causes an uncertainty in the opening angle between the tracks and smears out the invariant mass distribution of the pairs. To correct this we instead consider the 2D invariant mass. The tracks are rotated into the same plane before calculating the mass. The cutoff for photonic electrons is that this 2D invariant mass be below .10 GeV/$c^2$. Figure~\ref{fig:2DInvMass} shows the 2D invariant mass distribution. The 3D invariant mass is not used in identifying photonic electrons but is plotted in Figure~\ref{fig:InvMass}. The peak near 0 is from photon conversions while the peak at .05 GeV/$c^2$ comes from the Dalitz decays. The Dalitz decay is a three body decay and thus the missing photon causes the mass peak to be smeared.
 
-Clearly just pairing up all tracks to look for photonic electrons will not guarantee that we remove all of the background. It is possible for the partner track to be outside of our acceptance or otherwise fail to pass the photonic electron cuts. We will quantify how much background we miss by the parameter $\epsilon_\gamma$, the photonic reconstruction efficiency, which is essentially the fraction of all photonic electrons we are able to reconstruct from searching for partner tracks. The next section will discuss how $\epsilon_\gamma$ is calculated.
-
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[scale=.75]{Plots/NPE/2DInvMass_OS_LS.pdf}
@@ -422,3 +420,7 @@ Clearly just pairing up all tracks to look for photonic electrons will not guara
 \end{figure}
 
 \section{Photonic Electron Reconstruction Efficiency}
+
+Clearly just pairing up all tracks to look for photonic electrons will not guarantee that we remove all of the background. It is possible for the partner track to be outside of our acceptance or otherwise fail to pass the photonic electron cuts. We will quantify how much background we miss by the parameter $\epsilon_\gamma$, the photonic reconstruction efficiency, which is essentially the fraction of all photonic electrons we are able to reconstruct from searching for partner tracks. This section will discuss how $\epsilon_\gamma$ is calculated.
+
+We calculate the photonic electron reconstruction effieciency by using embedding simulations. Photon conversions and Dalitz decays of pions are simulated and then embedded into real STAR data. The data are generated flat in $p_T$ and thus must be weighted according to the measured spectra of $\gamma$ and $\pi^{\pm}$.

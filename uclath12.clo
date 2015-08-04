@@ -1,5 +1,6 @@
 % POINT SIZE OPTION for UCLA thesis style
-% (C) Copyright 1995 by John Heidemann,
+% (C) Copyright 2012 by Jose Hales-Garcia,
+% derived from work (C) Copyright 1995 by John Heidemann,
 % derived from work (C) Copyright 1988 Richard B. Wales,
 % taken in turn from material Copyright (C) 1985 by Leslie Lamport.
 
@@ -12,8 +13,8 @@
 % Version checking.
 %%%
 \NeedsTeXFormat{LaTeX2e}
-\def\uclathxiiversion{1.0 beta}
-\def\uclathxiidate{1995/05/11}
+\def\uclathxiiversion{2.0}
+\def\uclathxiidate{2012/05/03}
 \ProvidesFile{uclath12.clo}[\uclathxiidate, \uclathxiiversion]
 
 
@@ -104,12 +105,12 @@
 %
 
 % SIDE MARGINS:
-%\oddsidemargin 0.65in     %   Note that \oddsidemargin = \evensidemargin
-%\evensidemargin 0.65in    % these are added to the 1 inch margin.
+\oddsidemargin 0.5in     %   Note that \oddsidemargin = \evensidemargin
+\evensidemargin 0.5in    % these are added to the 1 inch margin.
 
 % VERTICAL SPACING:        
                           % Top of page:
-%\topmargin 0.15in         %    Nominal distance from top of page to top
+\topmargin 0.15in         %    Nominal distance from top of page to top
                           %    of box containing running head.
 \headheight 0pt           %    Height of box containing running head.
 \headsep 0pt              %    Space between running head and text.
@@ -117,16 +118,16 @@
                           % Bottom of page:
 % johnh: footheight unused
 % \footheight 12pt          %    Height of box containing running foot.
-\footskip 0.25in            %    Distance from baseline of box containing
+\footskip 0.50in            %    Distance from baseline of box containing
                             %    foot to baseline of last line of text.
 % johnh: footskip -> 0.8in from 0.6in to meet RFTADP guidelines
 % (probably with LaTeX209 footheight was added to footskip).
 
 % DIMENSION OF TEXT:
 
-\textheight 9in       % Height of text (including footnotes and fig-
+\textheight 8.75in       % Height of text (including footnotes and fig-
                          % ures, excluding running head and foot).
-\textwidth 6.5in         % Width of text line.
+\textwidth 5.75in         % Width of text line.
 
 % A \raggedbottom command causes 'ragged bottom' pages: pages set to
 % natural height instead of being stretched to exactly \textheight.

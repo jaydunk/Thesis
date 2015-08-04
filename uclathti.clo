@@ -1,5 +1,6 @@
 % UCLA THESIS TITLE PAGE STYLE (format for preliminary pages)
-% (C) Copyright 1995 by John Heidemann,
+% (C) Copyright 2012 by Jose Hales-Garcia
+% derived from (C) Copyright 1995 by John Heidemann,
 % derived from work (C) Copyright 1988 Richard B. Wales,
 % taken in turn from material Copyright (C) 1985 by Leslie Lamport.
 
@@ -7,8 +8,8 @@
 % Version checking.
 %%%
 \NeedsTeXFormat{LaTeX2e}
-\def\uclathtiversion{1.0 beta}
-\def\uclathtidate{1995/05/11}
+\def\uclathtiversion{2.0}
+\def\uclathtidate{2012/05/03}
 \ProvidesFile{uclathti}[\uclathtidate, \uclathtiversion]
 
 %
@@ -151,17 +152,18 @@
 % changed, it may be desirable to change the "\vskip" before the name.
 
 \newcommand\@signatureline[1]{
-   #1
-   
+   \vskip-10pt{#1} \\
+   \vskip 24pt plus0pt minus15pt%
 }
 
 \newcommand\@makesignaturepage{
    \ColumnSave
+%   \setcounter{page}{4}
    \noindent
    \renewcommand\baselinestretch{\@doublespacing}\@normalsize
    \normalsize \normalfont The \@thesisname\ of \@author\ is approved.
-   
-   {\centering
+   \vskip 12pt plus0pt minus24pt
+   \begin {center}
       \ifnum\c@members>5 \@signatureline{\@memberF}\fi
       \ifnum\c@members>4 \@signatureline{\@memberE}\fi
       \ifnum\c@members>3 \@signatureline{\@memberD}\fi
@@ -180,12 +182,11 @@
          \@signatureline{\@chairA, Committee Chair}
       \else\typeout{No committee chair.}
       \fi\fi\fi
-      \vskip 72pt
-      University of California, Los Angeles
-      
-      \@degreeyear
-      
-   }
+   \end {center}
+   \vskip 36pt
+   \begin {center}
+      University of California, Los Angeles \\ \@degreeyear
+   \end {center}
    \ColumnRestore
    \renewcommand\baselinestretch{\@spacing}\@normalsize
 }
@@ -259,7 +260,7 @@
 \newcounter{vitaitems}
 \setcounter{vitaitems}{0}
 \newcommand\@vitadate[1]{{\parbox[t]{1.25in}{\normalfont{#1}}}}
-\newcommand\@vitatext[1]{{\parbox[t]{5.25in}{\normalfont{#1}}}}
+\newcommand\@vitatext[1]{{\parbox[t]{4.45in}{\normalfont{#1}}}}
 \newcommand\vitaitem[2]{
    \ifcase\value{vitaitems}
       \def\@vitaA{\@vitadate{#1} & \@vitatext{#2}} \or
@@ -340,7 +341,7 @@
 
 \newcommand\@printvitaitem[1]{
    \noindent
-   \begin {tabular} {@{}p{1.25in}@{}p{5.25in}@{}}
+   \begin {tabular} {@{}p{1.25in}@{}p{4.45in}}
       #1
    \end {tabular}
 }
@@ -389,7 +390,7 @@
          \ifx\@spacing\@doublespacing\parskip 24pt plus 4pt
 	 \else                       \parskip 12pt plus 2pt
 	 \fi
-	 \vskip 36pt
+	 \vskip 42pt
 	 \begin{center}
 	    \large \scshape
 	    \if@pubs

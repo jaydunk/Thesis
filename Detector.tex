@@ -46,9 +46,19 @@ The TPC is the main tracking and particle identification in STAR, it surrounds t
 \label{fig:TPC}
 \end{figure}
 
-Charged particles traverse the TPC and ionize the gas inside. The electrons in the drift along the electric field in the TPC at 5.45 cm/$\mu$s towards the ends of the TPC where the readout pads are located.  
+Charged particles traverse the TPC and ionize the gas inside. The electrons in the drift along the electric field in the TPC at 5.45 cm/$\mu$s towards the ends of the TPC where the readout pads are located. The endcaps of the TPC chambers are divided radially into 12 sections, each section has an inner and outer segment (Figure~\ref{fig:TPC_pad}). The TPC readout sectors have 4 components, a pad plane and three wire planes. The outermost wire plane is a gating grid which can block charged particles in the TPC from reaching the readout counters at the endcap. Inside the gating grid are the ground wire plane, a readout plane and the the pad plane. The inner part of the TPC sector consists of 13 pad rows which are spaced 52 mm apart in the radial direction in the outer section there is no spacing between the pads. The inner sector also features smaller pads to improve tracking, particularly for low momentum tracks. Future upgrades to the TPC will replace the TPC sectors with ones that have no gaps between the inner pad rows. This will improve the tracking of the TPC out to larger $\eta$. 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=1.0]{Plots/Detector/TPC_pad.pdf}
+\end{center}
+\caption[TPC Sector]{Schematic of one TPC pad plane. The difference in spacing between inner and outer pads can be seen.}
+\label{fig:TPC_pad}
+\end{figure}
 
 \section{Barrel Electromagnetic Calorimeter}
+
+The Barrel Electromagnetic Calorimeter (BEMC) is a lead-scintillator sampling calorimeter sitting outside of the TPC and STAR magnet. The BEMC is used for studying high $\pt$ processes such as jets and (in the case of this analysis) decays from heavy mesons. The calorimeter is also used to trigger on these processes and is capable of detecting direct $\gamma$'s. There are two main subsystems of the BEMC: the towers of lead and scintillator, which produce the particle showers and collect the light to measure the energy, and the Shower Maximum Detector (SMD) for measuring the profile of showers in the BEMC which can be used to select showers from electrons.
 
 \subsection{EMC Towers}
 

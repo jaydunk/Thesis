@@ -62,6 +62,8 @@ The Barrel Electromagnetic Calorimeter (BEMC) is a lead-scintillator sampling ca
 
 \subsection{EMC Towers}
 
+The towers of the BEMC cover $2\pi$ in azimuth and have coverage from -1 to 1 in $\eta$. The inner surface of the calorimeter sits approximately 2.2 m from the beam line in STAR. The towers are grouped into modules which each cover $6\deg$ in $\phi$ and 1 in $\Delta\eta$. There are in total 120 modules, 60 on each half of the detector. Each tower consists of alternating layers of lead and scintillator. There are 21 scintillating layers and 20 lead layers in each tower, the tower depth is appproximately 20 radiation lengths. The towers have a projective geometry so that towers located out farther from $\eta = 0$ still point back to the center of the detector. Figure~\ref{fig:BEMC_towera} shows the structure and dimensions of a single tower from near the center of the BEMC ($\eta \approx 0$). In Figure~\ref{fig:BEMC_towerb} is a photograph of a single BEMC module. The left end is near $\eta = 0$ and the projective geometry of the towers can be seen when moving right along the modules.
+
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{Plots/Detector/BEMC_tower.pdf}
@@ -77,4 +79,16 @@ The Barrel Electromagnetic Calorimeter (BEMC) is a lead-scintillator sampling ca
 \label{fig:BEMC_tower}
 \end{figure}
 
+Particle showers in the BEMC towers produce light in the scintillating layers which is then collected and read out by a wavelength shifting fiber. The fibers run from each scintillating layer of the tower to a photomultiplier tube (one per tower) located outside the STAR magnet.
+
 \subsection{Shower Maximum Detector}
+
+The Shower Maximum Detector (SMD) is located within the BEMC towers and gives access to finer positional resolution than the BEMC towers alone, allowing us to study the profile and development of showers inside the BEMC. As can be seen in Figure~\ref{fig:BEMC_towera} the BSMD sits after the fifth lead layer in the tower, which corresponds to $\approx 5.6 X_{0}$ of material total in STAR in front of the SMD. The SMD itself is a wire proportional counter with strip readout, there are two perpendicular directions for the chambers to measure shower profiles in both $\eta$ and $\phi$. The strips are $\approx 1.5$ cm in both directions for $|\eta| < .5$ and 1.88 cm in the $\eta$ direction outside of that. For electrons with $\pt > 1$ GeV/c the SMD is near the depth of widest shower development (the Moliere radius for lead is $\approx 3.2$ cm), however for hadrons the depth of maximum deveopment is around 1 nuclear interaction length, which for the BEMC close to the entire length of one BEMC tower. Thus we can use the development of showers in the SMD as a powerful tool for rejecting showers from hadrons or minimum ionizing particles. Figure~\ref{fig:SMD} shows how the SMD works in practice, an electron enters the detector, develops into a wide shower and registers multiple hits in the SMD strips in both directions.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=1.0]{Plots/Detector/SMD.pdf}
+\end{center}
+\caption[BSMD Diagram]{Illustration of the function of the BSMD detector. Particle enters the tower (at top) and develops into a shower which registers hits in the $\eta$ and $\phi$ directions in the BSMD.}
+\label{fig:SMD}
+\end{figure}

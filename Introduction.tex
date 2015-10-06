@@ -81,14 +81,52 @@ Comparisons can be made across several experiements with different collision ene
 In heavy ion collisions the nuclei do not exactly overlap, instead leaving an ellipsoidal region where temperatures and densities are high enough to create quark gluon plasma. This ellipsoidal overlap region creates an initial position space anisotropy which creates a pressure gradient along the fireball which manifests itself as an momentum dependent azimuthal anisotropy in the final state, which we call elliptic flow. More formally, the distribution of particles as a function of azimuthal angle can be written out as a Fourier expansion:
 
 \begin{equation}\label{eq:v2def}
-E\frac{d^3N}{d^3p} = \frac{1}{2\pi}\frac{d^2N}{p_Tdp_Tdy}[1 + \sum_{n=1}^{\infty}2 v_n \cos{n(\phi - \Psi_r)}]
+E\frac{d^3N}{d^3p} = \frac{1}{2\pi}\frac{d^2N}{p_Tdp_Tdy}[1 + \sum_{n=1}^{\infty}2 v_n \cos(n(\phi - \Psi_r))]
 \end{equation}
 
 Where $\Psi_r$ is the angle of the reaction plane, which for our purposes can be thought of as the plane perpendicular to the major axis of the ellipsoid. The elliptic flow is the coefficient of the second term of this expansion, $v_2$. In Au+Au collisions at RHIC $v_2$ is large for light hadrons and consistent with hydrodynamic models at low $p_T$ ($\leq 2$ GeV), at higher $p_T$ the contribution of jets to $v_2$ needs to be considered. These measurements of $v_2$ point to a high degree of thermalization in collisions at RHIC energies and the mass dependence of $v_2$ indicates a collective flow of the medium.
 
-%section and figure for NCQ scaling
+An interesting extension for $v_2$ measurements is to look at how $v_2$ scales with the number of constituent quarks. To measure this experimentally, measurements of $v_2$ are performed for identified particles, then the results are examined scaled by the number of constituent quarks in the particle. Results for $v_2$ in 200 GeV Au+Au collisions in STAR scaled by number of constituent quarks are shown in Figure~\ref{fig:ncqscale}. From the plots we can see that the scaled $v_2$ in hadrons follows a universal trend for low $p_T$. This points to the main hadronization mechanism at low $p_T$ to be coalescence of quarks and that in the collective evolution of the medium the partonic, rather than hadronic, degrees of freedom are most relevant. 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=1.7]{Plots/Intro/ncq_scale.pdf}
+\end{center}
+\caption[NCQ Scaling of $v_2$]{Identified particle $v_2$ as measured in 200 GeV Au+Au minimum bias collisions in STAR scaled by the number of constituent quarks. Common trend across hadrons is evidence for hadronization from coalescence of thermalized quarks.}
+\label{fig:ncqscale}
+\end{figure}
 
 \subsection{$R_{AA}$ and Jet Suppression}
+
+Another technique for studying QGP is to compare observables between heavy ion collisions and p+p data. In proton-proton or proton-nucleus collisons the baryon density is not high enough for a QCD phase transition. Here we will explore two different ways of comparing heavy ion and p+p systems. The first is the nuclear modification factor which compares particle yields in  heavy ion systems to the scaled up yields from p+p, differences in theses yields could be signs of further interactions with the medium. We will also look at jet modification. Jets are the product of hard scattering of quarks and gluons in the initial collision, as a hard quarks traverses the QGP it will be subjected to strong interactions with the medium and lose energy. The suppression of high $p_T$ jets is further evidence for the existence of QGP.
+
+In collider experiements, high $p_T$ particles come from the initial hard scattering of partons in the collisions. Without any sort of medium effects from QGP we could model the collision of two heavy nuclei as a superposition of binary proton collisions. Deviation from this behavior indicates extra effects from the medium. We define the ratio of yields in heavy ion to scaled p+p as the nuclear modification factor $R_{AA}$. Which is explicitly defined as:
+
+\begin{equation}\label{eq:RAAdef}
+R_{AA}(p_T) = \frac{(1/N_{AA}) d^2N_{AA}/dp_Tdy}{\langle N_{coll} \rangle/\sigma^{incl}_{pp}(d^2\sigma_{pp}/dp_Tdy)} 
+\end{equation}
+
+where $ \langle N_{coll} \rangle $ is the average number of collisions as calculated by a Glauber model simulation. Figure~\ref{fig:piRAA} shows the measurement of $\pi^0 R_{AA}$ in Au+Au collisions in PHENIX. In central collisions where we expect critical behavior the yield is highly suppressed for all momenta. In the peripheral bin where no QGP is expected to be formed the $R_{AA}$ is consistent with 1, meaning the yields are what would be expected from a superposition of p+p collisions. Moving from most central to most peripheral bins, the yields gradually go from highly suppressed to not supressed at all, as we would expect since the more central bins produce regions of higher temperature and density bringing on the onset of deconfinement.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=1.2]{Plots/Intro/pi_RAA.pdf}
+\end{center}
+\caption[$R_{AA}$ for $\pi^0$]{PHENIX measurement of $R_{AA}$ for $\pi^0$ in central and peripheral Au+Au collisions. Large suppression of yields is seen in central collisions.}
+\label{fig:piRAA}
+\end{figure}
+
+The properties of the QGP can also be probed by examining the effects on high $p_T$ partons as they traverse the medium. The high $p_T$ light quarks are created by hard processes early in the collision and are theorized to lose energy due to induced gluon radiation in the QGP. The energy loss leads softer particles in jets and the broadening of spatial jet-like correlations. STAR investigated light flavor jet correlations by looking at azimuthal correlations of particles in Au+Au, p+p, and d+Au collisions. High $p_T$ particles were used as the leading particles and correlated with other hadrons in the event.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=1.2]{Plots/Intro/jet_quench.pdf}
+\end{center}
+\caption[Jet Quenching is STAR]{Azimuthal dihadron correlations in STAR. Strong quenching of the away side jet is seen in Au+Au collisions but not p+p or d+Au. Lack of suppression in d+Au rules out cold nuclear matter effects on jet suppression.}
+\label{fig:jet_quench}
+\end{figure}
+
+Figure~\ref{fig:jet_quench} shows the azimuthal dihadron correlations measured in STAR. In p+p and d+Au we see strong back-to-back correlations of particles due to momentum conservation in the initial production of hard partons. The consistency of p+p and d+Au correlations is evidence that cold nuclear matter does not significantly impact the propagation of hard quarks. However, in Au+Au the away side jet is strongly suppressed, indicating that light quarks lose a substantial amount of energy within the hot and dense medium created in heavy ion collisions.
 
 \section{Heavy Flavor Probes}
 

@@ -1,18 +1,18 @@
 \chapter{Experimental Setup}
 
-We will discuss the accelerator setup used to collide gold nuclei at relativistic energies which briefly create the strongly interacting medium of quarks and gluons which we wish to study. We also examine the STAR detector, triggering, data aquisition, and its particle identification capabilities. We will specifically talk about the detector subsystems which are most relavant to the identification of electrons from heavy flavor processes. 
+We will discuss the accelerator setup used to collide gold nuclei at relativistic energies which briefly create the strongly interacting medium of quarks and gluons which we wish to study. We also examine the STAR detector, triggering, data aquisition, and its particle identification capabilities. We will talk in greater detail about the detector subsystems which are most relavant to the identification of electrons from heavy flavor processes. 
 
 \section{Relativistic Heavy Ion Collider}
 
-The Relativistic Heavy Ion Collider (RHIC) is an accelerator facility located at Brookhaven National Lab which was built for the study of QCD. The collider is capable of colliding a variety of heavy nuclei (to date: gold, uranium, and copper) as well as lighter particles (protons, deuterons, and recently helium-3). RHIC is also capable of colliding polarized proton beams for the program studying the spin structure of the proton. The top energy for collisions in RHIC is 500 GeV for p+p and 200 GeV for Au+Au. 
+The Relativistic Heavy Ion Collider (RHIC) is an accelerator facility located at Brookhaven National Lab which was built for the study of QCD at high temperatures as well as probing the spin structure of protons. The collider is capable of colliding a variety of heavy nuclei (to date: gold, uranium, and copper) as well as lighter particles (protons, deuterons, and recently helium-3). RHIC is also capable of colliding polarized proton beams for the program studying the spin structure of the proton. The top energy for collisions in RHIC is 500 GeV for p+p and 200 GeV per nucleon for Au+Au. 
 
-The main collider rings at RHIC are 2.4 miles in miles in circumference and intersect at six interaction points. Particles are brought up to collision energies through a series of linear accelerators and booster synchrotrons. Figure~\ref{fig:RHIC} shows the layout of the RHIC facilities as well as the location of some experiments that have run or are currently running at RHIC. PHENIX and STAR are the two long running general purpose detectors at RHIC.
+The main collider rings at RHIC are 2.4 miles in miles in circumference and intersect at six interaction points. Particles are brought up to collision energies through a series of linear accelerators and booster synchrotrons~\cite{RHICacc}. Figure~\ref{fig:RHIC} shows the layout of the RHIC facilities as well as the location of some experiments that have run or are currently running at RHIC. PHENIX and STAR are the two long running general purpose detectors at RHIC.
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[scale=0.7]{Plots/Detector/RHIC_Complex.pdf}
+\includegraphics[scale=0.75]{Plots/Detector/RHIC_Complex.pdf}
 \end{center}
-\caption[RHIC Facility]{RHIC Complex seen from above. Top of the picture shows the main rings and locations of various experiments. Lower part shows the LINAC and booster rings.}
+\caption[RHIC Facility]{RHIC Complex seen from above. Top of the picture shows the main rings and locations of various experiments. Lower part shows the LINAC and booster rings. Picture taken from ~\cite{RHICpic}}
 \label{fig:RHIC}
 \end{figure}
 
@@ -28,41 +28,41 @@ The Solenoidal Tracker at RHIC (STAR) is a general purpose detector located at t
 \begin{center}
 \includegraphics[scale=0.7]{Plots/Detector/STAR_Detector.pdf}
 \end{center}
-\caption[STAR Detector]{The STAR detector as it was configured around the time of the data taking for this analysis. The SVT was removed prior to run 10 and thus only its support structure was in during the runs.}
+\caption[STAR Detector]{The STAR detector as it was configured around the time of the data taking for this analysis. The SVT was removed prior to run 10 and thus only its support structure was in during the runs~\cite{STARweb}.}
 \label{fig:STAR}
 \end{figure}
 
-In STAR the primary tracking detector is the Time Projection Chamber (TPC) which surrounds the beam pipe, covering $2\pi$ in azimuth and capable of tracking particles in pseudorapidity up to around $\eta \approx 1.3$. The TPC is also measures ionization energy loss of charged particles, which is used for particle identification. For runs 10 and 11 the TPC was the inner most tracking detector in STAR. Prior to this the SVT was in place as a tracking detector and from 2014 onwards the inner tracking in STAR has been upgraded with the Heavy Flavor Tracker (HFT) which is capable of improving resolution on secondary vertices. Outside of the TPC is the Time of Flight (TOF) detector. TOF greatly improves the particle identification for low momentum hadrons. Further outside of TOF and the TPC is the Barrel Electromagnetic Calorimeter (BEMC): a lead-scintillator calorimeter and Shower Maximum Detector (SMD). The BEMC allows for measurements of electron energies, improves the identification of high $p_T$ electrons, and allows for identifying $\gamma$'s which cannot be tracked in the TPC. Sitting outside the BEMC is the Muon Telescope Detector (MTD) which is used for the analysis of dimuon and $e-\mu$ spectra. For measurements of non-photonic electrons we use the tracking and PID from the TPC as well as additionaly PID information from the BEMC systems.
+In STAR the primary tracking detector is the Time Projection Chamber (TPC) which surrounds the beam pipe, covering $2\pi$ in azimuth and capable of tracking particles in pseudorapidity up to around $\eta \approx 1.3$~\cite{tpcNIM}. The TPC is also measures ionization energy loss of charged particles, which is used for particle identification. For runs 10 and 11 the TPC was the inner most tracking detector in STAR. Prior to this the SVT was in place as a tracking detector and from 2014 onwards the inner tracking in STAR has been upgraded with the Heavy Flavor Tracker (HFT) which is capable of improving resolution on secondary vertices. Outside of the TPC is the Time of Flight (TOF) detector~\cite{vpdNIM}. TOF greatly improves the particle identification for low momentum hadrons. Further outside of TOF and the TPC is the Barrel Electromagnetic Calorimeter (BEMC), consisting of a lead-scintillator calorimeter and Shower Maximum Detector (SMD). The BEMC allows for measurements of electron energies, improves the identification of high $p_T$ electrons, and allows for identifying $\gamma$'s which cannot be tracked in the TPC. Sitting outside the BEMC is the Muon Telescope Detector (MTD) which is used for the analysis of dimuon and $e-\mu$ spectra. For measurements of non-photonic electrons we use the tracking and PID from the TPC as well as additionaly PID information from the BEMC systems.
 
 \section{Time Projection Chamber}
 
-The TPC is the main tracking and particle identification in STAR, it surrounds the beam pipe and interaction region and has full azimuthal coverage and covers $\pm 1.8$ in pseudorapidity. The TPC is a cylindrical volume, 4.2 m long, with an inner diameter of 1 m and an outer diameter of 4 m. The enclosed volume is filled with a mixture of 10\% methane and 90\% argon. The TPC sits inside of the STAR solenoid magnet which is capable of producing magnetic fields of .5 T in two opposite polarities. Bending of tracks of charged particles in the TPC allows for tracking of particles from .1 GeV/c to 30 GeV/c. Midway down the length of the TPC the chamber is divided by the Central Membrane. A potential is established between the Central Membrane, the cathode, and the end caps of the TPC, the anodes. Inner and Outer Field Cages run the length of the TPC along the walls, gradually increasing in potential as they get closer to the Central Membrane. The field cages help establish a uniform electric field in the TPC which is critical for tracking resolution. Figure~\ref{fig:TPC} shows an illustration of the TPC and the locations of the Central Membrane and field cages.
+The TPC is the main tracking and particle identification system in STAR, it surrounds the beam pipe and interaction region and has full azimuthal coverage and covers $\pm 1.8$ in pseudorapidity. The TPC is a cylindrical volume, 4.2 m long, with an inner diameter of 1 m and an outer diameter of 4 m. The enclosed volume is filled with a mixture of 10\% methane and 90\% argon. The TPC sits inside of the STAR solenoid magnet which is capable of producing magnetic fields of .5 T in two opposite polarities. Bending of tracks of charged particles in the TPC allows for tracking of particles from .1 GeV/c to 30 GeV/c. Midway down the length of the TPC the chamber is divided by the Central Membrane. A potential is established between the Central Membrane, the cathode, and the end caps of the TPC, the anodes. Inner and Outer Field Cages run the length of the TPC along the walls, gradually increasing in potential as they get closer to the Central Membrane. The field cages help establish a uniform electric field in the TPC which is critical for tracking resolution. Figure~\ref{fig:TPC} shows an illustration of the TPC and the locations of the Central Membrane and field cages~\cite{tpcNIM}.
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[scale=1.0]{Plots/Detector/TPC.pdf}
 \end{center}
-\caption[TPC Diagram]{Diagram of the STAR TPC showing the main components as well as the scale.}
+\caption[TPC Diagram]{Diagram of the STAR TPC showing the main components as well as the scale. From~\cite{tpcNIM}}
 \label{fig:TPC}
 \end{figure}
 
-Charged particles traverse the TPC and ionize the gas inside. The electrons in the drift along the electric field in the TPC at 5.45 cm/$\mu$s towards the ends of the TPC where the readout pads are located. The endcaps of the TPC chambers are divided radially into 12 sections, each section has an inner and outer segment (Figure~\ref{fig:TPC_pad}). The TPC readout sectors have 4 components, a pad plane and three wire planes. The outermost wire plane is a gating grid which can block charged particles in the TPC from reaching the readout counters at the endcap. Inside the gating grid are the ground wire plane, a readout plane and the the pad plane. The inner part of the TPC sector consists of 13 pad rows which are spaced 52 mm apart in the radial direction in the outer section there is no spacing between the pads. The inner sector also features smaller pads to improve tracking, particularly for low momentum tracks. Future upgrades to the TPC will replace the TPC sectors with ones that have no gaps between the inner pad rows. This will improve the tracking of the TPC out to larger $\eta$. 
+Charged particles traverse the TPC and ionize the gas inside. The electrons inside it drift along the electric field in the TPC at 5.45 cm/$\mu$s towards the ends of the TPC where the readout pads are located. The endcaps of the TPC chambers are divided radially into 12 sections, each section has an inner and outer segment (Figure~\ref{fig:TPC_pad}). The TPC readout sectors have 4 components, a pad plane and three wire planes. The outermost wire plane is a gating grid which can block charged particles in the TPC from reaching the readout counters at the endcap. Inside the gating grid are the ground wire plane, a readout plane and the the pad plane. The inner part of the TPC sector consists of 13 pad rows which are spaced 52 mm apart in the radial direction in the outer section there is no spacing between the pads. The inner sector also features smaller pads to improve tracking, particularly for low momentum tracks. Future upgrades to the TPC will replace the TPC sectors with ones that have no gaps between the inner pad rows. This will improve the tracking of the TPC out to higher $\eta$. 
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[scale=1.0]{Plots/Detector/TPC_pad.pdf}
 \end{center}
-\caption[TPC Sector]{Schematic of one TPC pad plane. The difference in spacing between inner and outer pads can be seen.}
+\caption[TPC Sector]{Schematic of one TPC pad plane. The difference in spacing between inner and outer pads can be seen~\cite{tpcNIM}.}
 \label{fig:TPC_pad}
 \end{figure}
 
 \section{Barrel Electromagnetic Calorimeter}
 
-The Barrel Electromagnetic Calorimeter (BEMC) is a lead-scintillator sampling calorimeter sitting outside of the TPC, the tower assemblies are within the coil of the main STAR magnet but the readout PMTs are located outside. The BEMC is used for studying high $\pt$ processes such as jets, direct $\gamma$'s, and (in the case of this analysis) decays from heavy mesons. The calorimeter, being one of the fastest systems in STAR, is also used in triggering on high $\pt$ particles. There are two main subsystems of the BEMC: the towers of lead and scintillator, which produce the particle showers and collect the light to measure the energy, and the Shower Maximum Detector (SMD) for measuring the profile of showers in the BEMC which can be used to select showers from electrons.
+The Barrel Electromagnetic Calorimeter (BEMC) is a lead-scintillator sampling calorimeter sitting outside of the TPC, the tower assemblies are within the coil of the main STAR magnet but the readout PMTs are located outside. The BEMC is used for studying high $\pt$ processes such as jets, direct $\gamma$'s, and (in the case of this analysis) decays from heavy mesons. The calorimeter, being one of the fastest systems in STAR, is also used in triggering on high $\pt$ particles. There are two main subsystems of the BEMC: the towers of lead and scintillator, which produce the particle showers and collect the light to measure the energy, and the Shower Maximum Detector (SMD) for measuring the profile of showers in the BEMC which can be used to select showers caused by electrons~\cite{emcNIM}.
 
 \subsection{EMC Towers}
 
-The towers of the BEMC cover $2\pi$ in azimuth and have coverage from -1 to 1 in $\eta$. The inner surface of the calorimeter sits approximately 2.2 m from the beam line in STAR. The towers are grouped into modules which each cover $6\degree$ in $\phi$ and 1 in $\Delta\eta$. There are in total 120 modules, 60 on each half (lengthwise) of the detector. Each tower consists of alternating layers of lead and scintillator. There are 21 scintillating layers and 20 lead layers in each tower, the tower depth is appproximately 20 radiation lengths. The towers have a projective geometry so that towers located out farther from $\eta = 0$ still point back to the center of the interaction region in STAR. Figure~\ref{fig:BEMC_towera} shows the structure and dimensions of a single tower from near the center of the BEMC ($\eta \approx 0$). In Figure~\ref{fig:BEMC_towerb} is a photograph of a single BEMC module. The left end is near $\eta = 0$ and the projective geometry of the towers can be seen when moving right along the modules.
+The towers of the BEMC cover $2\pi$ in azimuth and have coverage from -1 to 1 in $\eta$. The inner surface of the calorimeter sits approximately 2.2 m from the beam line in STAR. The towers are grouped into modules which each cover $6\degree$ in $\phi$ and 1 in $\Delta\eta$. There are in total 120 modules, 60 on each half (lengthwise) of the detector. Each tower consists of alternating layers of lead and scintillator. There are 21 scintillating layers and 20 lead layers in each tower, the tower depth is approximately 20 radiation lengths. The towers have a projective geometry so that towers located out farther from $\eta = 0$ still point back to the center of the interaction region in STAR. Figure~\ref{fig:BEMC_towera} shows the structure and dimensions of a single tower from near the center of the BEMC ($\eta \approx 0$). In Figure~\ref{fig:BEMC_towerb} is a photograph of a single BEMC module. The left end is near $\eta = 0$ and the projective geometry of the towers can be seen when moving right along the modules.
 
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\textwidth}
@@ -75,7 +75,7 @@ The towers of the BEMC cover $2\pi$ in azimuth and have coverage from -1 to 1 in
 		\caption{BEMC Module}
 		\label{fig:BEMC_towerb}
 	\end{subfigure}
-\caption[BEMC Towers]{Left figure is a diagram of one BEMC tower as seen from the side. The location of the SMD is indicated after the fifth lead layer. Right shows a photograph of a single BEMC module showing the projective geometry of the towers.}
+\caption[BEMC Towers]{Left figure is a diagram of one BEMC tower as seen from the side. The location of the SMD is indicated after the fifth lead layer. Right shows a photograph of a single BEMC module showing the projective geometry of the towers~\cite{emcNIM}.}
 \label{fig:BEMC_tower}
 \end{figure}
 
@@ -89,6 +89,6 @@ The Shower Maximum Detector (SMD) is located within the BEMC towers and gives ac
 \begin{center}
 \includegraphics[scale=1.0]{Plots/Detector/SMD.pdf}
 \end{center}
-\caption[BSMD Diagram]{Illustration of the function of the BSMD detector. Particle enters the tower (at top) and develops into a shower which registers hits in the $\eta$ and $\phi$ directions in the BSMD.}
+\caption[BSMD Diagram]{Illustration of the function of the BSMD detector. Particle enters the tower (at top) and develops into a shower which registers hits in the $\eta$ and $\phi$ directions in the BSMD~\cite{emcNIM}.}
 \label{fig:SMD}
 \end{figure}

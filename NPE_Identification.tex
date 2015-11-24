@@ -6,9 +6,9 @@ We discuss the procedure for identifying electrons in events at STAR and how we 
 
 This chapter will lay out the general methods for event selection, track selection, electron identification, and the removal of photonic electron background for both Au+Au and p+p collisions.
 
-We start by identifying the dataset and the trigger collections we will use for the analysis. We look at the events and check that the quality of the event is good and that there could be candidate tracks for NPE in the event. We then reconstruct all tracks in the TPC and apply track quality cuts. To identify electrons we rely on the energy loss ($dE/dx$) measured in the TPC and on the hits in the EMC towers and shower max detector. 
+We start by identifying the dataset and the trigger collections we will use for the analysis. We look at the events and check that the quality of the event is good and that there could be candidate electron tracks in the event. We then reconstruct all tracks in the TPC and apply track quality cuts. To identify electrons we rely on the energy loss ($dE/dx$) measured in the TPC and on the hits in the EMC towers and shower max detector. 
 
-The background from photonic electrons will be removed by searching for the opposite signed partner electron. If the primary track is from Dalitz decays or photon conversion in the detector, the partner and primary track should have a low invariant mass. We will also investigate, through simulations, the efficiency for determining the background from photonic electrons.
+The background from photonic electrons will be removed by searching for the opposite signed partner electron. If the primary track is from Dalitz decays or photon conversion in the detector, the partner and primary track should have a low invariant mass. We will also investigate, through embedding simulations, the efficiency for determining the background from photonic electrons.
 
 In the end we will have a sample of electrons which we can use as triggers for measuring NPE-hadron correlations. 
 
@@ -16,20 +16,20 @@ In the end we will have a sample of electrons which we can use as triggers for m
 
 \subsection{Data and Triggers}
 
-In 2011 RHIC collided gold nuclei at $\sqrt{s_{NN}} = 200$ GeV and delivered 9.79 $nb^{-1}$ integrated luminosity similar to what was delivered during the previous year's run (Figure~\ref{fig:Luma}). The STAR detector recorded about 1.1 billion events across all triggers with TPC and BEMC information. In 2012 polarized proton collisions were run in RHIC (the polarization of the beams is not relevant to this analysis) at the same 200 GeV beam energy. RHIC delivered 74.0 $pb^{-1}$ (Figure~\ref{fig:Lumb}) which resulted in 1.7 billion triggered events in STAR. Heavy flavor events are rare and detector efficiencies can be low meaning the NPE analysisis typically constrained by statistics, necessitating large data sets. The Silicon Vertex Tracker (SVT) was removed from STAR resulting in less material near the beam line which cuts down on background from conversions in the detector. This combination of low material and high statisics make runs 11 and 12 (prior to run 14) the best datasets available for the analysis of non-photonic electrons.
+In 2011 RHIC collided gold nuclei at $\sqrt{s_{NN}} = 200$ GeV and delivered 9.79 $nb^{-1}$ integrated luminosity similar to what was delivered during the previous year's run (Figure~\ref{fig:Luma}). The STAR detector recorded about 1.1 billion events across all triggers with TPC and BEMC information. In 2012 polarized proton collisions were run in RHIC (the polarization of the beams is not relevant to this analysis) at the same 200 GeV beam energy. RHIC delivered 74.0 $pb^{-1}$ (Figure~\ref{fig:Lumb}) which resulted in 1.7 billion triggered events in STAR~\cite{RHIC2011}~\cite{RHIC2012}. Heavy flavor events are rare and detector efficiencies can be low meaning the NPE analysisis typically constrained by statistics, necessitating large data sets. The Silicon Vertex Tracker (SVT) was removed from STAR resulting in less material near the beam line which cuts down on background from conversions in the detector. This combination of low material and high statisics make runs 11 and 12 (prior to run 14) the best datasets available for the analysis of non-photonic electrons.
 
 \begin{figure}[htbp]
     \begin{subfigure}{0.5\textwidth}
         \includegraphics[width=\textwidth]{Plots/NPE/Run11_Lum.pdf}
-        \caption{Run 11 Au+Au Integrated Luminosity}
+        \caption{Run 11 Au+Au Integrated Luminosity.}
         \label{fig:Luma}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
         \includegraphics[width=\textwidth]{Plots/NPE/Run12_Lum.pdf}
-        \caption{Run 12 p+p Integrated Luminosity}
+        \caption{Run 12 p+p Integrated Luminosity.}
         \label{fig:Lumb}
     \end{subfigure}
-\caption[RHIC Integrated Luminosities in Run11 and Run12]{Integrated luminosities for run 11 and run 12 in RHIC. Left plot shows Au+Au delivered to STAR and PHENIX as well as run 10 in PHENIX for comparison. Right plot shows all p+p runs, run 12 is shown with thick lines.}
+\caption[RHIC Integrated Luminosities in Run11 and Run12]{Integrated luminosities for run 11~\cite{RHIC2011} and run 12~\cite{RHIC2012} in RHIC. Left plot shows Au+Au delivered to STAR and PHENIX as well as run 10 in PHENIX for comparison. Right plot shows all p+p runs, run 12 is shown with thick lines.}
 \label{fig:RunLum}
 \end{figure}
 

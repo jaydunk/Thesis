@@ -32,7 +32,7 @@ The Solenoidal Tracker at RHIC (STAR) is a general purpose detector located at t
 \label{fig:STAR}
 \end{figure}
 
-In STAR the primary tracking detector is the Time Projection Chamber (TPC) which surrounds the beam pipe, covering $2\pi$ in azimuth and capable of tracking particles in pseudorapidity up to around $\eta \approx 1.3$~\cite{tpcNIM}. The TPC can also measure ionization energy loss of charged particles, which is used for particle identification. For runs 10 and 11 the TPC was the inner most tracking detector in STAR. Prior to this the SVT was in place as a tracking detector and from 2014 onwards the inner tracking in STAR has been upgraded with the Heavy Flavor Tracker (HFT) which is capable of improving resolution on secondary vertices. Outside of the TPC is the Time of Flight (TOF) detector~\cite{vpdNIM}. TOF greatly improves the particle identification for low momentum hadrons. Further outside of TOF and the TPC is the Barrel Electromagnetic Calorimeter (BEMC), consisting of a lead-scintillator sampling calorimeter and Shower Maximum Detector (SMD). The BEMC allows for measurements of electron energies, improves the identification of high $p_T$ electrons, and allows for identifying $\gamma$'s which cannot be tracked in the TPC. Sitting outside the BEMC is the Muon Telescope Detector (MTD) which can be used for the measurement of $J/\psi$ decays through the di-muon channel. For measurements of non-photonic electrons we use the tracking and PID from the TPC as well as additionaly PID information from the BEMC systems.
+In STAR the primary tracking detector is the Time Projection Chamber (TPC) which surrounds the beam pipe, covering $2\pi$ in azimuth and capable of tracking particles in pseudorapidity up to around $\eta \approx 1.3$~\cite{tpcNIM}. The TPC can also measure ionization energy loss of charged particles, which is used for particle identification (Figure~\ref{TPC_dedx}). For runs 10 and 11 the TPC was the inner most tracking detector in STAR. Prior to this the SVT was in place as a tracking detector and from 2014 onwards the inner tracking in STAR has been upgraded with the Heavy Flavor Tracker (HFT) which is capable of improving resolution on secondary vertices. Outside of the TPC is the Time of Flight (TOF) detector~\cite{vpdNIM}. TOF greatly improves the particle identification for low momentum hadrons. Further outside of TOF and the TPC is the Barrel Electromagnetic Calorimeter (BEMC), consisting of a lead-scintillator sampling calorimeter and Shower Maximum Detector (SMD). The BEMC allows for measurements of electron energies, improves the identification of high $p_T$ electrons, and allows for identifying $\gamma$'s which cannot be tracked in the TPC. Sitting outside the BEMC is the Muon Telescope Detector (MTD) which can be used for the measurement of $J/\psi$ decays through the di-muon channel. For measurements of non-photonic electrons we use the tracking and PID from the TPC as well as additionaly PID information from the BEMC systems.
 
 \section{Time Projection Chamber}
 
@@ -47,6 +47,14 @@ The TPC is the main tracking and particle identification system in STAR, it surr
 \end{figure}
 
 Charged particles traverse the TPC and ionize the gas inside. The electrons inside it drift along the electric field in the TPC at 5.45 cm/$\mu$s towards the ends of the TPC where the readout pads are located. The endcaps of the TPC chambers are divided radially into 12 sections, each section has an inner and outer segment (Figure~\ref{fig:TPC_pad}). The TPC readout sectors have 4 components, a pad plane and three wire planes. The outermost wire plane is a gating grid which can block ions from the anode wires from reaching the TPC from reaching the TPC drift region. Inside the gating grid are the ground wire plane, an anode plane and the pad plane. The inner part of the TPC sector consists of 13 pad rows which are spaced 52 mm apart in the radial direction in the outer section there is no spacing between the pads. The inner sector also features smaller pads to improve two track resolution, particularly for low momentum tracks. Future upgrades to the TPC will replace the TPC sectors with ones that have no gaps between the inner pad rows. This will improve the tracking of the TPC out to higher $\eta$. 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=1.0]{Plots/Detector/TPC_dedx.pdf}
+\end{center}
+\caption[Ionization Energy Loss in TPC]{Ionization energy loss of tracks in the STAR TPC. Labeled bands show how the $dE/dx$ measurement can be used for particle identification~\cite{tpcNIM}.}
+\label{fig:TPC_dedx}
+\end{figure}
 
 \begin{figure}[htbp]
 \begin{center}

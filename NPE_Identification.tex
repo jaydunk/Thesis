@@ -39,7 +39,7 @@ Due to the large dataset sizes it is in our best interest to cut down on the dat
 
 \subsection{Event Level Cuts}
 
-At the event level we cut on events with vertex too far out of the center of the detector. We use the tracks in the TPC to reconstruct the vertex, we can also measure the vertex with the Vertex Position Detector (VPD). By convention we have the $x$ and $y$ axes as transverse to the beam line. The $z$ axis then runs along the beam. We require that the vertex be no more than 2 cm from the center of the beam pipe in the radial direction, i.e. $\sqrt{(V_x^{TPC})^2 + (V_y^{TPC})^2} \leq$ 2 cm. We also cut on the TPC vertex in the $z$ direction, choosing events with $|V_z^{TPC}| \leq$ 30 cm in Au+Au collisions and $|V_z^{TPC}| \leq$ 40 cm in p+p. Additionally we want to have good agreement between the vertices as measured by the TPC and VPD. We require that the difference between the measured $V_z$ satisfies $|V_z^{TPC} - V_z^{VPD} \leq|$ 4 cm in Au+Au. Figure~\ref{fig:Vertexz} shows the distribution of $V_z^{TPC}$ and the difference in TPC and VPD $V_z$ in Au+Au collisions. In p+p because of lower multiplicity and a wider vertex distribution the measured vertex from VPD is not reliable and thus the cut on the difference of $V_z$ is not used.
+At the event level we cut on events with vertex too far out of the center of the detector. We use the tracks in the TPC to reconstruct the vertex, we can also measure the vertex with the Vertex Position Detector (VPD). By convention we have the $x$ and $y$ axes as transverse to the beam line. The $z$ axis then runs along the beam. We require that the vertex be no more than 2 cm from the center of the beam pipe in the radial direction, i.e. $\sqrt{(V_x^{TPC})^2 + (V_y^{TPC})^2} \leq$ 2 cm. We also cut on the TPC vertex in the $z$ direction, choosing events with $|V_z^{TPC}| \leq$ 30 cm in Au+Au collisions and $|V_z^{TPC}| \leq$ 40 cm in p+p. Additionally we want to have good agreement between the vertices as measured by the TPC and VPD. We require that the difference between the measured $V_z$ satisfies $|V_z^{TPC} - V_z^{VPD}| \leq$ 4 cm in Au+Au. Figure~\ref{fig:Vertexz} shows the distribution of $V_z^{TPC}$ and the difference in TPC and VPD $V_z$ in Au+Au collisions. In p+p because of lower multiplicity and a wider vertex distribution the measured vertex from VPD is not reliable and thus the cut on the difference of $V_z$ is not used.
 
 \begin{table}
 \centering
@@ -123,7 +123,7 @@ Primary DCA          & $< 2.0$cm \\
 \label{tab:TPCQual}
 \end{table}
 
-The energy loss ($dE/dx$) in the TPC is modeled by the Bichsel function which also accounts for the spread in values for different particle species. We will be looking at the deviation of the energy loss compared to the Bichsel function value for electrons. This quantity is called $n\sigma_e$ and is defined as:
+The energy loss ($dE/dx$) in the TPC is modeled by the Bichsel function which also accounts for the spread in values for different particle species. We will be looking at the deviation of the energy loss compared to the Bichsel function value for electrons~\cite{bichsel}. This quantity is called $n\sigma_e$ and is defined as:
 
 \begin{equation}\label{eq:nsigmae}
 n\sigma_e = \frac{\log{\frac{dE/dx}{B_e}}}{\sigma_e}
@@ -147,7 +147,7 @@ We will now describe the UCLA BEMC point making program and will use the followi
 \item \textbf{BEMC point:} A tower cluster and an associated BSMD point which will be matched up with tracks from the TPC.
 \end{itemize}
 
-To use the UCLA EMC point maker, described in detail in ref, to construct points and associate them with TPC tracks. The first step in reconstructing the BEMC points is to find and cluster the hits in the BEMC towers. To do this we first look for seed towers which have deposited energy above .1 GeV/c. Once we have found a seed tower adjoining towers within the same BEMC module are clustered with the seed, there is no clustering of towers or SMD hits across the modules. 
+To use the UCLA EMC point maker, described in detail in~\cite{dongthesis}, to construct points and associate them with TPC tracks. The first step in reconstructing the BEMC points is to find and cluster the hits in the BEMC towers. To do this we first look for seed towers which have deposited energy above .1 GeV/c. Once we have found a seed tower adjoining towers within the same BEMC module are clustered with the seed, there is no clustering of towers or SMD hits across the modules. 
 
 The BSMD uses a similar clustering procedure for both the $\phi$ and $\eta$ directions. If EMC towers and BSMD clusters are found then the program will check for multiple clusters and attempt to merge them by relaxing the SMD clustering criteria. If one direction in the BSMD has no hits then clustering is rerun with relaxed criteria to try and find a good SMD point for that module. If neither tower nor SMD clusters are found in a module then the algorithm moves on to the next module. 
 

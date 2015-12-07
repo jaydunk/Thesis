@@ -1,18 +1,18 @@
 \chapter{Azimuthal Correlations of Non-Photonic Electrons to Hadrons}
 
-We will now investigate the correlations of triggered non-photonic electrons to hadrons in \auau and \pp collisions at 200 GeV. Hard processes in these collisions will produce back to back jets in the azimuthal angle $\phi$. We search for potential modification of the jet in \auau collisions compared to \pp. 
+We will now investigate the correlations of triggered non-photonic electrons to hadrons in \auau and \pp collisions at 200 GeV. Hard processes in these collisions will produce back to back jets in the azimuthal angle $\phi$. We evaluate potential modification of the jet in \auau collisions compared to \pp. 
 
-\section{Overview of Constructing the NPE-hadron Correlation}
+\section{Overview of Analysis Approach for NPE-hadron Correlations}
 
-Several steps are needed to produce the NPE-h correlation. The trigger particle electrons are identified by the procedure described in the previous chapter. The nonuniform acceptance of detector results in false correlations which are not a result of the underlying physics. This is corrected in two ways, the $\phi$ distribution of all particles in flattened and then the correlations from mixed events are calculated and then a weighting is determined so as to flatten these as well.
+Several steps are needed to produce the NPE-h correlation. The trigger particle electrons are identified by the procedure described in the previous chapter. The nonuniform acceptance of detector results in false correlations which have to be corrected for. This is corrected in two ways, the $\phi$ distribution of all particles is flattened and then the correlations from mixed events are calculated to determine a weighting to flatten these as well.
 
-In correlations from Au+Au collisions there is an underlying background correlation from the flow of the both the trigger electron and the associated hadron. In this analysis we only consider the second order harmonic of flow, $v_{2}$. For hadrons, $v_{2}$ is very accurately measured across a wide range centralities and $p_{T}$. For non-photonic electrons, the measurements of $v_{2}$ are not so precise, thus we can only estimate its contribution to the background. This uncertainty will be reflected in the analysis of systematic error.
+In correlations from Au+Au collisions there is an underlying background correlation from the flow of both the trigger electron and the associated hadron. In this analysis we only consider the second order harmonic of flow, $v_{2}$. For hadrons, $v_{2}$ is very accurately measured across a wide range centralities and $p_{T}$. For non-photonic electrons, the measurements of $v_{2}$ are not so precise, thus we can only estimate its contribution to the background. This uncertainty will be reflected in the systematic error.
 
-We will also look at the dependence of the correlation on the angle between the triggered electron and the event plane. A dependence on this angle could point to path length dependence on the jet suppression in QGP.
+We will also study the dependence of the correlation on the angle between the triggered electron and the event plane. A dependence on this angle could reflect the path length dependence of jet suppression in QGP.
 
 \section{Acceptance Corrections}
 
-The STAR detector give full $2\pi$ azimuthal coverage, however there are still regions of the detector which have noticeably poorer efficiency. This causes an uneven azimuthal acceptance which in turn lead to spurious correlations between detected particles. To correct this we need to apply a weighting to each track depending on where it is in the detector. 
+The STAR detector has full $2\pi$ azimuthal coverage, however there are still regions of the detector which have noticeably poorer efficiency. This causes an uneven azimuthal acceptance which in turn lead to spurious correlations between detected particles. To correct this we need to apply a weighting to each track depending on the location of the track. 
 
 \subsection{Single Particle $\phi$-weighting}
 
@@ -51,26 +51,26 @@ Likewise we account for dependence on the event vertex (in both \pp and \auau) a
 
 Finally, since the tracks in the TPC are curved, there will be a dependence on which direction the track curves. For example, two particles may start on opposite sides of a sector boundary separated by some distance in $\phi$ but both may cross the boundary if they curve in opposite directions. So we need to take separate weightings based on the product of the magnetic field and the particle's charge, $B \cdot q$. 
 
-After calculating the single $\phi$ correction we apply it to each track in the analysis whenever we calculate event planes or 2-particle correlations. Since some areas of the detector have very low efficiencies they can introduce huge weights for a small number of particles. This can destabilize results, so we cap the weight an individual particle can get at 5.0.
+After calculating the single $\phi$ correction we apply it to each track in the analysis whenever we calculate event planes or 2-particle correlations. Since some areas of the detector have very low efficiencies they can introduce huge weights for a small number of particles. This can destabilize results, so we cap the acceptable weight for an individual particle at 5.0.
 
 \subsection{Mixed Event Background}
 
-To further correct for nonuniformities is detector acceptance we use a mixed event weighting. In an ideal detector the correlations of trigger particles to associated hadrons from a different event should be flat, however acceptance effects will result in nonphysical correlations which need to be removed. 
+To further correct for nonuniformities in detector acceptance we use a mixed event weighting. In an ideal detector the correlations of trigger particles to associated hadrons from a different event should be flat, however acceptance effects will result in nonphysical correlations which need to be removed. 
 
-Similar to the single particle corrections we divide the mixed event corrections into bins to account for various systematic differences. In mixed event we bin according to associated particle $\pt$, triggered particle $\pt$, centrality, vertex z position, and $\eta$. As in single particle corrections, the most extreme bin to bin variationsoccur between the low associated $\pt$ bins.   
+Similar to the single particle corrections we divide the mixed event corrections into bins to account for various systematic differences. In mixed event we bin according to associated particle $\pt$, triggered particle $\pt$, centrality, vertex z position, and $\eta$. As in single particle corrections, the most extreme bin to bin variations occur in low associated $\pt$ bins.   
 
 \section{Background from Flow}
 
 \subsection{Measurements of Flow}
 
-The motivations behind two-particle correlation studies are typically the investigation of jet modification in QGP and the response of the medium to jets. But even in the absence of jets we still expect to see some correlation within events from flow. The azimuthal anisotropy resulting from the second order flow harmonic, $v_2$, of both the trigger and associated particles produces a background shape with the form:
+The motivations behind two-particle correlation studies are to investigate the jet modification in QGP and the response of the medium to jets. But even in the absence of jets we still expect to see some correlation within events from collective flow. The azimuthal anisotropy resulting from the second order flow harmonic, $v_2$, of both the trigger and associated particles produces a background shape with the form:
 \begin{equation}\label{eq:v2background}
  B[1 + v^{trig}_{2}v^{asso}_{2} \cos(2\Delta\phi)] 
 \end{equation}
 
-where $B$ is an overall constant factor. Higher order harmonics $v_3$, $v_4$, etc. can also contribute to the background. Large $v_3$ in particular is a potential explanation for some of the results in dihadron correlations, but these effects are not considered for this analysis. 
+where $B$ is an overall constant factor. Higher order harmonics $v_3$, $v_4$, etc. can also contribute to the background. Large $v_3$ in particular is a potential explanation for some of the results in dihadron correlations, but these effects do not contribute to our correlation measurement and are not considered in this analysis. 
 
-Hadron $v_2$ has been measured to high precision in a wide range of $\pt$ bins at STAR. Figure~\ref{fig:STARHadv2} shows the results of STAR $v_2$ measurements using an event plane method and illustrates the general depedence on $\pt$ and centrality. To calculate the hadron $v_2$ we extrapolate the $v_2$ measurement to the center of the associated hadron $\pt$ bin. Then when looking at correlations across multiple hadron $\pt$ bins we use the weighted average of $v_2$ based on the number of hadrons in each $\pt$ bin.
+Hadron $v_2$ has been measured to high precision in a wide range of $\pt$ bins at STAR. Figure~\ref{fig:STARHadv2} shows the results of STAR $v_2$ measurements using an event plane method and illustrates the general depedence on $\pt$ and centrality. To calculate the hadron $v_2$ we extrapolate the $v_2$ measurement to the center of the associated hadron $\pt$ bin. Then when evaluating correlations across multiple hadron $\pt$ bins we use the weighted average of $v_2$ based on the number of hadrons in each $\pt$ bin.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -80,7 +80,7 @@ Hadron $v_2$ has been measured to high precision in a wide range of $\pt$ bins a
 \label{fig:STARHadv2}
 \end{figure}
 
-Measurements of electron $v_2$ at STAR have shown that non-photonic electrons also have large elliptic flow. Because of limited statistics electron $v_2$ is measured in much larger $\pt$ and centrality bins. Various measurements of NPE $v_2$ are seen in Figure~\ref{fig:STARNPEv2}, showing that they tend to fall in a range between .05 and .15 depending on the measurement procedure. For this analysis we assume that NPE $v_2$ is .1 in all bins, we then vary the NPE $v_2$ between .05 and .15 and take the difference in final correlations as a systematic error. 
+Measurements of electron $v_2$ at STAR have shown that non-photonic electrons also have large elliptic flow. Because of limited statistics electron $v_2$ is measured in much larger $\pt$ and centrality bins. Various measurements of NPE $v_2$ are seen in Figure~\ref{fig:STARNPEv2}, showing that they tend to fall in a range between .05 and .15 depending on the measurement procedure. For this analysis we assume that NPE $v_2$ is .1 in all bins, we then vary the NPE $v_2$ between .05 and .15 and take the difference in final correlations as part of the systematic error. 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -94,13 +94,13 @@ Measurements of electron $v_2$ at STAR have shown that non-photonic electrons al
 
 Knowing the values of $v_2$ for hadrons and non-photonic electrons, we then need to determine the overall normalization constant $B$ as in Equation~\ref{eq:v2background}. There are two simple ways of estimating this, both relying on the assumption that the jet like contributions to the azimuthal correlation are concentrated in peaks around 0 and $\pi$, and that any remaining correlations there are the result of the underlying $v_2$ background. 
 
-In one case we can simply pick a point between the near and away sides and then set $B$ so that the overall yield of particles above background at that point is 0. This point is typically taken to be around 1 radian and thus this method is called the zero yield at 1 (ZYA1) normalization. Although when we implent ZYA1 normalization we take the lowest absolute yield of the 3 points closest to 1 radian. Alternatively we can instead pick the point in the raw correlation with lowest value and normalize so that that point produces zero yield. This is the zero yield at minimum (ZYAM) method. These methods tend to coincide in practice and unless otherwise noted we use ZYAM normalization. There is another technique called absolute background subtraction used by PHENIX in their NPE-hadron correlation measurement but we do not use this method. 
+In one case we can simply pick a point between the near and away sides and then set the value of $B$ so that the overall yield of particles above background at that point is 0. This point is typically taken to be around 1 radian and thus this method is called the zero yield at 1 (ZYA1) normalization. Although when we implement ZYA1 normalization we take the lowest absolute yield of the 3 points closest to 1 radian. Alternatively we can instead pick the point in the raw correlation with lowest value and normalize so that the point produces zero yield. This is the zero yield at minimum (ZYAM) method. These methods tend to coincide in practice and unless otherwise noted we use ZYAM normalization. There is another technique called absolute background subtraction used by PHENIX in their NPE-hadron correlation measurement~\cite{PHENIXeh}, where different uncertainties are involved and we do not use this method. 
 
-When using ZYAM or ZYA1 normalization our background subtracted yield can be very suceptible to downward fluctuations of points causing an abnormally high yield. To account for this we also look at the effect of normalizing to the next highest point in the correlation. We then compare the values of $B$ that we get and then quote the difference as the systematic error of background normalization.
+When using ZYAM or ZYA1 normalization our background subtracted yield can be very suceptible to downward fluctuations of points causing an abnormally high yield. To account for this we also look at the effect of normalizing to the next highest point in the correlation. We then compare the values of $B$ that we get and then quote the difference as the systematic error due to background normalization.
 
 \section{Correlations in Au+Au}
 
-We will now look at putting together the results of the previous sections and creating the NPE-h correlation in Au+Au collisions. We will then discuss the results in Au+Au before moving on to p+p and event plane dependent correlations.
+We will now put together the results of the previous sections and obtain the NPE-h correlation in Au+Au collisions. We will then discuss the results in Au+Au before moving on to p+p and event plane dependent correlations.
 
 \subsection{Associated Hadrons}
 
@@ -254,7 +254,7 @@ Figures~\ref{fig:Raw4060},~\ref{fig:Raw2040}and~\ref{fig:Raw010} show the raw co
 
 \subsection{Subtracted Distributions and Yields}
 
-We now want to look at how the jet-like distributions of particles changes as a function of collision centrality and trigger particle $\pt$. We subtract off the background from the underlying event and $v_2$ to examine effects of the heavy quark fragmentation and propagation through the medium. The subtracted plots are summarized in Figures~\ref{fig:Sub4060},~\ref{fig:Sub2040}and~\ref{fig:Sub010}.
+We now want to study how the jet-like distributions of particles changes as a function of collision centrality and trigger particle $\pt$. We subtract off the background from the underlying event and $v_2$ to examine effects of the heavy quark fragmentation and propagation through the medium. The subtracted plots are summarized in Figures~\ref{fig:Sub4060},~\ref{fig:Sub2040} and~\ref{fig:Sub010}.
 
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\textwidth}

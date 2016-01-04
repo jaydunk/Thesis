@@ -1,0 +1,91 @@
+**INPLANE**
+i = 0
+near side: 
+yield: -0.218665 stat: 0.0793826 sys: 0.089271
+head: 
+yield: 0.137084 stat: 0.0704693 sys: 0.0885244
+shoulder: 
+yield: 0.0865381 stat: 0.0676509 sys: 0.0126055
+i = 1
+near side: 
+yield: 0.0425292 stat: 0.168981 sys: 0.08076
+head: 
+yield: 0.206877 stat: 0.151395 sys: 0.0773547
+shoulder: 
+yield: 0.330149 stat: 0.144314 sys: 0.0141255
+
+i = 6
+near side: 
+yield: 0.362182 stat: 0.0433853 sys: 0.0465206
+head: 
+yield: 0.362646 stat: 0.0388357 sys: 0.0448773
+shoulder: 
+yield: 0.181872 stat: 0.0359502 sys: 0.0110551
+i = 7
+near side: 
+yield: 0.343778 stat: 0.0938972 sys: 0.0322854
+head: 
+yield: 0.512585 stat: 0.0832096 sys: 0.0323052
+shoulder: 
+yield: 0.221951 stat: 0.0760452 sys: 0.00974027
+
+i = 12
+near side: 
+yield: 0.0278378 stat: 0.0122415 sys: 0.00608284
+head: 
+yield: 0.0575923 stat: 0.0114321 sys: 0.00609646
+shoulder: 
+yield: 0.010384 stat: 0.00934284 sys: 0.000922886
+i = 13
+near side: 
+yield: 0.034686 stat: 0.0247008 sys: 0.00590215
+head: 
+yield: 0.087684 stat: 0.024291 sys: 0.00560127
+shoulder: 
+yield: 0.0312827 stat: 0.0203161 sys: 0.0029553
+
+**OUTPLANE**
+i = 0
+near side: 
+yield: -0.114922 stat: 0.0848318 sys: 0.077271
+head: 
+yield: 0.338062 stat: 0.0746521 sys: 0.0442947
+shoulder: 
+yield: 0.0957333 stat: 0.0755196 sys: 0.12879
+i = 1
+near side: 
+yield: 0.516374 stat: 0.185394 sys: 0.0943943
+head: 
+yield: 0.373254 stat: 0.162557 sys: 0.0805082
+shoulder: 
+yield: 0.152151 stat: 0.161714 sys: 0.141237
+
+i = 6
+near side: 
+yield: 0.110243 stat: 0.0459841 sys: 0.0301316
+head: 
+yield: 0.163868 stat: 0.0402496 sys: 0.014985
+shoulder: 
+yield: -0.107113 stat: 0.0406931 sys: 0.0535729
+i = 7
+near side: 
+yield: -0.107958 stat: 0.0997871 sys: 0.0398518
+head: 
+yield: 0.23256 stat: 0.088686 sys: 0.0231146
+shoulder: 
+yield: 0.151419 stat: 0.0913852 sys: 0.0646551
+
+i = 12
+near side: 
+yield: 0.0774173 stat: 0.0129251 sys: 0.00358085
+head: 
+yield: 0.0836511 stat: 0.0114293 sys: 0.00318433
+shoulder: 
+yield: 0.0124621 stat: 0.0108645 sys: 0.00367518
+i = 13
+near side: 
+yield: 0.274141 stat: 0.0277653 sys: 0.012051
+head: 
+yield: 0.196364 stat: 0.0270012 sys: 0.0064252
+shoulder: 
+yield: 0.177068 stat: 0.0246243 sys: 0.00971631

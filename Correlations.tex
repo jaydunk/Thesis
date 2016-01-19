@@ -55,7 +55,7 @@ After calculating the single $\phi$ correction we apply it to each track in the 
 
 \subsection{Mixed Event Background}
 
-To further correct for nonuniformities in detector acceptance we use a mixed event weighting. In an ideal detector the correlations of trigger particles to associated hadrons from a different event should be flat, however acceptance effects will result in nonphysical correlations which need to be removed. 
+To further correct for non-uniformities in detector acceptance we use a mixed event weighting. In an ideal detector the correlations of trigger particles to associated hadrons from a different event should be flat, however acceptance effects will result in nonphysical correlations which need to be removed. 
 
 Similar to the single particle corrections we divide the mixed event corrections into bins to account for various systematic differences. In mixed event we bin according to associated particle $\pt$, triggered particle $\pt$, centrality, vertex z position, and $\eta$. As in single particle corrections, the most extreme bin to bin variations occur in low associated $\pt$ bins.   
 
@@ -70,7 +70,7 @@ The motivations behind two-particle correlation studies are to investigate the j
 
 where $B$ is an overall constant factor. Higher order harmonics $v_3$, $v_4$, etc. can also contribute to the background. Large $v_3$ in particular is a potential explanation for some of the results in dihadron correlations, but these effects do not contribute to our correlation measurement and are not considered in this analysis. 
 
-Hadron $v_2$ has been measured to high precision in a wide range of $\pt$ bins at STAR~\cite{STARhadv2}. Figure~\ref{fig:STARHadv2} shows the results of STAR $v_2$ measurements using an event plane method and illustrates the general depedence on $\pt$ and centrality. To calculate the hadron $v_2$ we extrapolate the $v_2$ measurement to the center of the associated hadron $\pt$ bin. Then when evaluating correlations across multiple hadron $\pt$ bins we use the weighted average of $v_2$ based on the number of hadrons in each $\pt$ bin.
+Hadron $v_2$ has been measured to high precision in a wide range of $\pt$ bins at STAR~\cite{STARhadv2}. Figure~\ref{fig:STARHadv2} shows the results of STAR $v_2$ measurements using an event plane method and illustrates the general dependence on $\pt$ and centrality. To calculate the hadron $v_2$ we extrapolate the $v_2$ measurement to the center of the associated hadron $\pt$ bin. Then when evaluating correlations across multiple hadron $\pt$ bins we use the weighted average of $v_2$ based on the number of hadrons in each $\pt$ bin.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -96,7 +96,7 @@ Knowing the values of $v_2$ for hadrons and non-photonic electrons, we then need
 
 In one case we can simply pick a point between the near and away sides and then set the value of $B$ so that the overall yield of particles above background at that point is 0. This point is typically taken to be around 1 radian and thus this method is called the zero yield at 1 (ZYA1) normalization. Although when we implement ZYA1 normalization we take the lowest absolute yield of the 3 points closest to 1 radian. Alternatively we can instead pick the point in the raw correlation with lowest value and normalize so that the point produces zero yield. This is the zero yield at minimum (ZYAM) method. These methods tend to coincide in practice and unless otherwise noted we use ZYAM normalization. There is another technique called absolute background subtraction used by PHENIX in their NPE-hadron correlation measurement~\cite{PHENIXeh}, where different uncertainties are involved and we do not use this method. 
 
-When using ZYAM or ZYA1 normalization our background subtracted yield can be very suceptible to downward fluctuations of points causing an abnormally high yield. To account for this we also look at the effect of normalizing to the next highest point in the correlation. We then compare the values of $B$ that we get and then quote the difference as the systematic error due to background normalization.
+When using ZYAM or ZYA1 normalization our background subtracted yield can be very susceptible to downward fluctuations of points causing an abnormally high yield. To account for this we also look at the effect of normalizing to the next highest point in the correlation. We then compare the values of $B$ that we get and then quote the difference as the systematic error due to background normalization.
 
 \section{Correlations in Au+Au}
 
@@ -125,7 +125,7 @@ $\pt$               & $\geq .2$ GeV \\
 \label{tab:assohcuts}
 \end{table} 
 
-The correlations are further broken up into bins in event centrality and associated hadron $\pt$. This is the point at which we apply the acceptance corrections from the single particle $\phi$ weighting as well as the mixed event weighting. Additionaly we also correct the yield for the efficiency of the associated hadron yield. The TPC efficiency is lower for the high occupancy events in central collisions, and efficiency is also significantly worse for very low $\pt$ hadrons. The efficiency is calculated from embedding and the results are summarized in Figure~\ref{fig:assoheff}.
+The correlations are further broken up into bins in event centrality and associated hadron $\pt$. This is the point at which we apply the acceptance corrections from the single particle $\phi$ weighting as well as the mixed event weighting. Additionally we also correct the yield for the efficiency of the associated hadron yield. The TPC efficiency is lower for the high occupancy events in central collisions, and efficiency is also significantly worse for very low $\pt$ hadrons. The efficiency is calculated from embedding and the results are summarized in Figure~\ref{fig:assoheff}.
 
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\textwidth}
@@ -174,8 +174,8 @@ An explanation of these terms:
 
 \begin{itemize}
 \item \textbf{Semi-inclusive electrons:} This is the correlation of inclusive electrons for which no photonic partner track could be found. This sample will include many non-photonic electrons as well as some photonic background for which we could not find a partner track. 
-\item \textbf{Unidentified photonic electrons:} the term: \[ \left(\frac{1}{\epsilon_{\gamma}} - 1\right)\frac{dN_{photonic-h}}{d\Delta\phi} \] is intended to remove the remaining photonic background triggers from the semi-inclusive sample. To do this we take the correlation for identified photonic electrons to hadrons and scale it up according to the estimated photonic electrons reconstruction efficiency, $\epsilon_{\gamma}$. The reconstruciton efficiency is determined by embedding simulations.  
-\item \textbf{Same-sign electrons:} The method for identifying photonic electrons, pairing all tracks and calculating DCAs and invariant masses, will result in some oversubtraction of NPE signal. We account for the combinatorially removed points by looking at the results of same sign pairing tracks, i.e. the tracks which pass all of the photonic partner cuts except that they have the same sign. We add this term back make up for the NPE signal which was removed by the previous two terms. 
+\item \textbf{Unidentified photonic electrons:} the term: \[ \left(\frac{1}{\epsilon_{\gamma}} - 1\right)\frac{dN_{photonic-h}}{d\Delta\phi} \] is intended to remove the remaining photonic background triggers from the semi-inclusive sample. To do this we take the correlation for identified photonic electrons to hadrons and scale it up according to the estimated photonic electrons reconstruction efficiency, $\epsilon_{\gamma}$. The reconstruction efficiency is determined by embedding simulations.  
+\item \textbf{Same-sign electrons:} The method for identifying photonic electrons, pairing all tracks and calculating DCAs and invariant masses, will result in some over-subtraction of NPE signal. We account for the combinatorially removed points by looking at the results of same sign pairing tracks, i.e. the tracks which pass all of the photonic partner cuts except that they have the same sign. We add this term back make up for the NPE signal which was removed by the previous two terms. 
 \end{itemize}
 
 There is also the potential for contamination of the triggered electrons with hadrons. This would require the subtraction of a dihadron correlation term: \[\frac{dN_{h-h}}{d\Delta\phi}\] We expect the purity of our triggered electrons to be high in the relevant $\pt$ ranges so for this analysis we will not include it. 
@@ -551,7 +551,7 @@ NPE-h correlations have also been used to study the charm to bottom produced in 
 
 \subsection{Data and Correlations}
 
-The dataset for the p+p correlations is the BHT triggered events in STAR run 12 p+p 200 GeV. The procedure for identifying non-photonic electrons and constructing the NPE-h correlation is nearly identical to Au+Au. We still need to perform the acceptance corrections as in Au+Au, however because of the lower multicplicities in p+p collisions it is difficult to get enough statistics for mixed event correlations so we will rely only on the single particle $\phi$ weighting. In run 12 the TPC perfomed much better and has a more uniform acceptance than in run 11 so practically these correction are far less important. 
+The dataset for the p+p correlations is the BHT triggered events in STAR run 12 p+p 200 GeV. The procedure for identifying non-photonic electrons and constructing the NPE-h correlation is nearly identical to Au+Au. We still need to perform the acceptance corrections as in Au+Au, however because of the lower multiplicities in p+p collisions it is difficult to get enough statistics for mixed event correlations so we will rely only on the single particle $\phi$ weighting. In run 12 the TPC performed much better and has a more uniform acceptance than in run 11 so practically these correction are far less important. 
 
 In p+p correlations there is no need to perform the background subtraction as in Equation~\ref{eq:v2background} since there is no elliptic flow in p+p collisions. So we no longer need to consider raw correlations, we can just take the results from Equation~\ref{eq:NPEhdef} and use those as our correlations. Since there is no NPE-h $v_2$ and no need to normalize to some background distribution we no longer have to consider 2 of the 3 sources of systematic uncertainty present in Au+Au. We only need to account for uncertainty in $\epsilon_\gamma$, the photonic electron reconstruction efficiency. We do this as in Au+Au collisions, allowing the efficiency to vary by 10\%. Tables~\ref{tab:ppyieldlow} ~\ref{tab:ppyieldhigh}  summarize the yields with errors obtained from p+p collisions.
 
@@ -678,7 +678,7 @@ For the fit we compare the correlations for $p_{T,h} > .2$ GeV/c and vary the $\
 \frac{dN_{NPE-h}}{d\Delta\phi} = r_B f_B(\Delta\phi) + (1 - r_B) f_D(\Delta\phi)
 \end{equation}
 
-Where $f_B$ and $f_D$ are the correlations for bottom and charm electron-hadron correlations from Pythia, and $r_B = \frac{e_B}{e_B + e_D}$. The fit is done in a range around the near side peak $\Delta\phi < 1.5$ due to diffuculties in Pythia accurately recreating away side behavior. Figure~\ref{fig:exfit} shows an example fit, plus the correlations from Pythia.
+Where $f_B$ and $f_D$ are the correlations for bottom and charm electron-hadron correlations from Pythia, and $r_B = \frac{e_B}{e_B + e_D}$. The fit is done in a range around the near side peak $\Delta\phi < 1.5$ due to difficulties in Pythia accurately recreating away side behavior. Figure~\ref{fig:exfit} shows an example fit, plus the correlations from Pythia.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -700,9 +700,9 @@ Figure ~\ref{fig:BDRatio} shows the results for obtaining $r_B$ from fits of the
 
 \section{Comparisons of Yields}
 
-We can use the yields we measured in p+p and Au+Au collisions to look for evidence of jet modification in the medium. To do this we will examine the away side peak shape by comparing the ratio of yields in the shoulder region to the head region (as defined previously). Interactions with the QGP may cause jets to be redirected or smeared out which would manifest as broader away side correlatins in Au+Au collisions. We will also look at $I_{AA}$, the ratio of the integrated yield in Au+Au to p+p. Suppressions of yields in Au+Au could indicate jet suprression in the medium while increased yields may point to medium responses to the jet.
+We can use the yields we measured in p+p and Au+Au collisions to look for evidence of jet modification in the medium. To do this we will examine the away side peak shape by comparing the ratio of yields in the shoulder region to the head region (as defined previously). Interactions with the QGP may cause jets to be redirected or smeared out which would manifest as broader away side correlations in Au+Au collisions. We will also look at $I_{AA}$, the ratio of the integrated yield in Au+Au to p+p. Suppressions of yields in Au+Au could indicate jet suppression in the medium while increased yields may point to medium responses to the jet.
 
-An important thing to note when comparing the yields from p+p and Au+Au is that we subtracted off a background correlation from Au+Au but performed no such ZYAM procedure for p+p. There is no standard way of accounting for this but we calculate a flat underlying event for p+p (essentially the ZYAM coefficient for background with $v_2 = 0$), use this to estimate the oversubtraction of background in Au+Au and add this back to the Au+Au yields. As seen in Figure~\ref{fig:ppcorr}, this is not much of a concern at high associated hadron $\pt$ but for the lower $\pt$ bins it has a larger effect.
+An important thing to note when comparing the yields from p+p and Au+Au is that we subtracted off a background correlation from Au+Au but performed no such ZYAM procedure for p+p. There is no standard way of accounting for this but we calculate a flat underlying event for p+p (essentially the ZYAM coefficient for background with $v_2 = 0$), use this to estimate the over-subtraction of background in Au+Au and add this back to the Au+Au yields. As seen in Figure~\ref{fig:ppcorr}, this is not much of a concern at high associated hadron $\pt$ but for the lower $\pt$ bins it has a larger effect.
 
 \subsection{Away Side Shape}
 
@@ -711,7 +711,7 @@ We define the yield $Y$ in a region by:
 Y(\Delta\phi_1, \Delta\phi_2) = \int^{\Delta\phi_2}_{\Delta\phi_1} \frac{dN_{NPE-h}}{d\Delta\phi} d\Delta\phi
 \end{equation} 
 
-We define the near side yield as $Y(0, 2\pi/5)$ the head region as $Y(7\pi/10, \pi)$, and the shoulder region as $Y(2\pi/5, 7\pi/10)$. To see evidence of jet broadening we compare the yields in the shoulder and head regions. In particular we look at the ratio of the yields $Y($shoulder$)/Y($head$)$. We can see from the p+p data that this ratio tends to be below 1 as the away side peaks are narrow and contain most of the yield in the region immediately around $\pi$. Figure~\ref{fig:SH_Ratio} shows the the ratios for p+p data as well as Au+Au collisions with 0-10\%, 10-40\%, and 40-60\% centralities. We see that for the most central bins the ratio is larger indicating wider correlations, but the errors on these yields are large. For the other bins, including the p+p data, the ratios seem to follow a similar trend with increasingly narrow correlations at higher hadron $\pt$.
+We define the near side yield as $Y(0, 2\pi/5)$ the head region as $Y(7\pi/10, \pi)$, and the shoulder region as $Y(2\pi/5, 7\pi/10)$. To see evidence of jet broadening we compare the yields in the shoulder and head regions. In particular we look at the ratio of the yields $Y($shoulder$)/Y($head$)$. We can see from the p+p data that this ratio tends to be below 1 as the away side peaks are narrow and contain most of the yield in the region immediately around $\pi$. Figure~\ref{fig:SH_Ratio} shows the ratios for p+p data as well as Au+Au collisions with 0-10\%, 10-40\%, and 40-60\% centralities. We see that for the most central bins the ratio is larger indicating wider correlations, but the errors on these yields are large. For the other bins, including the p+p data, the ratios seem to follow a similar trend with increasingly narrow correlations at higher hadron $\pt$.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -723,7 +723,7 @@ We define the near side yield as $Y(0, 2\pi/5)$ the head region as $Y(7\pi/10, \
 
 \subsection{$I_{AA}$}
 
-We can also compare the yields in Au+Au collisions to p+p collisions directly to look for jet supression in heavy flavor correlations. To do this we look at the ration of yields $I_{AA}$ defined by:
+We can also compare the yields in Au+Au collisions to p+p collisions directly to look for jet suppression in heavy flavor correlations. To do this we look at the ration of yields $I_{AA}$ defined by:
 
 \begin{equation}\label{eq:IAA}
 I_{AA} = \frac{Y_{AuAu}(\Delta\phi_1, \Delta\phi_2)}{Y_{pp}(\Delta\phi_1, \Delta\phi_2)}
@@ -731,7 +731,7 @@ I_{AA} = \frac{Y_{AuAu}(\Delta\phi_1, \Delta\phi_2)}{Y_{pp}(\Delta\phi_1, \Delta
 
 $I_{AA}$ serves for jets as a rough analogue of $R_{AA}$ which is typically used to compare particle spectra between heavy-ion and proton collisions. For identical yields in Au+Au and p+p we would get $I_{AA} = 1$ and we look for deviations from 1, less than 1 indicating suppressed yield in Au+Au and greater than 1 an enhanced yield.
 
-We measure $I_{AA}$ for the near side as well as in the away side head region. As explained earlier we estimate the level for the underlying event in p+p and then add this back to the Au+Au data to make up for potential oversubtraction of background with the ZYAM normalization. Figure~\ref{fig:IAA_Near} show the near side $I_{AA}$ and Figure~\ref{fig:IAA_Away} the away side. The results are largely inconclusive and it appears that with the errors the results are still largely consistent with 1.
+We measure $I_{AA}$ for the near side as well as in the away side head region. As explained earlier we estimate the level for the underlying event in p+p and then add this back to the Au+Au data to make up for potential over-subtraction of background with the ZYAM normalization. Figure~\ref{fig:IAA_Near} show the near side $I_{AA}$ and Figure~\ref{fig:IAA_Away} the away side. The results are largely inconclusive and it appears that with the errors the results are still largely consistent with 1.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -751,7 +751,7 @@ We measure $I_{AA}$ for the near side as well as in the away side head region. A
 
 \section{Event-Plane Dependent Correlations}
 
-The motivation for measurements of two particle correlations in Au+Au comes from the fact that partons are expected to strongly interact with the color charges present in QGP and that the jet like correlations will depend on the path length traversed by the parton in QGP. Previously we have looked at comparisons between central and peripheral events as well as p+p collisions as a way of investigating the dependnce on the presence of QGP. Now we will try to look at a more direct dependence on path length by measuring the correlations relative to emmision in or out of the event plane.
+The motivation for measurements of two particle correlations in Au+Au comes from the fact that partons are expected to strongly interact with the color charges present in QGP and that the jet like correlations will depend on the path length traversed by the parton in QGP. Previously we have looked at comparisons between central and peripheral events as well as p+p collisions as a way of investigating the dependence on the presence of QGP. Now we will try to look at a more direct dependence on path length by measuring the correlations relative to emission in or out of the event plane.
 
 In non-central Au+Au collisions the collision region formed from the overlap of the two incident nuclei is ellipsoidal. This initial anisotropy in the medium results in elliptic flow, $v_2$, and in the final state we observe anisotropic emissions relative to the reaction plane, defined by the momenta of the initial beam particles (see Figure~\ref{fig:EPcartoon}). 
 
@@ -769,7 +769,7 @@ The event plane angle gives us an estimate for the reaction plane angle, we will
 
 \subsection{Event Plane Reconstruction}
 
-We use the azimuthal distribution of the particles in an event to calculate the event plane, $\Psi_{EP}$. Event planes can be calculated for any order of harmonic in the decompisition of the particle distribution, but since we are interested in $v_2$ and the second order event plane everything that follows is specifically the $n = 2$ case. For a more general treatment see ref. First we apply single particle $\phi$-weighting to correct for the acceptance of the detector. This is the same procedure as used for the two-particle correlation.
+We use the azimuthal distribution of the particles in an event to calculate the event plane, $\Psi_{EP}$. Event planes can be calculated for any order of harmonic in the decomposition of the particle distribution, but since we are interested in $v_2$ and the second order event plane everything that follows is specifically the $n = 2$ case. For a more general treatment see ref. First we apply single particle $\phi$-weighting to correct for the acceptance of the detector. This is the same procedure as used for the two-particle correlation.
 
 We use the hadrons in the event with 0.2 GeV/c $ \leq p_{T} \leq $ 2.0 GeV/c in the event plane calculation. Since these events are high tower triggered events there is also a high $\pt$ leading particle in each event. Since the presence of a jet may bias the calculation of the event plane, we should try to remove this contribution. To do this we exclude the particles in the event with $|\Delta\eta| <$ .5, where $\Delta\eta$ is the pseudorapidity difference between the hadron and the leading particle in the event (in events used in NPE analysis this track is usually the electron). This procedure is called the Modified Reaction Plane (MRP) method.
 
@@ -812,9 +812,9 @@ Using a finite number of particles to calculate the event plane leaves us with a
 
 \subsection{Correlations}
 
-Now we would like to calculate the NPE-h correlation and look at the dependence based on how the trigger particle is oriented relative to the event plane. Since for trigger particles which are out of the event plane the heavy quark traversed a longer path in medium, we could look for evidence of path length dependent effects on the correlation. Event plane dependent correlations can also be used to study the nonflow contributions to $v_2$~\cite{CERESEP}.
+Now we would like to calculate the NPE-h correlation and look at the dependence based on how the trigger particle is oriented relative to the event plane. Since for trigger particles which are out of the event plane the heavy quark traversed a longer path in medium, we could look for evidence of path length dependent effects on the correlation. Event plane dependent correlations can also be used to study the non-flow contributions to $v_2$~\cite{CERESEP}.
 
-The correlation is constructed as previously described for Au+Au collisions with one important difference. Before the background from flow assumed no dependence of the trigger particle on the reaction plane. The form of this background resulted from the dependence on the reaction plane cancelling leaving only the difference $\Delta\phi$ between the correlated particles. Now we are choosing specific orientations of the trigger particle relative to the event plane and thus the background will be different and depend on that orientation.
+The correlation is constructed as previously described for Au+Au collisions with one important difference. Before the background from flow assumed no dependence of the trigger particle on the reaction plane. The form of this background resulted from the dependence on the reaction plane canceling leaving only the difference $\Delta\phi$ between the correlated particles. Now we are choosing specific orientations of the trigger particle relative to the event plane and thus the background will be different and depend on that orientation.
 
 We use the same functional form for the background, Equation~\ref{eq:v2background}, as when we originally calculated the NPE-h correlations in Au+Au, but now we replace the $v_2$ of the electron with an ``effective" $v_2$, denoted $\widetilde{v}_{2}$, which will depend on the electrons angle relative to the event plane as well as the event plane resolution. The effective $v_2$ can be calculated for any arbitrary slice relative to the event plane~\cite{STAREPLong}, but we will only consider the case of two equal slices: in-plane and out-of-plane. For this case $\widetilde{v}_{2}$ is given by:
 
@@ -832,7 +832,7 @@ We use the same functional form for the background, Equation~\ref{eq:v2backgroun
 
 where Equation~\ref{eq:inplane} is for in-plane triggers and Equation~\ref{eq:outplane} is for out-of-plane triggers.
 
-Now we construct the raw correlations for two cases: The trigger particle is in-plane or out-of-plane and then subtract off the appropriate background for that case. We use the ZYAM method to normalize the bckground to the distributions, calculating each case individually. In principle it is possible to calculate what the normalization for each case should be just from the normalization of the background for all triggers, but we choose not to do this. When combining bins in centrality we calculate $\widetilde{v}_{2}$ from the average values in each bin, weighted by the number of NPE in each centrality bin.
+Now we construct the raw correlations for two cases: The trigger particle is in-plane or out-of-plane and then subtract off the appropriate background for that case. We use the ZYAM method to normalize the background to the distributions, calculating each case individually. In principle it is possible to calculate what the normalization for each case should be just from the normalization of the background for all triggers, but we choose not to do this. When combining bins in centrality we calculate $\widetilde{v}_{2}$ from the average values in each bin, weighted by the number of NPE in each centrality bin.
 
 We construct the raw correlation for 20-60\% central events. This is the region with the best event plane resolution due to the large elliptic flow and high multiplicity. It is also similar to the centrality region investigated by previous analyses of event plane dependent dihadron correlations. Figure~\ref{fig:EP_corr_raw} shows the resulting raw correlations for both cases and the dependence on the associated hadron $\pt$. We can also see how the background changes between in-plane and out-of-plane cases. For out-of-plane triggers the background appears shifted by $\pi/2$ since the effective $v_2$ has a negative value. This is not always the case though as for bins with large $v_2$ but poor event plane resolution we could potentially find that $\widetilde{v}_{2}$ for out-of-plane triggers is still positive.
 
@@ -871,7 +871,7 @@ We construct the raw correlation for 20-60\% central events. This is the region 
 \label{fig:EP_corr_raw}
 \end{figure}
 
-We can then subtract the backgrounds to get the correlations and yields to see if there is any significant difference between the in-plane and out-of-plane cases. The systematic errors from photonic eletron reconstruction efficiency and background normalization are calculated exactly as before. For the uncertainty in NPE $v_2$ we again let the value vary between .05 and .15 calculate $\widetilde{v}_{2}$ for the extreme values and then take the difference between the points when fit with different backgrounds as the uncertainty.
+We can then subtract the backgrounds to get the correlations and yields to see if there is any significant difference between the in-plane and out-of-plane cases. The systematic errors from photonic electron reconstruction efficiency and background normalization are calculated exactly as before. For the uncertainty in NPE $v_2$ we again let the value vary between .05 and .15 calculate $\widetilde{v}_{2}$ for the extreme values and then take the difference between the points when fit with different backgrounds as the uncertainty.
 
 \begin{figure}[htbp]
 	\begin{subfigure}{0.5\textwidth}
@@ -904,11 +904,11 @@ We can then subtract the backgrounds to get the correlations and yields to see i
 		\caption{2.0 GeV/c $\leq p_{T,h} \leq$ 4.0 GeV/c}
 		\label{fig:EP_corr_subtracted_f}
 	\end{subfigure}	
-\caption[Subtracted NPE-hadron Correlations, In-plane and Out-of-plane]{NPE-h correlations for 20-60\% centrality Au+Au collisions with 4.0 GeV/c $\leq pt_{T,e} \leq$ 6.0 GeV/c. Left column shows correlations for in-plane electrons, right shows out-of-plane electrons. Errors from photonic eletron reconstruciton efficiency and NPE $v_2$ uncertainty are shown as shaded regions around each point, background normalization uncertainties are the shaded bars around 0.}
+\caption[Subtracted NPE-hadron Correlations, In-plane and Out-of-plane]{NPE-h correlations for 20-60\% centrality Au+Au collisions with 4.0 GeV/c $\leq pt_{T,e} \leq$ 6.0 GeV/c. Left column shows correlations for in-plane electrons, right shows out-of-plane electrons. Errors from photonic electron reconstruction efficiency and NPE $v_2$ uncertainty are shown as shaded regions around each point, background normalization uncertainties are the shaded bars around 0.}
 \label{fig:EP_corr_subtracted}
 \end{figure}
 
-We can see from the subtracted distributions in Figure~\ref{fig:EP_corr_subtracted} that systematic uncertainties are quite large for lower hadron $\pt$. Above 2 GeV/c the uncertainties are less of a problem and this also happens to be the exact region looked at by a previous STAR analysis in dihadron collisions. In Figure~\ref{fig:EP_comparison} we show the comparison of in-plane and out-of-plane correlations for NPE-h as well as dihadron correlations, p+p dihadron correlations are also shown. For the dihadron correlations only the statistical errors are shown. We see that while in dihadron correlations there is evidence of greater jet supression in the out-of-plane correlations, there appears to be a small but not statistically significant difference between in-plane and out-of-plane in NPE-h correlations. In fact, the NPE-h correlations appear within errors to be consistent with the dihadron p+p data. There are a few possible explanations for this. The NPE-h correlation contains the decay products of the heavy $B$ or $D$ meson which happens after the freezeout of the QGP. Also in heavy flavor correlations the connection of the kinematics of the leading particle to the initial heavy quark is more tenuous, and the biases in these correlations may be different. We won't draw any definitive conclusions from these data and instead just present them as potential avenues for further study.
+We can see from the subtracted distributions in Figure~\ref{fig:EP_corr_subtracted} that systematic uncertainties are quite large for lower hadron $\pt$. Above 2 GeV/c the uncertainties are less of a problem and this also happens to be the exact region looked at by a previous STAR analysis in dihadron collisions. In Figure~\ref{fig:EP_comparison} we show the comparison of in-plane and out-of-plane correlations for NPE-h as well as dihadron correlations, p+p dihadron correlations are also shown. For the dihadron correlations only the statistical errors are shown. We see that while in dihadron correlations there is evidence of greater jet suppression in the out-of-plane correlations, there appears to be a small but not statistically significant difference between in-plane and out-of-plane in NPE-h correlations. In fact, the NPE-h correlations appear within errors to be consistent with the dihadron p+p data. There are a few possible explanations for this. The NPE-h correlation contains the decay products of the heavy $B$ or $D$ meson which happens after the freezeout of the QGP. Also in heavy flavor correlations the connection of the kinematics of the leading particle to the initial heavy quark is more tenuous, and the biases in these correlations may be different. We won't draw any definitive conclusions from these data and instead just present them as potential avenues for further study.
 
 \begin{figure}[htbp]
 \begin{center}

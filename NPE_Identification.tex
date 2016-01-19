@@ -129,13 +129,13 @@ The energy loss ($dE/dx$) in the TPC is modeled by the Bichsel function which al
 n\sigma_e = \frac{\log{\frac{dE/dx}{B_e}}}{\sigma_e}
 \end{equation}
 
-where $B_e$ is the Bichsel function value and $n\sigma_e$ is the deviation from the mean Bichsel function value for electrons. Analagous values are defined for protons, kaons, and pions but we will only concern ourselves with $n\sigma_e$. We will go over the specific $n\sigma_e$ cuts used when we discuss the details of electron identification. 
+where $B_e$ is the Bichsel function value and $n\sigma_e$ is the deviation from the mean Bichsel function value for electrons. Analogous values are defined for protons, kaons, and pions but we will only concern ourselves with $n\sigma_e$. We will go over the specific $n\sigma_e$ cuts used when we discuss the details of electron identification. 
 
 \section{BEMC Points and Matching}
 
 The BEMC is critical to the identification of high $p_T$ electrons in STAR. In Au+Au and p+p collisions hadrons (mostly pions and protons) greatly outnumber electrons and the $n\sigma_e$ cuts in the TPC are not enough to give an acceptable electron purity. With the BEMC electron identification is possible at high $\pt$. In the calorimeter electrons are much more likely to interact in the first few layers of the calorimeter and they will also deposit their entire energy within the tower. 
 
-The barrel information in an event gives us hits for the BEMC towers as well as hits in the $\eta$ and $\phi$ directions for the shower max detector. From this information we need to cluster the tower hits as well as find matching hits in the SMD. Then we need to take the BEMC points (tower cluster and SMD hits) and associate it with a track from the TPC. We want to cluster the tower and SMD hits such that each BEMC point is associated with one electron. With the combined TPC and BEMC information we acheive the necessary purity of high $\pt$ electrons in our analysis.
+The barrel information in an event gives us hits for the BEMC towers as well as hits in the $\eta$ and $\phi$ directions for the shower max detector. From this information we need to cluster the tower hits as well as find matching hits in the SMD. Then we need to take the BEMC points (tower cluster and SMD hits) and associate it with a track from the TPC. We want to cluster the tower and SMD hits such that each BEMC point is associated with one electron. With the combined TPC and BEMC information we achieve the necessary purity of high $\pt$ electrons in our analysis.
 
 We will now describe the UCLA BEMC point making algorithm and will use the following definitions: 
 
@@ -151,7 +151,7 @@ To use the UCLA EMC point maker, described in detail in~\cite{dongthesis}, to re
 
 The BSMD uses a similar clustering procedure for both the $\phi$ and $\eta$ directions. If EMC towers and BSMD clusters are found then the program will check for multiple clusters and attempt to merge them by relaxing the SMD clustering criteria. If one direction in the BSMD has no hits then clustering is rerun with relaxed criteria to try and find a good SMD point for that module. If neither tower nor SMD clusters are found in a module then the algorithm moves on to the next module. 
 
-With clusters in the towers and possibly the SMD found we move on to asscociating tower clusters to SMD hits. We only use SMD hits adjacent to the tower cluster and if there is only one SMD point associate it with the cluster. For the case of multple SMD hits adjacent to the tower the tower energy is divided between the SMD points. If there are no points in the SMD but we still have tower clusters then the tower cluster is kept but not used as a BEMC point for matching with the TPC. The SMD info is used as the $\phi$ and $\eta$ location of the hit and the tower cluster is used for the point's energy. Figure~\ref{fig:SMDetaphi} shows the distribution of SMD points in $\phi$ and $\eta$.
+With clusters in the towers and possibly the SMD found we move on to associating tower clusters to SMD hits. We only use SMD hits adjacent to the tower cluster and if there is only one SMD point associate it with the cluster. For the case of multiple SMD hits adjacent to the tower the tower energy is divided between the SMD points. If there are no points in the SMD but we still have tower clusters then the tower cluster is kept but not used as a BEMC point for matching with the TPC. The SMD info is used as the $\phi$ and $\eta$ location of the hit and the tower cluster is used for the point's energy. Figure~\ref{fig:SMDetaphi} shows the distribution of SMD points in $\phi$ and $\eta$.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -181,7 +181,7 @@ When we make the BEMC points we also record the highest tower ADC value in the B
 \label{fig:ADC0}
 \end{figure}
 
-For NPE, due to the short lifetime of the parent mesons, we only consider tracks originating from the primary vertex. Further we cut on the DCA of the track to the primary vertex, requiring that the DCA be less than 1.5 cm. This cut is tighter than the 2 cm cut we used when considering the TPC track quality. We also remove tracks with $p_T <$ 2.0 GeV/c, generally the tracks comming from triggered electrons will be much higher than this anyway. For our acceptance we want the electron to be -.7 $\leq \eta \leq$ .7 in  pseudorapidity. This corresponds to the $\eta$ acceptance of the BEMC. Other run 10 analyses also cut out areas in $\phi$ which correspond to the position of the SVT support structure. The reasoning behind that cut is that the remaining structure could cause more photon conversions in those regions, but this cut is not applied here.
+For NPE, due to the short lifetime of the parent mesons, we only consider tracks originating from the primary vertex. Further we cut on the DCA of the track to the primary vertex, requiring that the DCA be less than 1.5 cm. This cut is tighter than the 2 cm cut we used when considering the TPC track quality. We also remove tracks with $p_T <$ 2.0 GeV/c, generally the tracks coming from triggered electrons will be much higher than this anyway. For our acceptance we want the electron to be -.7 $\leq \eta \leq$ .7 in  pseudorapidity. This corresponds to the $\eta$ acceptance of the BEMC. Other run 10 analyses also cut out areas in $\phi$ which correspond to the position of the SVT support structure. The reasoning behind that cut is that the remaining structure could cause more photon conversions in those regions, but this cut is not applied here.
 
 Now we apply the BEMC information to select electrons. Electrons begin showering much earlier in the BEMC than hadrons, the SMD sits at $5.6 X_0$ where electromagnetic showers are widest. With more hits in the SMD the spatial resolution of the BEMC points is better as so the BEMC matching for electrons tends to be better. This is illustrated in Figures~\ref{fig:point_dphi} and~\ref{fig:dZ} which show the BEMC matching in $\Delta\phi$ and $\Delta Z$. Black points are for all matched primary tracks and red points show the matching for identified electrons (with the matching cuts excluded). We set the $\Delta\phi$ cut such that $|\Delta\phi| \leq$ .013 and for $\Delta Z$ we use -2.5 cm $\leq \Delta Z \leq$ 1.1 cm for positive $\eta$ and -1.5 cm $\leq \Delta Z \leq$ 1.9 cm for negative $\eta$ (Figure~\ref{fig:dZ}). Different cuts on $\Delta Z$ are applied in the different halves of the TPC due to a discreet jump when crossing the central membrane of the TPC.
 
@@ -372,7 +372,7 @@ When searching for the partner electron we use very relaxed cuts. We search thro
         \label{fig:PE_Phi}
     \end{subfigure}
 	\end{center}
-\caption[Angle Cuts for Phot. Electrons]{Angle cuts for partner tracks used to recontstruct photonic electrons.}
+\caption[Angle Cuts for Phot. Electrons]{Angle cuts for partner tracks used to reconstruct photonic electrons.}
 \label{fig:PE_angle}
 \end{figure}
 
@@ -423,4 +423,4 @@ For photonic electrons we expect the pair of particles to have a low invariant m
 
 Clearly just pairing up all tracks to look for photonic electrons will not guarantee that we remove all of the background. It is possible for the partner track to be outside of our acceptance or otherwise fail to pass the photonic electron cuts. We will quantify how much background we miss by the parameter $\epsilon_\gamma$, the photonic reconstruction efficiency, which is essentially the fraction of all photonic electrons we are able to reconstruct from searching for partner tracks. This section will discuss how $\epsilon_\gamma$ is calculated.
 
-We calculate the photonic electron reconstruction effieciency by using embedding simulations. Photon conversions and Dalitz decays of pions are simulated and then embedded into real STAR data. The data are generated flat in $p_T$ and thus must be weighted according to the measured spectra of $\gamma$ and $\pi^{\pm}$.
+We calculate the photonic electron reconstruction efficiency by using embedding simulations. Photon conversions and Dalitz decays of pions are simulated and then embedded into real STAR data. The data are generated flat in $p_T$ and thus must be weighted according to the measured spectra of $\gamma$ and $\pi^{\pm}$.

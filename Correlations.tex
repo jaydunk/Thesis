@@ -651,7 +651,7 @@ $p_{T,asso} \in(2.0, 4.0)$ GeV/c  & Shoulder & 0.0147791 & 0.00321696 & 0.000280
 
 \subsection{Charm to Bottom Ratios}
 
-We can use the p+p NPE-h correlations to investigate the relative contributions of charm and bottom to non-photonic electrons by fitting the observed correlations with those from $B$ and $D$ to find the ratio as a function of electron $\pt$. Several experiments have performed this measurement, making this a reasonable check that our method for constructing NPE-h correlations is working as intended. 
+We can use the p+p NPE-h correlations to investigate the relative contributions of charm and bottom to non-photonic electrons by fitting the observed correlations with those from $B$ and $D$ to find the ratio as a function of electron $\pt$~\cite{BDmethod}. Several experiments have performed this measurement, making this a reasonable check that our method for constructing NPE-h correlations is working as intended. 
 
 The simulations are done with Pythia 8.2 with the standard STAR heavy flavor tune. To get reasonable samples across all electron $\pt$ and to avoid the low $\pt$ divergence in heavy flavor processes in Pythia we generate the correlations in several bins in \texttt{ptHat} and then piece them together according to a weighting, this closely follows the Pythia example \texttt{main08.cc}. For \texttt{ptHat} $\leq 3.0$ GeV/c we use the ``minbias" process \texttt{SoftQCD:nonDiffractive = on} for the bins above this we use the hard QCD processes \texttt{HardQCD:all = on}. Then to patch the different bins together we scale each bin by the generated cross section, the raw and scaled \texttt{ptHat} spectra can be seen in Figure~\ref{fig:PythiaProcess}.   
 
@@ -692,7 +692,7 @@ Where $f_B$ and $f_D$ are the correlations for bottom and charm electron-hadron 
 \begin{center}
 \includegraphics[scale=.75]{Plots/Correlations/BD_ratio.pdf}
 \end{center}
-\caption[B/D Ratio]{Measured value of $r_B$ as a function of trigger $\pt$. Red points are for the current analysis and the black are from STAR published in Ref. Only statistical errors are shown.}
+\caption[B/D Ratio]{Measured value of $r_B$ as a function of trigger $\pt$. Red points are for the current analysis and the black are from STAR published in~\cite{STARBDrat}. Only statistical errors are shown.}
 \label{fig:BDRatio}
 \end{figure}
 
